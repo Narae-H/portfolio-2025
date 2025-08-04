@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - label-sync-test   # 테스트용 브랜치 포함
+      - chore/3-label-organisation
     paths:
       - '.github/labels.yml'
 
