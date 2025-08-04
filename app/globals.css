@@ -1,6 +1,40 @@
-@import "tailwindcss";
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
 
-:root {
+@font-face {
+  font-family: 'mono-space-neon';
+  src: url('/fonts/MonaspaceNeon-Regular.woff') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'mono-space-neon-light';
+  src: url('/fonts/MonaspaceNeon-Light.woff') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'mono-space-neon-extralight';
+  src: url('/fonts/MonaspaceNeon-ExtraLight.woff') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'mono-space-neon-bold';
+  src: url('/fonts/MonaspaceNeon-Bold.woff') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'mono-space-neon-light', monospace;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +57,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
