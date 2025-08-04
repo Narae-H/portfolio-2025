@@ -1,12 +1,11 @@
-name: Sync GitHub Labels via CLI
-
+name: Sync GitHub Labels
 on:
   push:
     branches:
       - main
       - chore/3-label-organisation
     paths:
-      - '.github/labels.yml'
+      - .github/labels.yml
 
 jobs:
   sync-labels:
