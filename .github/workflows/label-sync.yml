@@ -7,23 +7,21 @@ on:
     paths:
       - .github/labels.yml
 
+permissions:
+  issues: write
+
 jobs:
-  sync-labels:
+  labels:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/labels.yml
 
-      - name: Install GitHub CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gh
-
-      - name: Show labels.yml content for debug
-        run: cat .github/labels.yml
-
-      - name: Sync labels from labels.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh label sync .github/labels.yml
+      - uses: EndBug/label-sync@v2
+        with:
+          config-file: .github/labels.yml
+          delete-other-labels: true
+          dry-run: false
+          token: ${{ secrets.GITHUB_TOKEN }}
