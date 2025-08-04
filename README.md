@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Overview
 
-## Getting Started
+This project is a personal portfolio site built with `Next.js (React.js Framework) and TypeScript`, designed to showcase development skills and projects.
+It uses static export to enable deployment via GitHub Pages and emphasises clean, maintainable code structure and modern frontend best practices.
 
-First, run the development server:
+The main goal is to create a responsive, performant portfolio with well-organised code and automated deployment workflow.
+
+<br/>
+
+# What Works (Implemented)
+
+<br/>
+
+# Tech Stack
+
+| **Category**           | **Stack / Tools**                                                                 | **Notes / Details**                                                                    |
+| ---------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **Frontend**           | Next.js 15, React 19, TypeScript                                                  | Latest Next.js and React versions with TypeScript for a robust development environment |
+| **Styling**            | Tailwind CSS, normalize.css                                                       | Planning to use Tailwind CSS; normalize.css for CSS reset and base styling             |
+| **State Management**   | React Hooks (`useState`, `useEffect`), React-Redux (`useSelector`, `useDispatch`) | For global and component state management                                              |
+| **Routing**            | React Router DOM                                                                  | Client-side routing for SPA                                                            |
+| **Icons**              | React Icons                                                                       | Flexible and lightweight icon components                                               |
+| **Deployment**         | GitHub Pages via `gh-pages`                                                       | Static HTML export and deployment to GitHub Pages                                      |
+| **Linting/Formatting** | ESLint, Prettier                                                                  | Code quality and formatting tools                                                      |
+
+<br/>
+
+# Project Structure (Modify needed)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+portfolio-2025
+├── 📁 .github                         # GitHub configuration and templates for collaboration
+│   ├── 📁 ISSUE_TEMPLATE              
+│   │   ├── 📄 bug_report.md
+│   │   ├── 📄 feature_request.md
+│   │   └── 📄 task.md
+│   ├── 📄 COMMIT_CONVENTION.md        
+│   └── 📄 PULL_REQUEST_TEMPLATE.md   
+│
+├── 📁 app                             # Next.js App Router application structure
+│   ├── 📁 components                  # Reusable React components
+│   ├── 📁 styles                      # CSS Modules for component-level styling
+│   ├── 📄 layout.tsx                  
+│   ├── 📄 loading.tsx                  
+│   ├── 📄 page.tsx                  
+│   └── 📄 StoreProvider.tsx           # Redux provider component         
+│
+├── 📁 data                            # Static data used in components
+│   └── 📄 sortAndFilters.ts           # Sidebar menu data (e.g., meal categories)
+│
+├── 📁 lib                             # Pure logic helpers (e.g., parsing, formatting, tree builders)
+│   ├── 📁 graphql                     # GraphQL query definitions for Shopify
+│   ├── 📁 hooks                       # Custom hooks
+│   ├── 📁 parsers                     # Data transformers for API responses
+│   └── 📁 utils                       # General utility functions
+│
+├── 📁 models                          # Type definitions or interfaces 
+│
+├── 📁 public                          # Static assets
+│
+├── 📁 redux                           # State management
+│
+└── 📄 .env.local                      # Environment variables for local development
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Known Issues & Solutions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
