@@ -15,7 +15,7 @@
   description: Improvements or refactoring
 
 - name: chore
-  color: CCCC
+  color: CCCCCC
   description: Maintenance and miscellaneous tasks
 
 - name: documentation

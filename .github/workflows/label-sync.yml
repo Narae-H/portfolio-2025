@@ -1,20 +1,36 @@
-name: Sync GitHub Labels
+name: Sync GitHub Labels via CLI
 
 on:
   push:
     branches:
       - main
-      - chore/3-label-organisation
+      - label-sync-test   # 테스트용 브랜치 포함
     paths:
-      - .github/labels.yml
+      - '.github/labels.yml'
 
 jobs:
   sync-labels:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: micnncim/action-label-syncer@v1
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
+
+      - name: Authenticate GitHub CLI
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          manifest: .github/labels.yml
+        run: |
+          echo $GITHUB_TOKEN | gh auth login --with-token
+
+      - name: Show labels.yml content for debug
+        run: cat .github/labels.yml
+
+      - name: Sync labels from labels.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh label sync .github/labels.yml
