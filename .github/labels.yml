@@ -19,7 +19,7 @@
   description: Maintenance and miscellaneous tasks
 
 - name: documentation
-  color: 0075CA
+  color: 34D058
   description: Documentation related tasks
 
 - name: question
@@ -28,5 +28,5 @@
 
 - name: wontfix
   color: FFFFFF
-  description: This will not be worked on 
+  description: This will not be worked on
 
