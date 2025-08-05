@@ -66,4 +66,6 @@ portfolio-2025
 <br/>
 
 # Known Issues & Solutions
-
+## Dark Mode
+https://tailwindcss.com/docs/dark-mode
+https://tailwindcss.com/docs/background-color
