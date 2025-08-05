@@ -12,14 +12,15 @@
   --color-activitybar-bg: #181818;
   --color-activitybar-text: #cccccc;
   --color-activitybar-text: #7b7b7b;
-  --color-activitybar-active-border: #0078d4;
+  --color-activitybar-border: #37373d;
 
-  --color-statusbar-bg: #181818;
-  --color-statusbar-text: #cccccc;
-  --color-statusbar-hover-bg: #262626;
-  --color-statusbar-hover-text: #ffffff;
-  --color-statusbar-point-bg: #0078d4;
-  --color-statusbar-point-text: #ffffff;
+  --color-sidebar-bg: #181818;
+  --color-sidebar-text: #cccccc;
+  --color-sidebar-hover-bg: #262626;
+  --color-sidebar-hover-text: #ffffff;
+  --color-sidebar-point-bg: #0078d4;
+  --color-sidebar-point-text: #ffffff;
+  --color-sidebar-border: #37373d;
 
   --color-footer-bg: #181818;
   --color-footer-text: #cccccc;
@@ -62,22 +63,23 @@
     --color-activitybar-bg: #ededf5;
     --color-activitybar-text: #705697;
     --color-activitybar-inactive-text: #bbb0d9;
-    --color-activitybar-active-border: #705697;
-
-    --color-footer-bg: #705697;
-    --color-footer-text: #fbfafc;
-    --color-footer-hover-bg: #7e69a1;
-    --color-footer-hover-text: #ffffff;
-    --color-footer-point-bg: #4e3c69;
-    --color-footer-point-text: #e5e3e9;
+    --color-activitybar-border: #d6cfe2;
 
     --color-sidebar-bg: #f0f0f7;
     --color-sidebar-text: #61618f;
-    --color-sidebar-hover-bg: #ede8ef;
-    --color-sidebar-hover-text: #61618f;
-    --color-sidebar-search-bg: #ffffff;
-    --color-sidebar-search-text: #616161;
-    --color-sidebar-search-active-border: #ffffff;
+    --color-sidebar-hover-bg: #7e69a1;
+    --color-sidebar-hover-text: #ffffff;
+    --color-sidebar-point-bg: #4e3c69;
+    --color-sidebar-point-text: #e5e3e9;
+    --color-sidebar-border: #d6cfe2;
+
+    --color-footer-bg: #705697;
+    --color-footer-text: #fbfafc;
+    --color-footer-hover-bg: #ede8ef;
+    --color-footer-hover-text: #61618f;
+    --color-footer-search-bg: #ffffff;
+    --color-footer-search-text: #616161;
+    --color-footer-search-active-border: #ffffff;
 
     --color-editor-bg: #f5f5f5;
     --color-editor-text: #616161;
@@ -127,6 +129,14 @@
   src: url('/fonts/MonaspaceNeon-Bold.woff') format('truetype');
   font-style: normal;
   font-display: swap;
+}
+
+:root {
+  --font-size-base: 12px;
+}
+
+html {
+  font-size: var(--font-size-base);
 }
 body {
   font-family: 'mono-space-neon-light', monospace;

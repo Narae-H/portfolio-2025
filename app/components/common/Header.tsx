@@ -4,6 +4,13 @@ type Props = {
 
 export default function Header ({className}: Props) {
   return (
-    <div className={`w-full bg-base-bg text-base-text border-b-2 border-base-border ${className}`}>Header</div>
+    <div className={`flex justify-between items-center w-full bg-base-bg text-base-text border-b-1 border-base-border ${className}`}>
+      <div className="flex">
+        Logo + Menus
+      </div>
+      <div className="flex">
+        Window menus
+      </div>
+    </div>
   )
 }

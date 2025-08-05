@@ -1,13 +1,15 @@
+import ActivityBar from "./components/common/ActivityBar";
+import Workspace from "./components/common/Workspace";
 
-export default function Home() {
+type Props = {
+  children: React.ReactNode;
+  className?: string;
+}
+export default function Page({children, className}: Props) {
   return (
-    <div>
-      <div className="bg-base-bg text-base-text">
-        Hello!
-      </div>
-      <div className="bg-statusbar-bg text-statusbar-text">
-        Test
-      </div>
-    </div>
+    <>
+      <ActivityBar className="flex w-18 h-auto"/>
+      <Workspace className="flex flex-1 h-auto"/>
+    </>
   );
 }

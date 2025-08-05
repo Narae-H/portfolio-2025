@@ -2,15 +2,14 @@ import MainContent from "./MainContent";
 import Sidebar from "./Sidebar";
 
 type Props = {
-  children: React.ReactNode;
   className?: string;
 }
 
-export default function Workspace({children, className}: Props) {
+export default function Workspace({className}: Props) {
   return (
-    <div>
-      <Sidebar className="w-64 h-full"/>
-      <MainContent className="flex-1 h-full">{children}</MainContent>
+    <div className={`flex flex-row ${className}`}>
+      <Sidebar className="flex bg-sidebar-bg text-sidebar-text w-82 h-full border-r-1 border-sidebar-border"/>
+      <MainContent className="flex-1 h-full"></MainContent>
     </div>
   )
 }

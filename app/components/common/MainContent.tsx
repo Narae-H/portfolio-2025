@@ -1,11 +1,9 @@
 type Props = {
-  children: React.ReactNode;
   className?: string;
 }
-export default function MainContent({children, className}: Props) {
+export default function MainContent({className}: Props) {
   return (
-    <div className={`flex ${className}`}>
-      {children}
+    <div className={`flex w-full bg-editor-bg text-editor-text ${className}`}>
     </div>
   )
 }

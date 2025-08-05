@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/app/components/common/Header";
 import Footer from "@/app/components/common/Footer";
 import Workspace from "@/app/components/common/Workspace";
-import ActivityBar from "@/app/components/common/Activitybar";
+import ActivityBar from "@/app/components/common/ActivityBar";
 
 
 export default function RootLayout({
@@ -24,16 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme={theme}>
       <body className="min-h-screen flex flex-col">
-        <Header className="flex h-10 flex-shrink-0"/>
+        <Header className="flex h-15 flex-shrink-0"/>
 
-        <div className="flex flex-1">
-          <ActivityBar className="flex w-20 h-full"/>
-          <Workspace className="flex-1 h-full"> {children} </Workspace>
+        <div className="flex flex-1 h-full overflow-hidden">
+          {children}
+          <button onClick={toggleTheme}>Toggle Theme</button>
         </div>
-          {/* <button onClick={toggleTheme}>Toggle Theme</button> */}
         
-        <Footer className="flex h-6 flex-shrink-0"/>
-      
+        <Footer className="flex h-8 flex-shrink-0"/>
       </body>
     </html>
   );
