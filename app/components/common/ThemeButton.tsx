@@ -26,20 +26,21 @@ export default function ThemeButton() {
           : 'bg-[#626262] shadow-[inset_-1px_1px_4px_0px_rgba(0,0,0,0.5)]'}
       `}
     >
-      <div className={`flex ${isLight ? '' : 'animate-rotate-bounce'}`}>
-        <div className="na-mode-button light">
-          <MdLightMode />
-        </div>
+      <div>
+        <MdLightMode />
       </div>
 
-      <div className={`flex ${!isLight ? 'animate-rotate-bounce' : ''}`}>
-        <div className="na-mode-button dark">
-          <MdDarkMode />
-        </div>
+      <div>
+        <MdDarkMode />
       </div>
 
       <div
-        className="absolute flex top-0 left-0 w-full h-full bg-transparent text-footer-text cursor-pointer"
+        className="
+          absolute flex 
+          top-0 left-0 
+          w-full h-full 
+          bg-transparent 
+          cursor-pointer"
         onClick={handleThemeToggle}
       >
         <div
