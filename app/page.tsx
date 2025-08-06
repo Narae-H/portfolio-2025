@@ -1,15 +1,16 @@
-import ActivityBar from "./components/common/ActivityBar";
-import Workspace from "./components/common/Workspace";
+import MainContent from "./components/main/MainContent";
+import Sidebar from "./components/main/Sidebar";
 
 type Props = {
   children: React.ReactNode;
   className?: string;
 }
-export default function Page({children, className}: Props) {
+
+export default function Page() {
   return (
-    <>
-      <ActivityBar className="flex w-18 h-auto"/>
-      <Workspace className="flex flex-1 h-auto"/>
-    </>
+    <div className="flex flex-1 h-auto">
+      <Sidebar className="flex bg-sidebar-bg text-sidebar-text w-82 h-full border-r-1 border-sidebar-border"/>
+      <MainContent className="flex-1 h-full" />
+    </div>
   );
 }

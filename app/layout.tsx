@@ -1,11 +1,18 @@
 'use client'
+import Footer from "@/app/components/layout/footer/Footer";
+import Header from "@/app/components/layout/header/Header";
 import { useState } from "react";
 import "./globals.css";
-import Header from "@/app/components/common/Header";
-import Footer from "@/app/components/common/Footer";
-import Workspace from "@/app/components/common/Workspace";
-import ActivityBar from "@/app/components/common/ActivityBar";
+import Activitybar from "@/app/components/layout/Activitybar";
 
+// TODO: 나중에 useState() 를 localstorage하는걸로 바꾸고 나면 'use client' 삭제하고 적용하기
+// export const metadata: Metadata = {
+//   title: "Narae's Portfolio",
+//   description: 'My portfolio site',
+//   icons: {
+//     icon: "/favicon.ico"
+//   }
+// };
 
 export default function RootLayout({
   children,
@@ -27,6 +34,7 @@ export default function RootLayout({
         <Header className="flex h-15 flex-shrink-0"/>
 
         <div className="flex flex-1 h-full overflow-hidden">
+          <Activitybar className="flex w-18 h-auto"/>
           {children}
           <button onClick={toggleTheme}>Toggle Theme</button>
         </div>

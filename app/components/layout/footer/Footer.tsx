@@ -1,3 +1,6 @@
+import LeftFooter from "./LeftFooter";
+import RightFooter from "./RightFooter";
+
 type Props = {
   className: string;
 }
@@ -5,13 +8,15 @@ type Props = {
 export default function Footer ({className}: Props) {
   return (
     <div className={`flex flex-row justify-between items-center w-full bg-footer-bg text-footer-text ${className}`}>
-      <div className="">
+      <LeftFooter />
+      <RightFooter />
+      {/* <div className="">
         Narae's Profile
       </div>
 
       <div>
         UTF-8
-      </div>
+      </div> */}
     </div>
   )
 }
