@@ -1,9 +1,10 @@
-import ThemeButton from "@/app/components/common/ThemeButton";
+import ThemeButton from "@/app/components/layout/footer/ThemeButton";
 
 export default function RightFooter() {
+
   return(
     <div className="flex h-full text-sm">
-      <div className="flex h-full items-center text-footer-text">
+      <div className="flex h-full pr-3 items-center text-footer-text">
         <span className="flex">UTF-8</span>
       </div>
       <div className="flex h-full">

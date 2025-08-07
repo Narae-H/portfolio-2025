@@ -1,3 +1,4 @@
+
 export type Item = {
   name: string;
   important?: boolean,
@@ -7,6 +8,7 @@ export type Item = {
 export type Menu = {
   name: string,
   tooltip: string,
+  icon?: string,
   items?: Item[]
 }
 
@@ -20,11 +22,13 @@ export const mainMenus: MainMenu = {
   "menus": [
     {
       "name": "Home",
-      "tooltip" : "Home"
+      "tooltip" : "Home",
+      "icon": "VscFiles"
     },
     {
       "name": "Skills",
       "tooltip" : "Skills",
+      "icon": "VscCode",
       "items": [
           {
             "name": "Backend",
@@ -75,6 +79,7 @@ export const mainMenus: MainMenu = {
       {
         "name": "Experiences",
         "tooltip" : "Experiences",
+        "icon": "VscFolderLibrary",
         "items": [
           {
             "name": "Australia",

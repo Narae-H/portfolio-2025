@@ -148,13 +148,13 @@
   @keyframes to-the-left {
     0% { left: 10px; }
     50% { left: -1px; }
-    100% { left: calc(var(--na-mode-button-wrapper-margin-left-right) + 2px); }
+    100% { left: 7px; }
   }
 
   @keyframes to-the-right {
     0% { right: 10px; }
     50% { right: -1px; }
-    100% { right: calc(var(--na-mode-button-wrapper-margin-left-right) + 2px); }
+    100% { right: 7px; }
   }
 
   .animate-rotate-bounce {

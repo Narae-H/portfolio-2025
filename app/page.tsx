@@ -1,10 +1,14 @@
+import { Metadata } from "next";
 import MainContent from "./components/main/MainContent";
 import Sidebar from "./components/main/Sidebar";
 
-type Props = {
-  children: React.ReactNode;
-  className?: string;
-}
+export const metadata: Metadata = {
+  title: "Narae's Portfolio",
+  description: 'My portfolio site',
+  icons: {
+    icon: "/favicon.ico"
+  }
+};
 
 export default function Page() {
   return (
