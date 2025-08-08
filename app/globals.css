@@ -21,7 +21,10 @@
   --color-sidebar-hover-text: #ffffff;
   --color-sidebar-point-bg: #0078d4;
   --color-sidebar-point-text: #ffffff;
-  --color-sidebar-border: #37373d;
+  --color-sidebar-border: red;
+  /* --color-sidebar-border: #37373d; */
+  --color-sidebar-border-inactive: #181818;
+  --color-sidebar-border-active: #0078d4;
 
   --color-footer-bg: #181818;
   --color-footer-text: #cccccc;
@@ -72,10 +75,13 @@
     --color-sidebar-bg: #f0f0f7;
     --color-sidebar-text: #61618f;
     --color-sidebar-hover-bg: #7e69a1;
-    --color-sidebar-hover-text: #ffffff;
+    --color-sidebar-hover-text: #705697; 
     --color-sidebar-point-bg: #4e3c69;
     --color-sidebar-point-text: #e5e3e9;
-    --color-sidebar-border: #d6cfe2;
+    --color-sidebar-border: blue;
+    /* --color-sidebar-border: #d6cfe2; */
+    --color-sidebar-border-inactive: #f0f0f7;
+    --color-sidebar-border-active: #705697;
 
     --color-footer-bg: #705697;
     --color-footer-text: #fbfafc;
@@ -180,4 +186,19 @@ html {
 }
 body {
   font-family: 'mono-space-neon-light', monospace;
+}
+
+
+/* 라이트 모드 */
+html[data-theme='light'] .tippy-box[data-theme~='custom'] {
+  background-color: var(--color-sidebar-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+/* 다크 모드 */
+html[data-theme='dark'] .tippy-box[data-theme~='custom'] {
+  background-color: var(--color-sidebar-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
 }

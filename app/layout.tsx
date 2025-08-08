@@ -2,9 +2,9 @@
 import Activitybar from "@/app/components/layout/activitybar/Activitybar";
 import Footer from "@/app/components/layout/footer/Footer";
 import Header from "@/app/components/layout/header/Header";
+import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
 import { useTheme } from "@/lib/hooks/useTheme";
 import "./globals.css";
-import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
 
 export default function RootLayout({
   children,
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   const { theme } = useTheme();
   const { isMobile } = useDeviceDetection();
-
+  
   return (
     <html lang="en" data-theme={theme}>
       <body className="min-h-screen flex flex-col min-w-[360px]">
