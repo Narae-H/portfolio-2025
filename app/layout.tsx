@@ -1,37 +1,30 @@
 'use client'
-import { useState } from "react";
+import Activitybar from "@/app/components/layout/activitybar/Activitybar";
+import Footer from "@/app/components/layout/footer/Footer";
+import Header from "@/app/components/layout/header/Header";
+import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
+import { useTheme } from "@/lib/hooks/useTheme";
 import "./globals.css";
-import Header from "@/app/components/common/Header";
-import Footer from "@/app/components/common/Footer";
-import Workspace from "@/app/components/common/Workspace";
-import ActivityBar from "@/app/components/common/ActivityBar";
-
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // TODO: 나중에 LocalStorage 하는걸로 바꿔야 함. 현재는 확인위해서 토글 버튼으로 임시 조치
-  const [theme, setTheme] = useState('tokyonight-theme');
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) =>
-      prevTheme === 'tokyonight-theme' ? 'dark-theme' : 'tokyonight-theme'
-    );
-  };
-
+  const { theme } = useTheme();
+  const { isMobile } = useDeviceDetection();
+  
   return (
     <html lang="en" data-theme={theme}>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col min-w-[360px]">
         <Header className="flex h-15 flex-shrink-0"/>
 
         <div className="flex flex-1 h-full overflow-hidden">
+          {!isMobile && <Activitybar className="flex w-18 h-auto"/> }
           {children}
-          <button onClick={toggleTheme}>Toggle Theme</button>
         </div>
         
-        <Footer className="flex h-8 flex-shrink-0"/>
+        <Footer className="flex h-[25px] flex-shrink-0"/>
       </body>
     </html>
   );
