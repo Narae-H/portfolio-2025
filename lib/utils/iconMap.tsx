@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { AiOutlineMail } from "react-icons/ai";
 import { VscCode, VscFiles, VscFolderLibrary } from "react-icons/vsc";
 
 type IconMapType = {
@@ -7,5 +8,6 @@ type IconMapType = {
 export const IconMap: IconMapType = {
   VscFiles: VscFiles,
   VscCode: VscCode,
-  VscFolderLibrary: VscFolderLibrary
+  VscFolderLibrary: VscFolderLibrary,
+  AiOutlineMail: AiOutlineMail
 }

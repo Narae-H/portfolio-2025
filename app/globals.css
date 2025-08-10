@@ -11,8 +11,9 @@
   --color-base-hover-bg: #262626; 
 
   --color-activitybar-bg: #181818;
-  --color-activitybar-text: #cccccc;
-  --color-activitybar-text: #7b7b7b;
+  --color-activitybar-text: #969696;
+  --color-activitybar-hover-text: #f0f4ff;
+  --color-activitybar-inactive-text: #7b7b7b;
   --color-activitybar-border: #37373d;
 
   --color-sidebar-bg: #181818;
@@ -21,8 +22,7 @@
   --color-sidebar-hover-text: #ffffff;
   --color-sidebar-point-bg: #0078d4;
   --color-sidebar-point-text: #ffffff;
-  --color-sidebar-border: red;
-  /* --color-sidebar-border: #37373d; */
+  --color-sidebar-border: #37373d;
   --color-sidebar-border-inactive: #181818;
   --color-sidebar-border-active: #0078d4;
 
@@ -68,18 +68,18 @@
     --color-base-hover-bg: #ede8ef; 
 
     --color-activitybar-bg: #ededf5;
-    --color-activitybar-text: #705697;
+    --color-activitybar-text: #908c96;
+    --color-activitybar-hover-text: #705697;
     --color-activitybar-inactive-text: #bbb0d9;
     --color-activitybar-border: #d6cfe2;
 
     --color-sidebar-bg: #f0f0f7;
-    --color-sidebar-text: #61618f;
-    --color-sidebar-hover-bg: #7e69a1;
+    --color-sidebar-text: #9999bb;
+    --color-sidebar-hover-bg: #4a2d6e; 
     --color-sidebar-hover-text: #705697; 
     --color-sidebar-point-bg: #4e3c69;
     --color-sidebar-point-text: #e5e3e9;
-    --color-sidebar-border: blue;
-    /* --color-sidebar-border: #d6cfe2; */
+    --color-sidebar-border: #d6cfe2;
     --color-sidebar-border-inactive: #f0f0f7;
     --color-sidebar-border-active: #705697;
 
@@ -186,19 +186,4 @@ html {
 }
 body {
   font-family: 'mono-space-neon-light', monospace;
-}
-
-
-/* 라이트 모드 */
-html[data-theme='light'] .tippy-box[data-theme~='custom'] {
-  background-color: var(--color-sidebar-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
-}
-
-/* 다크 모드 */
-html[data-theme='dark'] .tippy-box[data-theme~='custom'] {
-  background-color: var(--color-sidebar-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
 }
