@@ -1,16 +1,14 @@
 import ActivityMenuItem from "@/app/components/layout/activitybar/ActivityMenuItem";
 import { mainMenus } from "@/data/menu/mainMenu";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AiOutlineMail } from "react-icons/ai";
 
 type Props = {
   className?: string;
 }
 
 export default function Activitybar({className}: Props) {
+  // TODO: 나중에 path 따라서 active 메뉴 선택되나 확인 필요
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <div className={`

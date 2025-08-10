@@ -1,4 +1,4 @@
-type Menu = {
+export type Menu = {
   name: string,
   tooltip: string
 }
