@@ -1,5 +1,6 @@
 import ActivityMenuItem from "@/app/components/layout/activitybar/ActivityMenuItem";
 import { mainMenus } from "@/data/menu/mainMenu";
+import { buildSlugPath, slugify } from "@/lib/utils/url";
 import { usePathname } from "next/navigation";
 
 type Props = {
@@ -7,8 +8,7 @@ type Props = {
 }
 
 export default function Activitybar({className}: Props) {
-  // TODO: 나중에 path 따라서 active 메뉴 선택되나 확인 필요
-  const pathname = usePathname();
+  const pathname = usePathname().replace("/","");
 
   return (
     <div className={`
@@ -20,13 +20,13 @@ export default function Activitybar({className}: Props) {
     >
       <div className="flex w-full flex-col">
         { mainMenus.menus.map( (menu) => {
-          const isActive = pathname.startsWith(menu.name);
+          const isActive = (pathname === slugify(menu.title));
           return (
             <ActivityMenuItem 
-              key={menu.name}  
-              tooltip={menu.tooltip} 
-              link={`/${menu.name}`}
-              icon={menu.icon} 
+              key={menu.id}  
+              tooltip={menu.tooltip?? ''} 
+              link={(menu.title === 'Home')? '/': `/${buildSlugPath([menu.title])}`}
+              icon={menu.iconKey} 
               iconClassName="w-8 h-8"
               isActiveMenu={isActive} 
             />

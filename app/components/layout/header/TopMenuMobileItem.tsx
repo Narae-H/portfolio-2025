@@ -1,13 +1,13 @@
 'use client';
 
-import { Item as MenuType } from '@/data/menu/mainMenu';
 import { buildSlugPath } from '@/lib/utils/url';
+import { MenuItem } from '@/models/menu';
 import { Content, DropdownMenu, Item, Portal, Sub, SubContent, SubTrigger, Trigger } from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
 import { MdArrowForwardIos } from 'react-icons/md';
 
 type TopMenuMobileItemType = {
-  item: MenuType
+  item: MenuItem
 }
 
 export default function TopMenuSubItem({ 
@@ -15,7 +15,7 @@ export default function TopMenuSubItem({
 }: TopMenuMobileItemType) {
 
   // If home menu
-  if (item.name === 'Home') {
+  if (item.title === 'Home') {
     return (
       <div
         className="
@@ -23,7 +23,7 @@ export default function TopMenuSubItem({
           hover:bg-header-hover-bg hover:cursor-pointer
         "
       >
-        <Link href="/">{item.name}</Link>
+        <Link href="/">{item.title}</Link>
       </div>
     );
   }
@@ -37,7 +37,7 @@ export default function TopMenuSubItem({
           hover:bg-header-hover-bg hover:cursor-pointer focus:outline-none
         "
       >
-        {item.name}
+        {item.title}
       </Trigger>
 
       <Portal>
@@ -49,13 +49,13 @@ export default function TopMenuSubItem({
   );
 }
 
-function renderSubMenuItems(subItems?: MenuType[]) {
+function renderSubMenuItems(subItems?: MenuItem[]) {
   if (!subItems) return null;
 
   return subItems.map((subItem) => (
-    <Sub key={subItem.name}>
+    <Sub key={subItem.id}>
       <SubTrigger className="dropdown-menu-trigger">
-        {subItem.name}
+        {subItem.title}
         <div>
           <MdArrowForwardIos />
         </div>
@@ -63,10 +63,10 @@ function renderSubMenuItems(subItems?: MenuType[]) {
       <Portal>
         <SubContent sideOffset={2} className="dropdown-menu-content">
           {subItem.items?.map((subSubItem) => (
-            <Item key={subSubItem.name} className="dropdown-menu-item">
+            <Item key={subSubItem.id} className="dropdown-menu-item">
               <span>
-                <Link href={`/${buildSlugPath([subItem.name, subSubItem.name])}`}>
-                  {subSubItem.name}
+                <Link href={`/${buildSlugPath([subItem.title, subSubItem.title])}`}>
+                  {subSubItem.title}
                 </Link>
               </span>
             </Item>

@@ -1,30 +1,32 @@
 'use client'
 
+import { MenuItem } from "@/models/menu";
 import React, { useState, ReactNode } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import Icon from "@/app/components/common/Icon";
+import Link from "next/link";
 
-export interface Tab {
-  id: string;
-  title: string;
-  Icon: ReactNode;
-  link: string;
-  content: ReactNode; 
+export interface Tab extends MenuItem {
+  content?: ReactNode
 }
 
 export interface TabsProps {
   tabs: Tab[];
-  defaultTabId?: string;
+  selectedTab?: string;
   className?: string;
   onCloseTab?: (id: string) => void;
 }
 
 export default function TabsPanel({ 
   tabs, 
-  defaultTabId, 
+  selectedTab,
   className = '',
   onCloseTab 
 }: TabsProps) {
-  const [activeTab, setActiveTab] = useState<string>(defaultTabId ?? tabs[0].id);
+  console.log(`selectedTab==> ${selectedTab}`);
+  const [activeTab, setActiveTab] = useState<string>(selectedTab ?? tabs[0].id);
+  console.log(`selectedTab==> ${activeTab}`);
+  console.log(tabs);
 
   return (
     <div className={`
@@ -38,8 +40,9 @@ export default function TabsPanel({
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
           return (
-            <div
+            <Link
               key={tab.id}
+              href={tab.link?? ''}
               className={`
                 flex items-center 
                 px-4 py-2 
@@ -54,7 +57,7 @@ export default function TabsPanel({
               onClick={() => setActiveTab(tab.id)}
             >
               <div className="flex items-center gap-2">
-                {tab.Icon}
+                {tab.iconKey && <Icon name={tab.iconKey} {...tab.style}/>}
                 <div>{tab.title}</div>
               </div>
               
@@ -68,7 +71,7 @@ export default function TabsPanel({
               >
                 <VscChromeClose />
               </button>
-            </div>
+            </Link>
           );
         })}
       </div>

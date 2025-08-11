@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme={theme}>
       <body className="min-h-screen flex flex-col min-w-[360px]">
-        <Header className="flex h-15 flex-shrink-0"/>
+        <Header className="flex h-14 flex-shrink-0"/>
 
         <div className="flex flex-1 h-full overflow-hidden">
           {!isMobile && <Activitybar className="flex w-18 h-auto"/> }
