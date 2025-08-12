@@ -1,23 +1,17 @@
 'use client'
+import useVisitedTabs from '@/lib/hooks/useVisitedTabs';
+import { useEffect } from 'react';
 
-import useVisitedTabs from "@/lib/hooks/useVisitedTabs";
-import { useEffect } from "react";
-
-type ClientHandlerType = {
+type Props = {
   handle: string,
   subHandle: string
 }
 
-export default function ClientHandler({
-  handle,
-  subHandle
-}: ClientHandlerType) {
+export default function ClientHandler({ handle, subHandle }: Props) {
   const { addTab } = useVisitedTabs(`visited_${handle}`);
 
   useEffect(() => {
-    if (subHandle) {
-      addTab(subHandle);
-    }
+    if (subHandle) addTab(subHandle);
   }, [subHandle, addTab]);
 
   return null;

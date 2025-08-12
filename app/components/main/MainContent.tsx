@@ -1,7 +1,7 @@
 'use client'
 
-import TabsPanel, { Tab } from "@/app/components/main/TabsPanel";
-import { experiencesTabs, homeTabs, skillsTabs } from "./tabsConfig";
+import { Tab } from "@/app/components/main/TabsPanel";
+import { ExperiencesTabs, HomeTabs, SkillsTabs } from "./tabsConfig";
 
 type MainContentProps = {
   handle: string;
@@ -10,31 +10,26 @@ type MainContentProps = {
   className?: string;
 };
 
+function ContentWrapper({ children, className = '' }: { children: React.ReactNode; className?: string }) {
+  return <div className={`flex flex-1 w-full h-auto bg-tabs-tab-bg text-tabs-tab-text ${className}`}>{children}</div>;
+}
+
 export default function MainContent({ 
   handle,
-  selectedTab,
+  selectedTab='',
   className = '' 
 }: MainContentProps) {
-
-  let tabs: Tab[];
-
+  
   switch (handle) {
     case "home":
-      tabs = homeTabs();
-      break;
+      return <ContentWrapper className={className}><HomeTabs selectedTab={selectedTab} /></ContentWrapper>;
     case "skills":
-      tabs = skillsTabs();
-      break;
+      return <ContentWrapper className={className}><SkillsTabs selectedTab={selectedTab} /></ContentWrapper>;
     case "experiences":
-      tabs = experiencesTabs();
-      break;
+      return <ContentWrapper className={className}><ExperiencesTabs selectedTab={selectedTab} /></ContentWrapper>;
     default:
-      tabs = [];
+      return null;
   }
-  return (
-    <div className={`flex flex-1 w-full h-auto bg-tabs-tab-bg text-tabs-tab-text ${className}`}>
-      <TabsPanel tabs={tabs} selectedTab={selectedTab} />
-    </div>
-  );
 }
+
 

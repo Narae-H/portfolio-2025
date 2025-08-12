@@ -1,50 +1,27 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState, AppDispatch } from "@/redux/store";
+import { addTab as addTabAction, resetTabs as resetTabsAction } from "@/redux/features/visitedTabsReducer";
 
-export type VisitedTabs = string[];
-export const STORAGE_KEY_SKILLS = "visited_skills";
-export const STORAGE_KEY_EXPERIENCE = "visited_experience";
+export default function useVisitedTabs(storageKey: string) {
+  const dispatch = useDispatch<AppDispatch>();
+  const visitedTabs = useSelector((state: RootState) => state.visitedTabs[storageKey] ?? []);
 
-export default function useVisitedTabs( storageKey: string ) {
-  const [visitedTabs, setVisitedTabs] = useState<VisitedTabs>([]);
+  const addTab = (tabName: string) => {
+    if (!tabName) return;
+    if (visitedTabs.includes(tabName)) return;
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    try {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) {
-        setVisitedTabs(JSON.parse(saved));
-      }
-    } catch (e) {
-      console.error("Failed to load visited menus", e);
-    }
-  }, []);
+    dispatch(addTabAction({ key: storageKey, tab: tabName }));
+  };
 
-  const saveTabs = useCallback((newMenus: VisitedTabs) => {
-    setVisitedTabs(newMenus);
-    if (typeof window !== "undefined") {
-      localStorage.setItem(storageKey, JSON.stringify(newMenus));
-    }
-  }, []);
-
-  const addTab = useCallback(
-    (tabName: string) => {
-      if (!tabName) return;
-
-      setVisitedTabs((prev) => {
-        if (prev.includes(tabName)) return prev;
-        const updated = [...prev, tabName];
-        localStorage.setItem(storageKey, JSON.stringify(updated));
-        return updated;
-      });
-    },
-    [storageKey]
-  );
+  const resetTabs = () => {
+    dispatch(resetTabsAction({ key: storageKey }));
+  };
 
   return {
     visitedTabs,
     addTab,
-    resetTabs: () => saveTabs([]),
+    resetTabs,
   };
 }

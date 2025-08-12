@@ -1,10 +1,10 @@
 'use client'
 
-import { MenuItem } from "@/models/menu";
-import React, { useState, ReactNode } from "react";
-import { VscChromeClose } from "react-icons/vsc";
 import Icon from "@/app/components/common/Icon";
+import { MenuItem } from "@/models/menu";
 import Link from "next/link";
+import { ReactNode, useState } from "react";
+import { VscChromeClose } from "react-icons/vsc";
 
 export interface Tab extends MenuItem {
   content?: ReactNode
@@ -23,10 +23,7 @@ export default function TabsPanel({
   className = '',
   onCloseTab 
 }: TabsProps) {
-  console.log(`selectedTab==> ${selectedTab}`);
-  const [activeTab, setActiveTab] = useState<string>(selectedTab ?? tabs[0].id);
-  console.log(`selectedTab==> ${activeTab}`);
-  console.log(tabs);
+  const [activeTab, setActiveTab] = useState<string>( !selectedTab? tabs[0].id:selectedTab );
 
   return (
     <div className={`

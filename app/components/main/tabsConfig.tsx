@@ -1,17 +1,20 @@
-"use client";
+// "use client";
 
 import Workspace from "@/app/components/common/workspace";
-import { Tab } from "@/app/components/main/TabsPanel";
+import TabsPanel, { Tab } from "@/app/components/main/TabsPanel";
 import { mainMenus } from "@/data/menu/mainMenu";
 import skillDataMap from "@/data/skills";
 import useVisitedTabs from "@/lib/hooks/useVisitedTabs";
 import { findMenuItemById } from "@/lib/utils/menu";
 import { MenuItem } from "@/models/menu";
-import SkillsWelcomeContent from "./SkillsWelcomeContent";
 import HomeContent from "./HomeContent";
+import SkillsWelcomeContent from "./SkillsWelcomeContent";
 
-export function homeTabs(): Tab[] {
-  return [
+type TabsProps = {
+  selectedTab: string
+}
+export function HomeTabs({selectedTab}: TabsProps) {
+  const tabs =  [
     {
       id: "welcome",
       title: "Welcome",
@@ -21,9 +24,13 @@ export function homeTabs(): Tab[] {
       content: <HomeContent />,
     },
   ];
+
+  return (
+    <TabsPanel tabs={tabs} selectedTab={selectedTab} />
+  )
 }
 
-export function skillsTabs(): Tab[] {
+export function SkillsTabs({ selectedTab }: TabsProps){
   const { visitedTabs } = useVisitedTabs("visited_skills");
 
   const skillMenu = mainMenus.menus.find((menu) => menu.id === "skills");
@@ -50,10 +57,10 @@ export function skillsTabs(): Tab[] {
     })),
   ];
 
-  return tabs;
+  return <TabsPanel tabs={tabs} selectedTab={selectedTab} />;
 }
 
-export function experiencesTabs(): Tab[] {
-  // TODO: experiencesTabs 구현
-  return [];
+export function ExperiencesTabs({selectedTab}: TabsProps) {
+  const tabs: Tab[] = [];
+  return <TabsPanel tabs={tabs} selectedTab={selectedTab} />;
 }
