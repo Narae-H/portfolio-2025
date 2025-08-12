@@ -27,13 +27,14 @@ export default function TabsPanel({
 
   return (
     <div className={`
-      flex flex-col 
-      w-full h-full 
+      flex flex-col
+      min-w-0 h-full
+      overflow-x-auto overflow-y-hidden
       bg-tabs-panel-bg
       text-tabs-tab-text 
       ${className}
     `}>
-      <div className="flex h-[39px]">
+      <div className="h-[39px] inline-flex whitespace-nowrap w-max">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
           return (
@@ -41,14 +42,13 @@ export default function TabsPanel({
               key={tab.id}
               href={tab.link?? ''}
               className={`
-                flex items-center 
+                inline-flex
+                items-center 
+                h-full
                 px-4 py-2 
                 cursor-pointer 
                 select-none
-                border-1
-                border-l-transparent
-                border-r-tabs-tab-border
-                hover:bg-tabs-tab-hover-bg
+                border-1 border-l-transparent border-r-tabs-tab-border hover:bg-tabs-tab-hover-bg
                 ${isActive ? "h-[40px] relative bg-tabs-tab-active-bg border-t-1 border-t-tabs-tab-active-border border-b-tabs-tab-active-bg" : "border-t-1 border-transparent"}
                 `}
               onClick={() => setActiveTab(tab.id)}

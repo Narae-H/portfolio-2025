@@ -1,5 +1,3 @@
-// "use client";
-
 import Workspace from "@/app/components/common/workspace";
 import TabsPanel, { Tab } from "@/app/components/main/TabsPanel";
 import { mainMenus } from "@/data/menu/mainMenu";

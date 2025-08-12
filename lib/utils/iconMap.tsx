@@ -2,15 +2,15 @@ import { IconBaseProps } from "react-icons";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLeaf } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
-import { FaAws, FaCss3Alt, FaHashtag, FaJ, FaJava, FaMaxcdn, FaReact, FaS } from "react-icons/fa6";
+import { FaAws, FaCss3Alt, FaGithub, FaHashtag, FaJ, FaJava, FaMaxcdn, FaMicrosoft, FaReact, FaS } from "react-icons/fa6";
 import { GiMuscleUp } from "react-icons/gi";
 import { GrMysql } from "react-icons/gr";
 import { ImOnedrive } from "react-icons/im";
 import { IoLogoJavascript, IoMdGitBranch } from "react-icons/io";
 import { LuConstruction } from "react-icons/lu";
-import { MdCode } from "react-icons/md";
+import { MdCode, MdOutlineContentPasteSearch } from "react-icons/md";
 import { RiBootstrapLine } from "react-icons/ri";
-import { SiJavascript, SiMariadb, SiSpringboot } from "react-icons/si";
+import { SiJavascript, SiMariadb, SiSpringboot, SiThymeleaf } from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
 import { TiVendorMicrosoft } from "react-icons/ti";
 import { VscAzure, VscCode, VscFiles, VscFolderLibrary } from "react-icons/vsc";
@@ -48,5 +48,9 @@ export const IconMap: IconMapType = {
   FaJava,
   FaCss3Alt,
   GrMysql,
-  SiJavascript
+  SiJavascript,
+  SiThymeleaf,
+  FaMicrosoft,
+  FaGithub,
+  MdOutlineContentPasteSearch
 };

@@ -11,7 +11,7 @@ type MainContentProps = {
 };
 
 function ContentWrapper({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  return <div className={`flex flex-1 w-full h-auto bg-tabs-tab-bg text-tabs-tab-text ${className}`}>{children}</div>;
+  return <div className={`flex-1 min-w-0 h-full bg-tabs-tab-bg text-tabs-tab-text ${className}`}>{children}</div>;
 }
 
 export default function MainContent({ 

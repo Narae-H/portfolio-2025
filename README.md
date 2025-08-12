@@ -70,7 +70,7 @@ portfolio-2025
 https://tailwindcss.com/docs/dark-mode
 https://tailwindcss.com/docs/background-color
 
-## LocalStorage-based tab state is not shared across components
+## LocalStorage-based tab state is not shared across components [Realated PR: *to be updated*]()
 
 Initially, the tab state was stored in `localStorage` for persistence.  
 However, because React components read from `localStorage` independently, state updates weren't reflected across components, causing inconsistencies.
