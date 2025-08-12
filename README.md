@@ -69,3 +69,14 @@ portfolio-2025
 ## Dark Mode
 https://tailwindcss.com/docs/dark-mode
 https://tailwindcss.com/docs/background-color
+
+## LocalStorage-based tab state is not shared across components
+
+Initially, the tab state was stored in `localStorage` for persistence.  
+However, because React components read from `localStorage` independently, state updates weren't reflected across components, causing inconsistencies.
+
+### Solution: Use Redux Toolkit with redux-persist for global state management
+
+- Manage tab states globally via `Redux Toolkit slice` keyed by storage keys.
+- Persist Redux state to localStorage using `redux-persist`.
+- This ensures all components share and react to the latest tab state instantly.
