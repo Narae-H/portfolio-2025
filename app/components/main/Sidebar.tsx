@@ -1,24 +1,29 @@
 'use client'
 
-import { buildSlugPath } from "@/lib/utils/url";
 import Link from "next/link";
 import { useState } from "react";
-import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
-import Icon from "../common/Icon";
-import { EmptyMenuItemValue, MenuItem } from "@/models/menu";
+
 import { mainMenus } from "@/data/menu/mainMenu";
+import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
+import { EmptyMenuItemValue, MenuItem } from "@/models/menu";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import Icon from "@/app/components/common/Icon";
 
 type Props = {
   handle: string,
   className?: string
 };
 
-export default function Sidebar({ 
+export default function SidebarWrapper(props: Props) {
+  const { isMobile } = useDeviceDetection();
+  return isMobile ? null : <SidebarContent {...props} />;
+}
+
+export function SidebarContent({ 
   handle,
   className = '' 
 }: Props) {
   const [openMenus, setOpenMenus] = useState<Record<string, boolean>>({});
-
   const selectedMenu = mainMenus.menus.find(
     (menu) => menu.title.toLowerCase() === handle.toLowerCase()
   );

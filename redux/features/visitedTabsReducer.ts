@@ -22,14 +22,6 @@ const visitedTabsSlice = createSlice({
     removeTab: (state, action: PayloadAction<{ key: string; tab: string }>) => {
       const list = state[action.payload.key] ?? [];
       state[action.payload.key] = list.filter(t => t !== action.payload.tab);
-      // state[action.payload.key] = list.filter(t => {
-      //   if(t !== action.payload.tab) {
-      //     console.log(`t => ${t}`);
-      //     console.log(`action.payload.tab=> ${action.payload.tab}`);
-      //     return t;
-      //   }
-      //   // t !== action.payload.tab
-      // });
     },
     resetTabs: (state, action: PayloadAction<{ key: string }>) => {
       state[action.payload.key] = []

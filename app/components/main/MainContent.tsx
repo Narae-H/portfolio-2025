@@ -10,9 +10,6 @@ type MainContentProps = {
   className?: string;
 };
 
-function ContentWrapper({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  return <div className={`flex-1 min-w-0 h-auto bg-tabs-tab-bg text-tabs-tab-text ${className}`}>{children}</div>;
-}
 
 export default function MainContent({ 
   handle,
@@ -24,11 +21,11 @@ export default function MainContent({
   
   switch (handle) {
     case "home":
-      return <ContentWrapper className={className}><HomeTabs /></ContentWrapper>;
+      return <HomeTabs />;
     case "skills":
-      return <ContentWrapper className={className}><SkillsTabs /></ContentWrapper>;
+      return <SkillsTabs />;
     case "experiences":
-      return <ContentWrapper className={className}><ExperiencesTabs /></ContentWrapper>;
+      return <ExperiencesTabs />;
     default:
       return null;
   }

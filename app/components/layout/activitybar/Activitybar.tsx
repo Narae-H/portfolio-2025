@@ -1,6 +1,6 @@
 import ActivityMenuItem from "@/app/components/layout/activitybar/ActivityMenuItem";
 import { mainMenus } from "@/data/menu/mainMenu";
-import { buildSlugPath, slugify } from "@/lib/utils/url";
+import { buildSlugPath } from "@/lib/utils/url";
 import { usePathname } from "next/navigation";
 
 type Props = {
@@ -20,7 +20,7 @@ export default function Activitybar({className}: Props) {
     >
       <div className="flex w-full flex-col">
         { mainMenus.menus.map( (menu) => {
-          const isActive = (pathname === slugify(menu.title));
+          const isActive = (pathname === menu.id || ((pathname === "") && (menu.id ==="home")));
           return (
             <ActivityMenuItem 
               key={menu.id}  

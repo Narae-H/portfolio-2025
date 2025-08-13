@@ -2,13 +2,13 @@ import Workspace from "@/app/components/common/workspace";
 import TabsPanel, { Tab } from "@/app/components/main/TabsPanel";
 import { mainMenus } from "@/data/menu/mainMenu";
 import skillDataMap from "@/data/skills";
+import useSelectedTab from "@/lib/hooks/useSelectedTab";
 import useVisitedTabs from "@/lib/hooks/useVisitedTabs";
 import { findMenuItemById } from "@/lib/utils/menu";
 import { MenuItem } from "@/models/menu";
+import { useRouter } from "next/navigation";
 import HomeContent from "./HomeContent";
 import SkillsWelcomeContent from "./SkillsWelcomeContent";
-import { useRouter } from "next/navigation";
-import useSelectedTab from "@/lib/hooks/useSelectedTab";
 
 export function HomeTabs() {
   const { selectedTab } = useSelectedTab("selected_home_tab");
@@ -31,8 +31,9 @@ export function HomeTabs() {
 
 export function SkillsTabs(){
   const router = useRouter();
+
   const { visitedTabs, closeTab } = useVisitedTabs("visited_skills");
-  const { selectedTab, setSelectedTab, clearSelectedTab } = useSelectedTab("selected_skills_tab");
+  const { selectedTab, setSelectedTab } = useSelectedTab("selected_skills_tab");
 
   const skillMenu = mainMenus.menus.find((menu) => menu.id === "skills");
   const foundItems: MenuItem[] = visitedTabs
@@ -53,26 +54,12 @@ export function SkillsTabs(){
       title: item.title,
       iconKey: item.iconKey,
       style: item.style,
-      link: item.link,
+      link: item.link?? '#',
       content: <Workspace menuCategory="skills" menuId={item.id as keyof typeof skillDataMap} />,
     })),
   ];
 
-  const handleCloseTab = (tabId: string) => {
-    const isActive = tabId === selectedTab;
-    closeTab(tabId);
-    
-    if (isActive) {
-      clearSelectedTab();
-      router.replace("/skills");
-    }
-  };
-
-  const handleSelectTab = (tabId: string) => {
-    setSelectedTab(tabId);
-  };
-
-  return <TabsPanel tabs={tabs} selectedTab={selectedTab} onCloseTab={handleCloseTab} onSelectTab={handleSelectTab}/>;
+  return <TabsPanel tabs={tabs} selectedTab={selectedTab} onCloseTab={closeTab} onSelectTab={setSelectedTab} />;
 }
 
 export function ExperiencesTabs() {

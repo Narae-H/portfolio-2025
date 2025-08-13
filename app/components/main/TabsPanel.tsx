@@ -1,10 +1,10 @@
 'use client'
 
 import Icon from "@/app/components/common/Icon";
-import { DEFAULT_TAB_ID } from "@/constants/constants";
 import { MenuItem } from "@/models/menu";
 import Link from "next/link";
-import { ReactNode, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { ReactNode } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 
 export interface Tab extends MenuItem {
@@ -26,19 +26,23 @@ export default function TabsPanel({
   onCloseTab,
   onSelectTab 
 }: TabsProps) {
-
-  if(selectedTab === '') {
-    onSelectTab?.(DEFAULT_TAB_ID);
-  }
+  const router = useRouter();
 
   const handleTabClick = (tabId: string) => {
     onSelectTab?.(tabId);
   };
 
+  const handleCloseTab = (tabId: string) => {
+    onCloseTab?.(tabId);
+    if(selectedTab == tabId) {
+      router.replace("/skills");
+    }
+  }
+
   return (
     <div className={`
-      flex flex-col
-      min-w-0 h-full
+      flex flex-1 flex-col
+      min-w-0 h-min-0 h-auto
       bg-tabs-panel-bg
       text-tabs-tab-text 
       ${className}
@@ -53,7 +57,7 @@ export default function TabsPanel({
           hover:overflow-x-auto
         ">
           {tabs.map((tab) => {
-            const isActive = selectedTab === tab.id;
+            const isActive = (selectedTab === tab.id);
             return (
               <div
                 key={tab.id}
@@ -78,7 +82,7 @@ export default function TabsPanel({
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    onCloseTab?.(tab.id);
+                    handleCloseTab(tab.id);
                   }}
                   className="p-2 text-gray-400 focus:outline-none cursor-pointer rounded-md hover:bg-tabs-tab-hover-text"
                 >
@@ -95,6 +99,7 @@ export default function TabsPanel({
       <div className="
         flex flex-1 
         bg-tabs-content-bg
+        overflow-y-auto
       ">
         {tabs.find((tab) => tab.id === selectedTab)?.content}
       </div>

@@ -45,8 +45,11 @@ portfolio-2025
 │   ├── 📄 page.tsx                  
 │   └── 📄 StoreProvider.tsx           # Redux provider component         
 │
-├── 📁 data                            # Static data used in components
+├── 📁 data                            # Static data
 │   └── 📄 sortAndFilters.ts           # Sidebar menu data (e.g., meal categories)
+│
+├── 📁 constants                       # Constant data
+│   └── 📄 constants.ts                
 │
 ├── 📁 lib                             # Pure logic helpers (e.g., parsing, formatting, tree builders)
 │   ├── 📁 graphql                     # GraphQL query definitions for Shopify
