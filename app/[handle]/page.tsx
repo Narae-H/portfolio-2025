@@ -20,10 +20,10 @@ export default async function Page({ params }: PageProps) {
   const { handle } = await params;
 
   return (
-    <div className="flex flex-1 h-auto">
+    <>
       <Sidebar handle={handle} />
       <MainContent handle={handle} />
-    </div>
+    </>
   );
 }
 

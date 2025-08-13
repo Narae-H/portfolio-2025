@@ -20,10 +20,9 @@ export default async function SubPage({ params }: PageProps) {
   const { handle, subHandle } = await params;
 
   return (
-    <div className="flex flex-1 h-auto">
-      <ClientHandler handle={handle} subHandle={subHandle} />
+    <>
       <Sidebar handle={handle} />
-      <MainContent handle={handle} selectedTab={subHandle} />
-    </div>
+      <MainContent handle={handle} subHandle={subHandle} />
+    </>
   );
 }

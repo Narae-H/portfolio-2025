@@ -32,8 +32,14 @@ export default function Sidebar({
   };
 
   return (
-    <div
-      className={`flex flex-col bg-sidebar-bg text-list-header-text w-82 h-full border-r border-sidebar-border p-2 ${className}`}
+    <div className={`
+      flex flex-col 
+      h-auto w-82
+      p-2 
+      bg-sidebar-bg text-list-header-text
+      border-r border-sidebar-border 
+      ${className}
+      `}
     >
       <div className="p-2 text-list-text font-[mono-space-neon-extralight]">
         EXPLORER
@@ -44,7 +50,7 @@ export default function Sidebar({
         return (
           <div key={menu.id} className="flex flex-col">
             <div
-              className="flex items-center font-[mono-space-neon] cursor-pointer pt-3 pb-2 gap-2"
+              className="flex items-center pt-3 pb-2 gap-2 font-[mono-space-neon] cursor-pointer"
               onClick={() => toggleMenu(menu.title)}
             >
               {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}

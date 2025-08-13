@@ -1,14 +1,10 @@
-'use client'
-import useSelectedTab from '@/lib/hooks/useSelectedTab';
+'use client';
+
 import useVisitedTabs from '@/lib/hooks/useVisitedTabs';
+import useSelectedTab from '@/lib/hooks/useSelectedTab';
 import { useEffect } from 'react';
 
-type Props = {
-  handle: string,
-  subHandle: string
-}
-
-export default function ClientHandler({ handle, subHandle }: Props) {
+export default function useTabInitializer(handle: string, subHandle?: string) {
   const { addTab } = useVisitedTabs(`visited_${handle}`);
   const { setSelectedTab } = useSelectedTab(`selected_${handle}_tab`);
 
@@ -16,8 +12,9 @@ export default function ClientHandler({ handle, subHandle }: Props) {
     if (subHandle) {
       addTab(subHandle);
       setSelectedTab(subHandle);
+    } else {
+      addTab('');
+      setSelectedTab('');
     }
-  }, [subHandle, addTab, setSelectedTab]);
-
-  return null;
+  }, [handle, subHandle, addTab, setSelectedTab]);
 }

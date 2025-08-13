@@ -62,9 +62,7 @@
   --color-editorblog-border: #37373d;
   --color-editorblog-active-border: #0078d4;
 
-  --color-scrollbar-track: #cccccc;
-  --color-scrollbar-thumb: rgba(120, 120, 120, 0.1);
-  --color-scrollbar-thumb-hover: rgba(120, 120, 120, 0.2);
+  --color-scrollbar-thumb: #37373d;
 
   --color-tooltip-bg: #1e1e1e;
   --color-tooltip-text: #cccccc;
@@ -73,7 +71,7 @@
   --color-list-text: #cccccc;
   --color-list-link-text: #0078d4;
   --color-list-header-text: #cccccc;
-  --color-list-hover-bg: #ede8ef;
+  --color-list-hover-bg: #262626;
 
   --color-card-bg: #1E1E1E;
   --color-card-hover-bg: #262626;
@@ -143,17 +141,10 @@
     --color-tabs-content-text-secondary: #6C757D;
     --color-tabs-content-link-text: #0078d4;
 
-    /* --color-editor-bg: #f5f5f5; */
-    /* --color-editor-text: #616161; */
-    /* --color-editor-tab-bg: #ececec; */
-    /* --color-editor-hover-bg: #ede8ef; */
-
     --color-editorblog-border: #d6cfe2;
     --color-editorblog-active-border: #705697;
 
-    --color-scrollbar-track: #f5f5f5;
-    --color-scrollbar-thumb: rgba(115, 115, 115, 0.1);
-    --color-scrollbar-thumb-hover: rgba(115, 115, 115, 0.3);
+    --color-scrollbar-thumb: #37373d;
 
     --color-tooltip-bg: #f3f3f3;
     --color-tooltip-text: #616161;
@@ -172,6 +163,18 @@
 }
 
 @layer utilities {
+  .tabs-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  .tabs-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .tabs-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--color-scrollbar-thumb);
+    border-radius: 10px;
+  }
+
+
   @keyframes rotate-left-and-right {
     0% { transform: rotate(0); }
     50% { transform: rotate(-30deg); }

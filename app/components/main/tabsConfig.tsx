@@ -7,11 +7,10 @@ import { findMenuItemById } from "@/lib/utils/menu";
 import { MenuItem } from "@/models/menu";
 import HomeContent from "./HomeContent";
 import SkillsWelcomeContent from "./SkillsWelcomeContent";
+import { useRouter } from "next/navigation";
+import useSelectedTab from "@/lib/hooks/useSelectedTab";
 
-type TabsProps = {
-  selectedTab: string
-}
-export function HomeTabs({selectedTab}: TabsProps) {
+export function HomeTabs() {
   const tabs =  [
     {
       id: "welcome",
@@ -24,12 +23,14 @@ export function HomeTabs({selectedTab}: TabsProps) {
   ];
 
   return (
-    <TabsPanel tabs={tabs} selectedTab={selectedTab} />
+    <TabsPanel tabs={tabs} />
   )
 }
 
-export function SkillsTabs({ selectedTab }: TabsProps){
-  const { visitedTabs } = useVisitedTabs("visited_skills");
+export function SkillsTabs(){
+  const router = useRouter();
+  const { visitedTabs, closeTab } = useVisitedTabs("visited_skills");
+  const { selectedTab, setSelectedTab, clearSelectedTab } = useSelectedTab("selected_skills_tab");
 
   const skillMenu = mainMenus.menus.find((menu) => menu.id === "skills");
   const foundItems: MenuItem[] = visitedTabs
@@ -55,10 +56,24 @@ export function SkillsTabs({ selectedTab }: TabsProps){
     })),
   ];
 
-  return <TabsPanel tabs={tabs} selectedTab={selectedTab} />;
+  const handleCloseTab = (tabId: string) => {
+    const isActive = tabId === selectedTab;
+    closeTab(tabId);
+    
+    if (isActive) {
+      clearSelectedTab();
+      router.replace("/skills");
+    }
+  };
+
+  const handleSelectTab = (tabId: string) => {
+    setSelectedTab(tabId);
+  };
+
+  return <TabsPanel tabs={tabs} selectedTab={selectedTab} onCloseTab={handleCloseTab} onSelectTab={handleSelectTab}/>;
 }
 
-export function ExperiencesTabs({selectedTab}: TabsProps) {
+export function ExperiencesTabs() {
   const tabs: Tab[] = [];
-  return <TabsPanel tabs={tabs} selectedTab={selectedTab} />;
+  return <TabsPanel tabs={tabs} />;
 }

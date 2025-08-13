@@ -1,17 +1,19 @@
 // store/store.ts
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import visitedTabsReducer from '@/redux/features/visitedTabsReducer'
+import selectedTabReducer from '@/redux/features/selectedTabReducer'
 import storage from 'redux-persist/lib/storage'
 import { persistReducer, persistStore } from 'redux-persist'
 
 const rootReducer = combineReducers({
   visitedTabs: visitedTabsReducer,
+  selectedTab: selectedTabReducer,
 })
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['visitedTabs'],
+  whitelist: ['visitedTabs', 'selectedTab'],
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
