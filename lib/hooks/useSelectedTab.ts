@@ -7,11 +7,9 @@ export default function useSelectedTab(storageKey: string) {
   const selectedTab = useSelector((state: RootState) => state.selectedTab[storageKey] ?? "");
 
   const setSelectedTab = (tabId: string) => {
-    console.log(`storageKey = >${storageKey}`);
-    console.log(`tabId = >${tabId}`);
     dispatch(setSelectedTabAction({ key: storageKey, tabId }));
   };
-
+  
   const clearSelectedTab = () => {
     dispatch(clearSelectedTabAction({ key: storageKey }));
   };

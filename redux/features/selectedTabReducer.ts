@@ -14,7 +14,7 @@ const selectedTabSlice = createSlice({
       state[action.payload.key] = action.payload.tabId? action.payload.tabId: '';
     },
     clearSelectedTabAction: (state, action: PayloadAction<{ key: string }>) => {
-      state[action.payload.key] = "";
+      state[action.payload.key] = '';
     }
   }
 });

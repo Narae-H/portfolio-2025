@@ -1,7 +1,6 @@
 import MainContent from "@/app/components/main/MainContent";
 import Sidebar from "@/app/components/main/Sidebar";
 import { Metadata } from "next";
-import ClientHandler from "./ClientHandler";
 
 export const metadata: Metadata = {
   title: "Narae's Portfolio",

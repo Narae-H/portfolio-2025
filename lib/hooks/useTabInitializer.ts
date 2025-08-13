@@ -12,9 +12,6 @@ export default function useTabInitializer(handle: string, subHandle?: string) {
     if (subHandle) {
       addTab(subHandle);
       setSelectedTab(subHandle);
-    } else {
-      addTab('');
-      setSelectedTab('');
-    }
+    } 
   }, [handle, subHandle, addTab, setSelectedTab]);
 }

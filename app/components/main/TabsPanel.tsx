@@ -1,6 +1,7 @@
 'use client'
 
 import Icon from "@/app/components/common/Icon";
+import { DEFAULT_TAB_ID } from "@/constants/constants";
 import { MenuItem } from "@/models/menu";
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
@@ -25,11 +26,10 @@ export default function TabsPanel({
   onCloseTab,
   onSelectTab 
 }: TabsProps) {
-  // const [activeTab, setActiveTab] = useState<string>( !selectedTab? tabs[0].id:selectedTab );
 
-  // useEffect(() => {
-  //   setActiveTab(!selectedTab ? tabs[0].id : selectedTab);
-  // }, [selectedTab, tabs]);
+  if(selectedTab === '') {
+    onSelectTab?.(DEFAULT_TAB_ID);
+  }
 
   const handleTabClick = (tabId: string) => {
     onSelectTab?.(tabId);
