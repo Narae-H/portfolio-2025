@@ -11,6 +11,8 @@ import { useRouter } from "next/navigation";
 import useSelectedTab from "@/lib/hooks/useSelectedTab";
 
 export function HomeTabs() {
+  const { selectedTab } = useSelectedTab("selected_home_tab");
+
   const tabs =  [
     {
       id: "welcome",
@@ -23,7 +25,7 @@ export function HomeTabs() {
   ];
 
   return (
-    <TabsPanel tabs={tabs} />
+    <TabsPanel tabs={tabs} selectedTab={selectedTab}/>
   )
 }
 
