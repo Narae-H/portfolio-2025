@@ -41,8 +41,8 @@ export default function TabsPanel({
 
   return (
     <div className={`
-      flex flex-1 flex-col
-      min-w-0 h-min-0 h-auto
+      flex flex-1 flex-col basis-0
+      min-w-0 h-min-0 h-full
       bg-tabs-panel-bg
       text-tabs-tab-text 
       ${className}
@@ -97,9 +97,9 @@ export default function TabsPanel({
       </div>
 
       <div className="
-        flex flex-1 
+        flex flex-1 basis-0
+        h-m-0 h-full
         bg-tabs-content-bg
-        overflow-y-auto
       ">
         {tabs.find((tab) => tab.id === selectedTab)?.content}
       </div>

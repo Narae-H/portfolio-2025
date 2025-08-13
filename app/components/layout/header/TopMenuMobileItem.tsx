@@ -13,6 +13,7 @@ type TopMenuMobileItemType = {
 export default function TopMenuSubItem({ 
   item,
 }: TopMenuMobileItemType) {
+  console.log(item);
 
   // If home menu
   if (item.title === 'Home') {
@@ -42,14 +43,15 @@ export default function TopMenuSubItem({
 
       <Portal>
         <Content side="bottom" align="start" alignOffset={5} className="dropdown-menu-content">
-          {renderSubMenuItems(item.items)}
+          {renderSubMenuItems(item)}
         </Content>
       </Portal>
     </DropdownMenu>
   );
 }
 
-function renderSubMenuItems(subItems?: MenuItem[]) {
+function renderSubMenuItems(item: MenuItem) {
+  const subItems = item.items;
   if (!subItems) return null;
 
   return subItems.map((subItem) => (
@@ -63,13 +65,11 @@ function renderSubMenuItems(subItems?: MenuItem[]) {
       <Portal>
         <SubContent sideOffset={2} className="dropdown-menu-content">
           {subItem.items?.map((subSubItem) => (
-            <Item key={subSubItem.id} className="dropdown-menu-item">
-              <span>
-                <Link href={`/${buildSlugPath([subItem.title, subSubItem.title])}`}>
-                  {subSubItem.title}
-                </Link>
-              </span>
-            </Item>
+          <Item key={subSubItem.id} asChild>
+            <Link href={subSubItem.link ?? '#'} className="dropdown-menu-item">
+              {subSubItem.title}
+            </Link>
+          </Item>
           ))}
         </SubContent>
       </Portal>

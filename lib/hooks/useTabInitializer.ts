@@ -7,16 +7,18 @@ import { useEffect } from 'react';
 
 export default function useTabInitializer(handle: string, subHandle?: string) {
   const { visitedTabs, addTab } = useVisitedTabs(`visited_${handle}`);
-  const { setSelectedTab } = useSelectedTab(`selected_${handle}_tab`);
+  const { setSelectedTab, selectedTab } = useSelectedTab(`selected_${handle}_tab`);
+
+  console.log("useTabInitializer!");
+  console.log(`subHandle=> ${subHandle}`);
+  console.log(`selectedTab=> ${selectedTab}`);
 
   useEffect(() => {
     if (subHandle) {
       if (!visitedTabs.includes(subHandle)) {
         addTab(subHandle);
         setSelectedTab(subHandle);
-      }
-      
-      if (visitedTabs.includes(subHandle)) {
+      } else {
         setSelectedTab(subHandle);
       }
       

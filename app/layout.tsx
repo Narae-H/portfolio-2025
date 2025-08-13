@@ -21,7 +21,7 @@ export default function RootLayout({
         <StoreProvider>
           <Header className="flex h-14 flex-shrink-0"/>
 
-          <div className="flex flex-1 min-w-0 min-h-0 h-full overflow-hidden">
+          <div className="flex flex-1 min-w-0 min-h-0 h-full basis-0 overflow-hidden">
             {!isMobile && <Activitybar className="flex w-18 h-auto"/> }
             {children}
           </div>

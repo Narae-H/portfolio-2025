@@ -66,8 +66,8 @@ export default function HomeContent() {
   ];
 
   return (
-    <div className="flex w-full h-full justify-center">
-      <div className="flex flex-col justify-center w-11/12 sm:w-8/12 pt-10">
+    <div className="flex w-full h-full justify-center overflow-y-auto">
+      <div className="flex flex-col md:justify-center w-full sm:w-8/12 h-full pt-10">
         <header className="flex flex-col pb-12">
           <h1 className="text-5xl text-tabs-content-text font-[mono-space-neon] mb-2">Narae Hyeon</h1>
           <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Full Stack Java Developer</h2>

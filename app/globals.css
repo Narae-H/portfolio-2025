@@ -144,7 +144,7 @@
     --color-editorblog-border: #d6cfe2;
     --color-editorblog-active-border: #705697;
 
-    --color-scrollbar-thumb: #37373d;
+    --color-scrollbar-thumb: #C8C8C8;
 
     --color-tooltip-bg: #f3f3f3;
     --color-tooltip-text: #616161;
@@ -163,18 +163,6 @@
 }
 
 @layer utilities {
-  .tabs-scroll::-webkit-scrollbar {
-    height: 6px;
-  }
-  .tabs-scroll::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  .tabs-scroll::-webkit-scrollbar-thumb {
-    background-color: var(--color-scrollbar-thumb);
-    border-radius: 10px;
-  }
-
-
   @keyframes rotate-left-and-right {
     0% { transform: rotate(0); }
     50% { transform: rotate(-30deg); }
@@ -295,6 +283,33 @@
 
 :root {
   --font-size-base: 12px;
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: var(--color-scrollbar-thumb);
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .tabs-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  .tabs-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .tabs-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--color-scrollbar-thumb);
+    border-radius: 10px;
+  }
 }
 
 html {
