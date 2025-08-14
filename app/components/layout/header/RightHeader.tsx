@@ -12,7 +12,7 @@ export default function RightHeader(){
   return (
     isMobile? (
       <div className="flex h-full mr-3 items-center">
-        <Link href="mailto:naraehyeon@gmail.com"><AiOutlineMail className="w-6 h-6"/></Link>
+        <Link href="mailto:naraehyeon@gmail.com" className="hover:text-header-hover-text"><AiOutlineMail className="w-6 h-6"/></Link>
       </div>
     ) : (
       <div className='flex h-full'>

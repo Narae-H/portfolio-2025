@@ -20,7 +20,7 @@ export default function LeftHeader() {
       </Link>
       {menus.menus.map((menu) => (
         <MenuItemComponent
-          key={menu.name}
+          key={menu.id}
           item={menu}
         />
       ))}

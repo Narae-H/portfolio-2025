@@ -5,6 +5,7 @@ import Header from "@/app/components/layout/header/Header";
 import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
 import { useTheme } from "@/lib/hooks/useTheme";
 import "./globals.css";
+import StoreProvider from "./StoreProvider";
 
 export default function RootLayout({
   children,
@@ -17,14 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme={theme}>
       <body className="min-h-screen flex flex-col min-w-[360px]">
-        <Header className="flex h-15 flex-shrink-0"/>
+        <StoreProvider>
+          <Header className="flex h-14 flex-shrink-0"/>
 
-        <div className="flex flex-1 h-full overflow-hidden">
-          {!isMobile && <Activitybar className="flex w-18 h-auto"/> }
-          {children}
-        </div>
-        
-        <Footer className="flex h-[25px] flex-shrink-0"/>
+          <div className="flex flex-1 min-w-0 min-h-0 h-full basis-0 overflow-hidden">
+            {!isMobile && <Activitybar className="flex w-18 h-auto"/> }
+            {children}
+          </div>
+          
+          <Footer className="flex h-[25px] flex-shrink-0"/>
+        </StoreProvider>
       </body>
     </html>
   );

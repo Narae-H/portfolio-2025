@@ -1,7 +1,7 @@
-import { Menu } from "@/data/menu/topMenus"
+import { MenuItem } from "@/models/menu"
 
 type TopMenuItemProps = {
-  item: Menu,
+  item: MenuItem,
   className?: string
 }
 
@@ -19,7 +19,7 @@ export default function TopMenuItem({
       hover: cursor-pointer 
       ${className}
     `}>
-      {item.name}
+      {item.title}
     </div>
   )
 }

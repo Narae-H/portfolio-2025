@@ -1,21 +1,19 @@
-'use client';
-
-import { Item as MenuType } from '@/data/menu/mainMenu';
-import { buildSlugPath } from '@/lib/utils/url';
+import { MenuItem } from '@/models/menu';
 import { Content, DropdownMenu, Item, Portal, Sub, SubContent, SubTrigger, Trigger } from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
 import { MdArrowForwardIos } from 'react-icons/md';
 
 type TopMenuMobileItemType = {
-  item: MenuType
+  item: MenuItem
 }
 
 export default function TopMenuSubItem({ 
   item,
 }: TopMenuMobileItemType) {
+  console.log(item);
 
   // If home menu
-  if (item.name === 'Home') {
+  if (item.title === 'Home') {
     return (
       <div
         className="
@@ -23,7 +21,7 @@ export default function TopMenuSubItem({
           hover:bg-header-hover-bg hover:cursor-pointer
         "
       >
-        <Link href="/">{item.name}</Link>
+        <Link href="/">{item.title}</Link>
       </div>
     );
   }
@@ -37,25 +35,26 @@ export default function TopMenuSubItem({
           hover:bg-header-hover-bg hover:cursor-pointer focus:outline-none
         "
       >
-        {item.name}
+        {item.title}
       </Trigger>
 
       <Portal>
         <Content side="bottom" align="start" alignOffset={5} className="dropdown-menu-content">
-          {renderSubMenuItems(item.items)}
+          {renderSubMenuItems(item)}
         </Content>
       </Portal>
     </DropdownMenu>
   );
 }
 
-function renderSubMenuItems(subItems?: MenuType[]) {
+function renderSubMenuItems(item: MenuItem) {
+  const subItems = item.items;
   if (!subItems) return null;
 
   return subItems.map((subItem) => (
-    <Sub key={subItem.name}>
+    <Sub key={subItem.id}>
       <SubTrigger className="dropdown-menu-trigger">
-        {subItem.name}
+        {subItem.title}
         <div>
           <MdArrowForwardIos />
         </div>
@@ -63,13 +62,11 @@ function renderSubMenuItems(subItems?: MenuType[]) {
       <Portal>
         <SubContent sideOffset={2} className="dropdown-menu-content">
           {subItem.items?.map((subSubItem) => (
-            <Item key={subSubItem.name} className="dropdown-menu-item">
-              <span>
-                <Link href={`/${buildSlugPath([subItem.name, subSubItem.name])}`}>
-                  {subSubItem.name}
-                </Link>
-              </span>
-            </Item>
+          <Item key={subSubItem.id} asChild>
+            <Link href={subSubItem.link ?? '#'} className="dropdown-menu-item">
+              {subSubItem.title}
+            </Link>
+          </Item>
           ))}
         </SubContent>
       </Portal>

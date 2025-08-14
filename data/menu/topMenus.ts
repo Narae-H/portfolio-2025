@@ -1,46 +1,51 @@
-export type Menu = {
-  name: string,
-  tooltip: string
-}
+import { MenuItem } from "@/models/menu"
 
 type TopMenu = {
   _comment: string,
-  menus: Menu[]
+  menus: MenuItem[]
 }
 
 export const topMenus: TopMenu = {
   "_comment" : "name: used for a link, tooltip: used for a tooltip",
   "menus": [
     {
-      "name": "File",
+      "id": "file",
+      "title": "File",
       "tooltip" : "File"
     },
     {
-      "name": "Edit",
+      "id": "edit",
+      "title": "Edit",
       "tooltip" : "Edit"
     },
     {
-      "name": "Selection",
+      "id": "selection",
+      "title": "Selection",
       "tooltip" : "Selection"
     },
     {
-      "name": "View",
+      "id": "view",
+      "title": "View",
       "tooltip" : "View"
     },
     {
-      "name": "Go",
+      "id": "go",
+      "title": "Go",
       "tooltip" : "Go"
     },
     {
-      "name": "Run",
+      "id": "run",
+      "title": "Run",
       "tooltip" : "Run"
     },
     {
-      "name": "Terminal",
+      "id": "terminal",
+      "title": "Terminal",
       "tooltip" : "Terminal"
     },
     {
-      "name": "Help",
+      "id": "help",
+      "title": "Help",
       "tooltip" : "Help"
     }
   ]

@@ -45,8 +45,11 @@ portfolio-2025
 │   ├── 📄 page.tsx                  
 │   └── 📄 StoreProvider.tsx           # Redux provider component         
 │
-├── 📁 data                            # Static data used in components
+├── 📁 data                            # Static data
 │   └── 📄 sortAndFilters.ts           # Sidebar menu data (e.g., meal categories)
+│
+├── 📁 constants                       # Constant data
+│   └── 📄 constants.ts                
 │
 ├── 📁 lib                             # Pure logic helpers (e.g., parsing, formatting, tree builders)
 │   ├── 📁 graphql                     # GraphQL query definitions for Shopify
@@ -69,3 +72,14 @@ portfolio-2025
 ## Dark Mode
 https://tailwindcss.com/docs/dark-mode
 https://tailwindcss.com/docs/background-color
+
+## LocalStorage-based tab state is not shared across components [Realated PR: *to be updated*]()
+
+Initially, the tab state was stored in `localStorage` for persistence.  
+However, because React components read from `localStorage` independently, state updates weren't reflected across components, causing inconsistencies.
+
+### Solution: Use Redux Toolkit with redux-persist for global state management
+
+- Manage tab states globally via `Redux Toolkit slice` keyed by storage keys.
+- Persist Redux state to localStorage using `redux-persist`.
+- This ensures all components share and react to the latest tab state instantly.

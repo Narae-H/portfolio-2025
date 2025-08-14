@@ -31,7 +31,7 @@ export default function Card({
           href={card.link} 
           className="flex bg-card-bg rounded-lg px-5 py-3 ml-5 my-3 hover:bg-card-hover-bg">
           <div className="flex items-center w-full">
-            <div className="flex w-1/12 pl-2 items-center">
+            <div className="flex w-1/12 pl-0 lg:pl-2 items-center">
               {card.Icon}
             </div>
 
