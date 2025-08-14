@@ -28,7 +28,7 @@ export default function TabsPanel({
   onCloseTab,
   onSelectTab 
 }: TabsProps) {
-  const {category, subCategory, tabId} = useParams();
+  const { category } = useParams();
   const router = useRouter();
 
   const handleTabClick = (categoryId: string, tabId: string) => {
