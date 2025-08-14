@@ -3,7 +3,7 @@
 import ActivityMenuItem from "@/app/components/layout/activitybar/ActivityMenuItem";
 import { mainMenus } from "@/data/menu/mainMenu";
 import { buildSlugPath } from "@/lib/utils/url";
-import { useParams, usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 
 type Props = {
   className?: string;
