@@ -4,22 +4,23 @@ import useTabInitializer from "@/lib/hooks/useTabInitializer";
 import { ExperiencesTabs, HomeTabs, SkillsTabs } from "./tabsConfig";
 
 type MainContentProps = {
-  handle: string;
-  subHandle?: string;
+  category: string;
+  subCategory?: string;
+  tabId?: string;
   defaultTabId?: string;
   className?: string;
 };
 
 
 export default function MainContent({ 
-  handle,
-  subHandle='',
-  className = '' 
+  category,
+  subCategory='',
+  tabId='',
 }: MainContentProps) {
 
-  useTabInitializer(handle, subHandle);
+  useTabInitializer(category, subCategory, tabId);
   
-  switch (handle) {
+  switch (category) {
     case "home":
       return <HomeTabs />;
     case "skills":

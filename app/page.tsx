@@ -13,6 +13,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return(
-    <MainContent handle="home" />
+    <MainContent category="home" />
   )
 }

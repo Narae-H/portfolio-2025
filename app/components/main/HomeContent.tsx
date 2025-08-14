@@ -1,9 +1,11 @@
-import { MenuItem } from "@/models/menu";
-import Card, { CardItem } from "../common/Card";
+import Link from "next/link";
+
 import { FaDocker, FaReact } from "react-icons/fa6";
 import { SiSpringboot } from "react-icons/si";
-import List from "../common/List";
-import Link from "next/link";
+
+import { MenuItem } from "@/models/menu";
+import Card, { CardItem } from "@/app/components/common/Card";
+import List from "@/app/components/common/List";
 
 export default function HomeContent() {
   const contentList: MenuItem[] = [
@@ -70,7 +72,7 @@ export default function HomeContent() {
       <div className="flex flex-col lg:justify-center w-10/12 md:w-8/12 h-auto pt-10">
         <header className="flex flex-col pb-12">
           <h1 className="text-5xl text-tabs-content-text font-[mono-space-neon] mb-2">Narae Hyeon</h1>
-          <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Full Stack Java Developer</h2>
+          <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Full Stack Developer</h2>
         </header>
 
         <div className="flex flex-wrap h-auto">

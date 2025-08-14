@@ -10,7 +10,7 @@ import HomeContent from "@/app/components/main/HomeContent";
 import SkillsWelcomeContent from "@/app/components/main/SkillsWelcomeContent";
 
 export function HomeTabs() {
-  const { selectedTabCategory, selectedTab } = useSelectedTab("selected_home_tab");
+  const { selectedTab } = useSelectedTab("selected_home_tab");
 
   const tabs =  [
     {
@@ -29,13 +29,18 @@ export function HomeTabs() {
 }
 
 export function SkillsTabs(){
-  const { visitedTabs, closeTab } = useVisitedTabs("visited_skills");
-  const { selectedTab, setSelectedTab } = useSelectedTab("selected_skills_tab");
+  const category = "skills";
+  const { visitedTabs, closeTab } = useVisitedTabs(`visited_${category}`);
+  const { selectedTab, setSelectedTab } = useSelectedTab(`selected_${category}_tab`);
 
-  const skillMenu = mainMenus.menus.find((menu) => menu.id === "skills");
-  const foundItems: MenuItem[] = visitedTabs
+  console.log(mainMenus);
+  
+  const skillMenu = mainMenus.menus.find((menu) => menu.id === category);
+  console.log(skillMenu);
+
+  const foundItems = visitedTabs
     .map((title) => findMenuItemById(skillMenu?.items ?? [], title))
-    .filter((item): item is typeof item => Boolean(item)) as MenuItem[];
+    .filter((item): item is MenuItem => item !== undefined);
 
   const tabs: Tab[] = [
     {
@@ -44,7 +49,7 @@ export function SkillsTabs(){
       iconKey: "VscCode",
       style: { size: "13px" },
       link: "/skills",
-      content: <SkillsWelcomeContent />,
+      content: <SkillsWelcomeContent skillMenu={skillMenu} />,
     },
     ...foundItems.map((item) => ({
       id: item.id,
@@ -52,7 +57,7 @@ export function SkillsTabs(){
       iconKey: item.iconKey,
       style: item.style,
       link: item.link?? '#',
-      content: <Workspace menuCategory="skills" menuId={item.id as keyof typeof skillDataMap}/>,
+      content: <Workspace menuCategory="skills" tabId={item.id as keyof typeof skillDataMap}/>,
     })),
   ];
 

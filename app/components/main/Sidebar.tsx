@@ -11,7 +11,7 @@ import useSelectedTab from "@/lib/hooks/useSelectedTab";
 import { useState } from "react";
 
 type Props = {
-  handle: string,
+  category: string,
   className?: string
 };
 
@@ -21,19 +21,28 @@ export default function SidebarWrapper(props: Props) {
 }
 
 export function SidebarContent({ 
-  handle,
+  category,
   className = '' 
 }: Props) {
-  const { selectedTab, setSelectedTab } = useSelectedTab(`selected_${handle}_tab`);
-  // const { category, setCategory } = useState('');
+  const [openMenus, setOpenMenus] = useState<Record<string, boolean>>({});
+  const { selectedTabCategory, selectedTab, setSelectedTab } = useSelectedTab(`selected_${category}_tab`);
   console.log("SidebarContent");
   console.log(`selectedTab=> ${selectedTab}`);
   console.log(mainMenus);
   
   const selectedMenu = mainMenus.menus.find(
-    (menu) => menu.id === handle
+    (menu) => menu.id === category
   );
   const menus: MenuItem[] = selectedMenu?.items ?? [EmptyMenuItemValue];
+  console.log(menus);
+
+
+  const toggleMenu = (menuName: string) => {
+    setOpenMenus((prev) => ({
+      ...prev,
+      [menuName]: !prev[menuName]
+    }));
+  };
 
   return (
     <div className={`
@@ -49,7 +58,9 @@ export function SidebarContent({
         EXPLORER
       </div>
       {menus?.map((menu) => {
-        const isOpen = (selectedTab === menu.title);
+        const isOpen = openMenus[menu.title] ?? false;
+        // console.log(`menu.id => ${menu.id}`)
+        // const isOpen = (selectedTabCategory === menu.id);
 
         return (
           <div key={menu.id} className="flex flex-col">
@@ -59,7 +70,8 @@ export function SidebarContent({
                 
                 `}
               // TODO: 여기 첫번째 아규먼트는 cateogry가져와야함.
-              onClick={() => setSelectedTab('', menu.title)}
+              // onClick={() => setSelectedTab(menu.categoryId?? '', menu.id)}
+              onClick={() => toggleMenu(menu.title)}
             >
               {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
               <span>{menu.title}</span>
