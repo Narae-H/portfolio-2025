@@ -1,7 +1,7 @@
 import React from "react";
 
 type WindowButtonProps = {
-  Icon: any;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   children?: React.ReactNode;
   tooltip?: string;
   className?: string;

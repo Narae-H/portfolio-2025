@@ -16,11 +16,8 @@ export default function useVisitedTabs(storageKey: string) {
   };
 
   const closeTab = (tabName: string) => {
-    console.log(`tabName=> ${tabName}`);
-
     if (!tabName) return;
     dispatch(removeTabAction({ key: storageKey, tab: tabName }));
-    console.log(visitedTabs);
   };
 
   const resetTabs = () => {

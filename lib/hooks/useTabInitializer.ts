@@ -24,5 +24,6 @@ export default function useTabInitializer(category: string, subCategory: string,
       clearSelectedTab();
     }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 }

@@ -10,8 +10,6 @@ type TopMenuMobileItemType = {
 export default function TopMenuSubItem({ 
   item,
 }: TopMenuMobileItemType) {
-  console.log(item);
-
   // If home menu
   if (item.title === 'Home') {
     return (
