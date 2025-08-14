@@ -66,23 +66,23 @@ export default function HomeContent() {
   ];
 
   return (
-    <div className="flex w-full h-full justify-center overflow-y-auto">
-      <div className="flex flex-col md:justify-center w-full sm:w-8/12 h-full pt-10">
+    <div className="flex w-full h-auto justify-center">
+      <div className="flex flex-col lg:justify-center w-10/12 md:w-8/12 h-auto pt-10">
         <header className="flex flex-col pb-12">
           <h1 className="text-5xl text-tabs-content-text font-[mono-space-neon] mb-2">Narae Hyeon</h1>
           <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Full Stack Java Developer</h2>
         </header>
 
-        <div className="flex flex-wrap mx-4">
-          <section className="w-full lg:w-1/2 px-4 mb-8">
+        <div className="flex flex-wrap h-auto">
+          <section className="w-full h-auto lg:w-1/2 mb-8">
             <List title="Contents" listItems={contentList} className="mb-10" />
-            <List title="Experiences" listItems={expList} className="pr-10 w-10/12"/>
+            <List title="Experiences" listItems={expList} className="pr-10 w-full"/>
             <Link href="/experiences" className="flex text-list-link-text pl-5 mt-1">
               More...
             </Link>
           </section>
 
-          <section className="w-full lg:w-1/2 px-4 mb-8">
+          <section className="w-full h-auto lg:w-1/2 mb-8">
             <Card title="Skills" cardItems={skillList} />
             <Link href="/skills" className="flex text-list-link-text pl-5 mt-1">
               More...

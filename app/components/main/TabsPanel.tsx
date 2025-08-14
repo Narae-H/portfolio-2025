@@ -1,10 +1,12 @@
 'use client'
 
-import Icon from "@/app/components/common/Icon";
-import { MenuItem } from "@/models/menu";
-import Link from "next/link";
+import { ReactNode, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { ReactNode } from "react";
+import Link from "next/link";
+
+import Icon from "@/app/components/common/Icon";
+import ScrollToTopButton from "@/app/components/common/workspace/ScrollToTopButton";
+import { MenuItem } from "@/models/menu";
 import { VscChromeClose } from "react-icons/vsc";
 
 export interface Tab extends MenuItem {
@@ -31,13 +33,22 @@ export default function TabsPanel({
   const handleTabClick = (tabId: string) => {
     onSelectTab?.(tabId);
   };
-
   const handleCloseTab = (tabId: string) => {
     onCloseTab?.(tabId);
     if(selectedTab == tabId) {
       router.replace("/skills");
     }
   }
+
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const handleScrollToTop = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <div className={`
@@ -96,12 +107,17 @@ export default function TabsPanel({
         </div>
       </div>
 
-      <div className="
-        flex flex-1 basis-0
-        h-m-0 h-full
-        bg-tabs-content-bg
-      ">
+      <div 
+        ref={scrollContainerRef}
+        className="
+          flex flex-1 basis-0
+          min-h-0 h-full
+          bg-tabs-content-bg
+          overflow-y-auto
+        "
+      >
         {tabs.find((tab) => tab.id === selectedTab)?.content}
+        <ScrollToTopButton onClick={handleScrollToTop} />
       </div>
     </div>
   );

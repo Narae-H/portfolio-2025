@@ -39,7 +39,7 @@ export function SidebarContent({
   return (
     <div className={`
       flex flex-col 
-      h-auto w-82
+      h-auto md:w-70 lg:w-82
       p-2 
       bg-sidebar-bg text-list-header-text
       border-r border-sidebar-border 

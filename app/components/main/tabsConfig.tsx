@@ -6,9 +6,8 @@ import useSelectedTab from "@/lib/hooks/useSelectedTab";
 import useVisitedTabs from "@/lib/hooks/useVisitedTabs";
 import { findMenuItemById } from "@/lib/utils/menu";
 import { MenuItem } from "@/models/menu";
-import { useRouter } from "next/navigation";
-import HomeContent from "./HomeContent";
-import SkillsWelcomeContent from "./SkillsWelcomeContent";
+import HomeContent from "@/app/components/main/HomeContent";
+import SkillsWelcomeContent from "@/app/components/main/SkillsWelcomeContent";
 
 export function HomeTabs() {
   const { selectedTab } = useSelectedTab("selected_home_tab");
@@ -30,7 +29,6 @@ export function HomeTabs() {
 }
 
 export function SkillsTabs(){
-  const router = useRouter();
 
   const { visitedTabs, closeTab } = useVisitedTabs("visited_skills");
   const { selectedTab, setSelectedTab } = useSelectedTab("selected_skills_tab");
@@ -55,7 +53,7 @@ export function SkillsTabs(){
       iconKey: item.iconKey,
       style: item.style,
       link: item.link?? '#',
-      content: <Workspace menuCategory="skills" menuId={item.id as keyof typeof skillDataMap} />,
+      content: <Workspace menuCategory="skills" menuId={item.id as keyof typeof skillDataMap}/>,
     })),
   ];
 

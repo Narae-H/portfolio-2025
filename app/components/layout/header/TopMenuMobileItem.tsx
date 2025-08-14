@@ -1,6 +1,3 @@
-'use client';
-
-import { buildSlugPath } from '@/lib/utils/url';
 import { MenuItem } from '@/models/menu';
 import { Content, DropdownMenu, Item, Portal, Sub, SubContent, SubTrigger, Trigger } from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
