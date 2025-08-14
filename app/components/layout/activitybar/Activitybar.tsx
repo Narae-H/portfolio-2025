@@ -1,14 +1,16 @@
+'use client'
+
 import ActivityMenuItem from "@/app/components/layout/activitybar/ActivityMenuItem";
 import { mainMenus } from "@/data/menu/mainMenu";
 import { buildSlugPath } from "@/lib/utils/url";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 type Props = {
   className?: string;
 }
 
 export default function Activitybar({className}: Props) {
-  const pathname = usePathname().replace("/","");
+  const { category } = useParams();
 
   return (
     <div className={`
@@ -20,7 +22,7 @@ export default function Activitybar({className}: Props) {
     >
       <div className="flex w-full flex-col">
         { mainMenus.menus.map( (menu) => {
-          const isActive = (pathname === menu.id || ((pathname === "") && (menu.id ==="home")));
+          const isActive = (category === menu.id || (!(category) && (menu.id ==="home")));
           return (
             <ActivityMenuItem 
               key={menu.id}  

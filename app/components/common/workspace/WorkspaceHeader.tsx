@@ -1,7 +1,8 @@
-import { SkillData } from "@/data/skills";
 import Icon from "@/app/components/common/Icon";
+import { ExperiencesData } from "@/data/experiences";
+import { SkillData } from "@/data/skills";
 
-export default function WorkspaceHeader ({ skillData }: { skillData: SkillData }) {
+export default function WorkspaceHeader ({ contentData }: { contentData: SkillData | ExperiencesData }) {
   return (
     <div className='
       flex flex-col
@@ -9,11 +10,11 @@ export default function WorkspaceHeader ({ skillData }: { skillData: SkillData }
       gap-5
     '>
       <div className='flex items-center gap-6'>
-        <Icon name={skillData.titleIconName} size="30px"/>
-        <div className='text-3xl d:text-3xl lg:text-5xl'>{skillData.title}</div>
+        <Icon name={contentData.titleIconName} size="30px"/>
+        <div className='text-3xl d:text-3xl lg:text-5xl'>{contentData.title}</div>
       </div>
       <div className='flex text-lg'>
-        {skillData.overviewContent}
+        {contentData.overviewContent}
       </div>
     </div>
   )

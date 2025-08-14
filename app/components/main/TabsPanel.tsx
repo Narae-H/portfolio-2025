@@ -29,12 +29,6 @@ export default function TabsPanel({
   onSelectTab 
 }: TabsProps) {
   const {category, subCategory, tabId} = useParams();
-  console.log(`***** TabsPanel *******`); //NOTE: skills
-  console.log(`selectedTab => ${selectedTab}`); //NOTE: skills
-  console.log(`category => ${category}`); //NOTE: skills
-  console.log(`subCategory => ${subCategory}`); //NOTE: backend
-  console.log(`tabId => ${tabId}`); //NOTE: java
-
   const router = useRouter();
 
   const handleTabClick = (categoryId: string, tabId: string) => {
@@ -42,8 +36,8 @@ export default function TabsPanel({
   };
   const handleCloseTab = (tabId: string) => {
     onCloseTab?.(tabId);
-    if(selectedTab == tabId) {
-      router.replace("/skills");
+    if(category && selectedTab == tabId) {
+      router.replace(`/${category as string}`);
     }
   }
 

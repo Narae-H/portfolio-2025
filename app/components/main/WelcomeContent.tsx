@@ -1,16 +1,12 @@
 import List from "@/app/components/common/List";
 import { EmptyMenuItemValue, MenuItem } from "@/models/menu";
 
-type SkillsWelcomeContentProps = {
-  skillMenu: MenuItem | undefined
+type WelcomeContentProps = {
+  contentMenu: MenuItem | undefined
 }
 
-export default function SkillsWelcomeContent({skillMenu}: SkillsWelcomeContentProps) {
-
-  // const selectedMenu = mainMenus.menus.find(
-  //   (menu) => menu.title.toLowerCase() === "skills"
-  // );
-  const menus: MenuItem[] = skillMenu?.items ?? [EmptyMenuItemValue];
+export default function WelcomeContent({contentMenu}: WelcomeContentProps) {
+  const menus: MenuItem[] = contentMenu?.items ?? [EmptyMenuItemValue];
 
   return (
     <div className="flex flex-1 justify-center items-start md:items-center w-full p-4">

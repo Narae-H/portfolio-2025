@@ -6,15 +6,18 @@ import { useEffect } from 'react';
 
 export default function useTabInitializer(category: string, subCategory: string, tabId: string) {
   const { visitedTabs, addTab } = useVisitedTabs(`visited_${category}`);
-  const { selectedTab, setSelectedTab, clearSelectedTab } = useSelectedTab(`selected_${category}_tab`);
+  const { setSelectedTab, clearSelectedTab } = useSelectedTab(`selected_${category}_tab`);
 
   useEffect(() => {
     if (category && subCategory && tabId) {
-      if ( !visitedTabs.includes(tabId)) {
+      if ( !visitedTabs.includes(tabId) ) {
         addTab(tabId);
         setSelectedTab(subCategory, tabId);
+        return;
+      } else {
+        setSelectedTab(subCategory, tabId);
+        return;
       } 
-      return;
     } 
     
     if (category) {
