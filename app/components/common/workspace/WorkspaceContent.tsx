@@ -1,12 +1,18 @@
+import { ExperiencesData } from "@/data/experiences";
 import { SkillData } from "@/data/skills";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Link from "next/link";
+
+type WorkspaceContentProps = {
+  contentData: SkillData | ExperiencesData,
+  menuCategory: string
+}
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function WorkspaceContent({ skillData }: { skillData: SkillData }) {
+export default function WorkspaceContent({ contentData, menuCategory }: WorkspaceContentProps) {
   return (
     <div className="flex flex-1 relative">
       <TabGroup className="w-full h-full py-5">
@@ -37,31 +43,71 @@ export default function WorkspaceContent({ skillData }: { skillData: SkillData }
           </Tab>
         </TabList>
 
-        <TabPanels className="h-full w-full">
-          <TabPanel className="p-2">
-            <h3 className="m-4 font-semibold text-2xl">Related Projects:</h3>
-            <ul className="list-disc pl-6 space-y-4">
-              {skillData.relatedProject.map((project, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={project.projectLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-tabs-content-link-text hover:underline"
-                  >
-                    {project.projectName}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </TabPanel>
-
-          <TabPanel className="p-2">
-            <h3 className="m-4 font-semibold text-2xl">Images</h3>
-            <p className="pl-4 space-y-4">No images available yet.</p>
-          </TabPanel>
-        </TabPanels>
+        {menuCategory === "skills" && (
+          <SkillsTab contentData={contentData as SkillData} />
+        )}
+        {menuCategory === "experiences" && (
+          <ExperiencesTab contentData={contentData as ExperiencesData} />
+        )}
       </TabGroup>
     </div>
   );
+}
+
+function SkillsTab({ contentData }: { contentData: SkillData }) {
+  return(
+    <TabPanels className="h-full w-full">
+      <TabPanel className="p-2">
+        <h3 className="m-4 font-semibold text-2xl">Related Projects:</h3>
+        <ul className="list-disc pl-6 space-y-4">
+          {contentData.relatedProject.map((project, idx) => (
+            <li key={idx}>
+              <Link
+                href={project.projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-tabs-content-link-text hover:underline"
+              >
+                {project.projectName}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </TabPanel>
+
+      <TabPanel className="p-2">
+        <h3 className="m-4 font-semibold text-2xl">Images</h3>
+        <p className="pl-4 space-y-4">No images available yet.</p>
+      </TabPanel>
+    </TabPanels>
+  )
+}
+
+function ExperiencesTab({ contentData }: { contentData: ExperiencesData }) {
+  return(
+    <TabPanels className="h-full w-full">
+      <TabPanel className="p-2">
+        <h3 className="m-4 font-semibold text-2xl">DETAILS:</h3>
+        <ul className="list-disc pl-6 space-y-4">
+          {contentData.details.skills.map((skill, idx) => (
+            <li key={idx}>
+              <Link
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-tabs-content-link-text hover:underline"
+              >
+                {skill}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </TabPanel>
+
+      <TabPanel className="p-2">
+        <h3 className="m-4 font-semibold text-2xl">Images</h3>
+        <p className="pl-4 space-y-4">No images available yet.</p>
+      </TabPanel>
+    </TabPanels>
+  )
 }

@@ -2,7 +2,7 @@
   "title" : "MobisPatent System in Hyundai Mobis",
   "titleIconName": "patent",
   "subTitle": "This is a subtitle",
-  "description": "Updated the system to support multiple languages based on the user's location or preferences",
+  "overviewContent": "Updated the system to support multiple languages based on the user's location or preferences",
   "details": [
     {
       "position": "Java Programmer",

@@ -2,7 +2,7 @@
   "title" : "H & H Lawyers Website and Server Migration",
   "titleIconName": "hhlawyerswebsiteandservermigration",
   "subTitle": "",
-  "description": "I developed a new website for H & H Lawyers and successfully migrated their servers from on-premises solutions to Microsoft Exchange and AWS. This project involved creating a modern, user-friendly website that enhances the firm's online presence while ensuring optimal functionality. Additionally, the server migration improved system reliability and scalability, enabling the firm to leverage cloud technology for better performance and data management.",
+  "overviewContent": "I developed a new website for H & H Lawyers and successfully migrated their servers from on-premises solutions to Microsoft Exchange and AWS. This project involved creating a modern, user-friendly website that enhances the firm's online presence while ensuring optimal functionality. Additionally, the server migration improved system reliability and scalability, enabling the firm to leverage cloud technology for better performance and data management.",
   "position": "Full Stack Java Developer",
   "period": "12 months (Oct 2019 – Sep 2020)",
   "link": "https://hhlaw.com.au",

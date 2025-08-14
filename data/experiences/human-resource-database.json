@@ -2,7 +2,7 @@
   "title" : "Human Resource Database",
   "titleIconName": "humanresourcedatabase",
   "subTitle": "This is a subtitle",
-  "description": "I designed and implemented a comprehensive database to streamline the management of employee information, and performance evaluations. By analysing the HR department's specific needs, I structured the database for efficient data retrieval and reporting, enabling informed decision-making.",
+  "overviewContent": "I designed and implemented a comprehensive database to streamline the management of employee information, and performance evaluations. By analysing the HR department's specific needs, I structured the database for efficient data retrieval and reporting, enabling informed decision-making.",
   "position": "Full Stack Developer",
   "period": "5 months (Dec 2023 - Apr 2024)",
   "details": {
