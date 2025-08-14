@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 
 import Icon from "@/app/components/common/Icon";
@@ -28,6 +28,13 @@ export default function TabsPanel({
   onCloseTab,
   onSelectTab 
 }: TabsProps) {
+  const {category, subCategory, tabId} = useParams();
+  console.log(`***** TabsPanel *******`); //NOTE: skills
+  console.log(`selectedTab => ${selectedTab}`); //NOTE: skills
+  console.log(`category => ${category}`); //NOTE: skills
+  console.log(`subCategory => ${subCategory}`); //NOTE: backend
+  console.log(`tabId => ${tabId}`); //NOTE: java
+
   const router = useRouter();
 
   const handleTabClick = (categoryId: string, tabId: string) => {

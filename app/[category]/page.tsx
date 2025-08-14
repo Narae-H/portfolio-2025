@@ -1,6 +1,7 @@
+import { Metadata } from "next";
+
 import MainContent from "@/app/components/main/MainContent";
 import Sidebar from "@/app/components/main/Sidebar";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Narae's Portfolio",
@@ -11,17 +12,19 @@ export const metadata: Metadata = {
 };
 
 type PageProps = {
-  params: Promise<{ handle: string, subHandle: string }>;
+  params: Promise<{category: string}>;
   searchParams: Promise<Record<string, string>>;
 };
 
-export default async function SubPage({ params }: PageProps) {
-  const { handle, subHandle } = await params;
+export default async function Page({ params }: PageProps) {
+  const { category } = await params;
 
   return (
     <>
-      <Sidebar handle={handle} />
-      <MainContent handle={handle} subHandle={subHandle} />
+      <Sidebar category={category} />
+      <MainContent category={category} />
     </>
   );
 }
+
+

@@ -1,31 +1,25 @@
 'use client';
 
-import { DEFAULT_TAB_ID } from '@/constants/constants';
 import useSelectedTab from '@/lib/hooks/useSelectedTab';
 import useVisitedTabs from '@/lib/hooks/useVisitedTabs';
 import { useEffect } from 'react';
 
-export default function useTabInitializer(handle: string, subHandle?: string) {
-  const { visitedTabs, addTab } = useVisitedTabs(`visited_${handle}`);
-  const { setSelectedTab, selectedTab } = useSelectedTab(`selected_${handle}_tab`);
-
-  console.log("useTabInitializer!");
-  console.log(`subHandle=> ${subHandle}`);
-  console.log(`selectedTab=> ${selectedTab}`);
+export default function useTabInitializer(category: string, subCategory: string, tabId: string) {
+  const { visitedTabs, addTab } = useVisitedTabs(`visited_${category}`);
+  const { selectedTab, setSelectedTab, clearSelectedTab } = useSelectedTab(`selected_${category}_tab`);
 
   useEffect(() => {
-    //TODO: 카테고리 넣어야함. 
-    if (subHandle) {
-      if (!visitedTabs.includes(subHandle)) {
-        addTab(subHandle);
-        setSelectedTab('' ,subHandle);
-      } else {
-        setSelectedTab('', subHandle);
-      }
-      
-    } else if(handle) {
-      setSelectedTab('', DEFAULT_TAB_ID);
+    if (category && subCategory && tabId) {
+      if ( !visitedTabs.includes(tabId)) {
+        addTab(tabId);
+        setSelectedTab(subCategory, tabId);
+      } 
+      return;
+    } 
+    
+    if (category) {
+      clearSelectedTab();
     }
 
-  }, [handle, subHandle]);
+  },[]);
 }

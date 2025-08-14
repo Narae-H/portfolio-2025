@@ -4,13 +4,13 @@ import WorkspaceHeader from './WorkspaceHeader';
 
 type WorkSpaceType = {
   menuCategory: string,
-  menuId: keyof typeof skillDataMap,
+  tabId: keyof typeof skillDataMap,
 }
 
 export default function Workspace({ 
-  menuId,
+  tabId,
 }: WorkSpaceType) {
-  const skillData: SkillData | undefined = skillDataMap[menuId];
+  const skillData: SkillData | undefined = skillDataMap[tabId];
 
   if (!skillData) {
     return <div>Skill data not found.</div>;

@@ -1,3 +1,4 @@
+import { DEFAULT_TAB_ID } from "@/constants/constants";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 type TabInfo = {
@@ -23,7 +24,7 @@ const selectedTabSlice = createSlice({
     },
     clearSelectedTabAction: (state, action: PayloadAction<{ key: string }>) => {
       state[action.payload.key] = {
-        tabId: '',
+        tabId: DEFAULT_TAB_ID,
         category: ''
       };
     }
