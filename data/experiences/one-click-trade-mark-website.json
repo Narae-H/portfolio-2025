@@ -1,0 +1,42 @@
+{
+  "title" : "One Click Trade Mark Website",
+  "titleIconName": "oneclicktrademarkwebsite",
+  "subTitle": "This is a subtitle",
+  "overviewContent": "I developed the One Click Trade Mark website to provide clients with an easy-to-use platform for registering their trademarks online. This solution streamlines the registration process, allowing users to navigate steps with minimal effort. The site includes secure payment options and real-time status updates, enhancing client satisfaction and promoting efficient trademark management.",
+  "position": "Full Stack Java Developer",
+  "period": "12 months (Oct 2021 – Sep 2022)",
+  "link": "https://oneclicktrademark.com.au/",
+  "details": {
+    "skills": [
+      "OS: Windows"
+      , "Tool: Eclipse, Visual Studio Code (Development), DBeaver (RDB)"
+      , "Programming: Java, Thymeleaf, HTML, CSS, JavaScript, jQuery, Bootstrap, MySQL"
+      , "Framework: Spring Boot"
+      , "Database: Maria DB"
+      , "Version Control: GitHub"
+      , "Cloud Services: AWS Elastic Beanstalk, AWS Load Balancer, Route 53"
+      , "Other: RESTful API, Agile Methodology, MVC pattern"
+    ],
+    "jd": [
+      "Gathered and analysed user requirements."
+      , "Organised and oversaw project planning and execution."
+      , "Designed the architecture and created a detailed sitemap to support project structure."
+      , "Configured and optimised the development and production environments."
+      , "Evaluated and integrated third-party APIs, including IP Australia API, PayPal API, and Google Location Autocomplete API, to enhance website functionality."
+      , "Designed and implemented the database in AWS RDS."
+      , "Developed the website using a RESTful API and successfully deployed it to AWS."
+      , "Ensured compliance with W3C web standards for validation and accessibility."
+      , "Performed rigorous unit testing and integration testing to maintain quality."
+      , "Authored comprehensive technical documentation and user guides."
+      , "Contributed to all stages of the Software Development Life Cycle (SDLC) with active collaboration across teams and stakeholders."
+      , "Implemented SEO strategies, including optimised meta tags, sitemap generation, and keyword optimisation."
+    ]
+  }, 
+  "imgs": [
+    {
+      "desc" : "Website main page"
+      , "url" : "/images/experiences/one-click-trade-mark-website.png" 
+    }
+  ]
+}
+

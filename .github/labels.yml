@@ -1,0 +1,32 @@
+- name: feature
+  color: 1D76DB
+  description: New feature to be implemented
+
+- name: bug
+  color: D73A4A
+  description: Bug to be fixed
+
+- name: design
+  color: F9D846
+  description: UI/UX related tasks
+
+- name: enhancement
+  color: A2EEEF
+  description: Improvements or refactoring
+
+- name: chore
+  color: CCCCCC
+  description: Maintenance and miscellaneous tasks
+
+- name: documentation
+  color: 34D058
+  description: Documentation related tasks
+
+- name: question
+  color: D876E3
+  description: Needs discussion or clarification
+
+- name: wontfix
+  color: FFFFFF
+  description: This will not be worked on
+
