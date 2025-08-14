@@ -1,13 +1,14 @@
 'use client'
 
 import Link from "next/link";
-import { useState } from "react";
 
 import { mainMenus } from "@/data/menu/mainMenu";
 import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
 import { EmptyMenuItemValue, MenuItem } from "@/models/menu";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import Icon from "@/app/components/common/Icon";
+import useSelectedTab from "@/lib/hooks/useSelectedTab";
+import { useState } from "react";
 
 type Props = {
   handle: string,
@@ -23,18 +24,16 @@ export function SidebarContent({
   handle,
   className = '' 
 }: Props) {
-  const [openMenus, setOpenMenus] = useState<Record<string, boolean>>({});
+  const { selectedTab, setSelectedTab } = useSelectedTab(`selected_${handle}_tab`);
+  // const { category, setCategory } = useState('');
+  console.log("SidebarContent");
+  console.log(`selectedTab=> ${selectedTab}`);
+  console.log(mainMenus);
+  
   const selectedMenu = mainMenus.menus.find(
-    (menu) => menu.title.toLowerCase() === handle.toLowerCase()
+    (menu) => menu.id === handle
   );
   const menus: MenuItem[] = selectedMenu?.items ?? [EmptyMenuItemValue];
-
-  const toggleMenu = (menuName: string) => {
-    setOpenMenus((prev) => ({
-      ...prev,
-      [menuName]: !prev[menuName]
-    }));
-  };
 
   return (
     <div className={`
@@ -50,13 +49,17 @@ export function SidebarContent({
         EXPLORER
       </div>
       {menus?.map((menu) => {
-        const isOpen = openMenus[menu.title] ?? false;
+        const isOpen = (selectedTab === menu.title);
 
         return (
           <div key={menu.id} className="flex flex-col">
             <div
-              className="flex items-center pt-3 pb-2 gap-2 font-[mono-space-neon] cursor-pointer"
-              onClick={() => toggleMenu(menu.title)}
+              className={`
+                flex items-center pt-3 pb-2 gap-2 font-[mono-space-neon] cursor-pointer
+                
+                `}
+              // TODO: 여기 첫번째 아규먼트는 cateogry가져와야함.
+              onClick={() => setSelectedTab('', menu.title)}
             >
               {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
               <span>{menu.title}</span>
@@ -69,7 +72,7 @@ export function SidebarContent({
                     <Link
                       key={subMenu.id} 
                       href={subMenu.link}
-                      className="p-2 hover:bg-list-hover-bg"
+                      className={`p-2 hover:bg-list-hover-bg ${(selectedTab === subMenu.id)? 'bg-yellow-200' : ''}`}
                     >
                       <div key={subMenu.title} className="flex items-center gap-2 cursor-pointer">
                         {subMenu.iconKey && <Icon name={subMenu.iconKey} {...subMenu.style} />}

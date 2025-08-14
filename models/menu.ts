@@ -1,6 +1,7 @@
 
 export interface MenuItem {
   id: string;
+  categoryId?: string;  
   title: string;
   tooltip?: string;
   iconKey?: string;

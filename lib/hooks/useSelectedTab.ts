@@ -4,10 +4,11 @@ import { setSelectedTabAction, clearSelectedTabAction } from "@/redux/features/s
 
 export default function useSelectedTab(storageKey: string) {
   const dispatch = useDispatch<AppDispatch>();
-  const selectedTab = useSelector((state: RootState) => state.selectedTab[storageKey] ?? "");
+  const selectedTabCategory = useSelector((state: RootState) => state.selectedTab[storageKey].category ?? "");
+  const selectedTab = useSelector((state: RootState) => state.selectedTab[storageKey].tabId ?? "");
 
-  const setSelectedTab = (tabId: string) => {
-    dispatch(setSelectedTabAction({ key: storageKey, tabId }));
+  const setSelectedTab = (category: string, tabId: string) => {
+    dispatch(setSelectedTabAction({ key: storageKey, category, tabId }));
   };
   
   const clearSelectedTab = () => {
@@ -15,6 +16,7 @@ export default function useSelectedTab(storageKey: string) {
   };
 
   return {
+    selectedTabCategory,
     selectedTab,
     setSelectedTab,
     clearSelectedTab,

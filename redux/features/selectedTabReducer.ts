@@ -1,7 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+type TabInfo = {
+  tabId: string;
+  category: string;
+};
+
 type State = {
-  [key: string]: string;
+  [key: string]: TabInfo;
 }
 
 const initialState: State = {}
@@ -10,11 +15,17 @@ const selectedTabSlice = createSlice({
   name: "selectedTab",
   initialState,
   reducers: {
-    setSelectedTabAction: (state, action: PayloadAction<{ key: string; tabId: string }>) => {
-      state[action.payload.key] = action.payload.tabId? action.payload.tabId: '';
+    setSelectedTabAction: (state, action: PayloadAction<{ key: string; category: string, tabId: string }>) => {
+      state[action.payload.key] = {
+        tabId: action.payload.tabId?? '',
+        category: action.payload.category?? ''
+      };
     },
     clearSelectedTabAction: (state, action: PayloadAction<{ key: string }>) => {
-      state[action.payload.key] = '';
+      state[action.payload.key] = {
+        tabId: '',
+        category: ''
+      };
     }
   }
 });

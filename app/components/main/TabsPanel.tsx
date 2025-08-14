@@ -18,7 +18,7 @@ export interface TabsProps {
   selectedTab?: string;
   className?: string;
   onCloseTab?: (id: string) => void;
-  onSelectTab?: (id: string) => void;
+  onSelectTab?: (category:string, id: string) => void;
 }
 
 export default function TabsPanel({ 
@@ -30,8 +30,8 @@ export default function TabsPanel({
 }: TabsProps) {
   const router = useRouter();
 
-  const handleTabClick = (tabId: string) => {
-    onSelectTab?.(tabId);
+  const handleTabClick = (categoryId: string, tabId: string) => {
+    onSelectTab?.(categoryId, tabId);
   };
   const handleCloseTab = (tabId: string) => {
     onCloseTab?.(tabId);
@@ -81,7 +81,7 @@ export default function TabsPanel({
                   border-1 border-l-transparent border-r-tabs-tab-border border-b-tabs-tab-border border-t-transparent hover:bg-tabs-tab-hover-bg 
                   ${isActive ? " bg-tabs-tab-active-bg !border-t-tabs-tab-active-border !border-b-tabs-tab-active-bg" : "border-t-1 border-transparent"}
                   `}
-                onClick={() => handleTabClick(tab.id)}
+                onClick={() => handleTabClick(tab.categoryId?? '', tab.id)}
               >
                 <Link href={tab.link?? ''} className="flex items-center gap-2 px-4 h-full cursor-pointer ">
                   {tab.iconKey && <Icon name={tab.iconKey} {...tab.style}/>}

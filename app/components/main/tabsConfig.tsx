@@ -10,7 +10,7 @@ import HomeContent from "@/app/components/main/HomeContent";
 import SkillsWelcomeContent from "@/app/components/main/SkillsWelcomeContent";
 
 export function HomeTabs() {
-  const { selectedTab } = useSelectedTab("selected_home_tab");
+  const { selectedTabCategory, selectedTab } = useSelectedTab("selected_home_tab");
 
   const tabs =  [
     {
@@ -29,7 +29,6 @@ export function HomeTabs() {
 }
 
 export function SkillsTabs(){
-
   const { visitedTabs, closeTab } = useVisitedTabs("visited_skills");
   const { selectedTab, setSelectedTab } = useSelectedTab("selected_skills_tab");
 
