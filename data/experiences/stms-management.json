@@ -1,23 +1,23 @@
 {
-  "title" : "STMS Management at Samsung",
-  "titleIconName": "stmsmanagement",
-  "subTitle": "",
-  "overviewContent": "Management of the STMS (Samsung Tooling Management System) at Samsung, located in South Korea, involves overseeing and coordinating the various tooling processes and systems to ensure efficiency and productivity across operations.",
+  "title" : "Samsung Tooling Management System Management at Samsung",
+  "titleIconName": "TbCircleLetterSFilled",
+  "subTitle": "Supporting the management of tooling scheduling system",
+  "overviewContent": "Supported the management of the STMS (Samsung Tooling Management System) used for scheduling and coordinating mould usage in Samsung factories. Assisted in maintaining system efficiency and ensuring optimal utilisation of tooling resources.",
   "position": "Full Stack Developer",
   "period": "12 months (Jun 2018 - Dec 2018)",
   "details": {
-    "skills": [
-      "OS: Windows"
-      , "Tool: Eclipse (Development), Toad (RDB)"
-      , "Programming: Java, HTML, CSS, JavaScript"
-      , "Database: Oracle DB"
-      , "Version Control: GitHub"
+    "skillIds": [
+      "java",
+      "html",
+      "css",
+      "javascript",
+      "oracledb"
     ],
     "jd": [
-      "Installing, configuring, diagnosing, upgrading, and troubleshooting in-house systems by controlling and monitoring them"
-      ,"Performing maintenance on the in-house systems to ensure the availability of the IT operations infrastructure"
-      ,"Assisting with system enquiries from end-users"
-      ,"Performing code refactoring"
+      "Assisted in installing, configuring, diagnosing, upgrading, and troubleshooting the STMS.",
+      "Performed maintenance tasks to ensure the availability and reliability of the tooling management system.",
+      "Provided support and responded to system enquiries from end-users.",
+      "Contributed to code refactoring and minor system improvements."
     ]
   }
 }

@@ -1,24 +1,27 @@
 {
   "title" : "System Management at Hyundai Mobis",
-  "titleIconName": "systemmanagement",
-  "subTitle": "",
-  "overviewContent": "I contributed to system management at Hyundai Mobis, focusing on optimising the performance and reliability of various internal systems. My role involved monitoring system operations, troubleshooting issues, and implementing updates to ensure seamless functionality. By collaborating with cross-functional teams, I aimed to enhance system efficiency and support organisational objectives, ensuring that all systems align with business needs and operational standards. This proactive approach not only improved system performance but also contributed to a more streamlined workflow across departments.",
+  "titleIconName": "MdOutlineManageHistory",
+  "subTitle": "Maintaining and optimising multiple internal systems",
+  "overviewContent": "Managed and optimised multiple internal systems at Hyundai Mobis, ensuring reliable performance and seamless operation. Responsibilities included monitoring system operations, troubleshooting issues, performing maintenance, and collaborating with teams to support organisational workflows and business objectives.",
   "position": "PLM Programmer",
   "period": "23 months ( Mar 2015 - Jun 2017 )",
   "details": {
-    "skills": [
-      "OS: Windows"
-      , "Tool: Eclipse (Development), Toad (RDB), Matrix (ODB)"
-      , "Programming: Java, HTML, CSS, JavaScript, jQuery, JSP, XML" 
-      , "Database: Oracle DB, Matrix ODB" 
-      , "Version Control: SVN"
+    "skillIds": [
+      "java",
+      "jsp",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "oracledb",
+      "matrixodb"
     ],
     "jd": [
-      "Configured, diagnosed, upgraded, and troubleshot in-house systems to ensure optimal functionality and performance."
-      , "Controlled and monitored systems proactively, implementing necessary adjustments to maintain peak performance levels."
-      , "Performed regular maintenance on in-house systems, ensuring continuous system availability to support IT operations and infrastructure."
-      , "Provided timely and effective support to end-users for system inquiries, resolving issues and enhancing user experience."
-      , "Assessed current IT requirements and collaborated with stakeholders to deliver solutions that aligned with both current and future business objectives, ensuring strategic alignment across the organisation."
+      "Configured, diagnosed, upgraded, and troubleshot in-house systems to maintain optimal performance.",
+      "Monitored systems proactively and implemented adjustments to ensure reliable operation.",
+      "Performed regular maintenance to guarantee continuous availability and support of IT infrastructure.",
+      "Provided support to end-users, resolving system issues and enhancing operational efficiency.",
+      "Collaborated with stakeholders to assess IT requirements and implement solutions aligned with organisational objectives."
     ]
   }
 }

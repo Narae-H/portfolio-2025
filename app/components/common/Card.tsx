@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { ReactNode } from "react";
+import Icon from "./Icon";
 
 export interface CardItem {
   id: string;
   title: string;
-  Icon?: ReactNode;
+  iconKey: string;
   link: string;
-  description?: string;
+  description: string;
 }
 
 export interface CardProps {
@@ -32,7 +32,7 @@ export default function Card({
           className="flex bg-card-bg rounded-lg px-5 py-3 ml-5 my-3 hover:bg-card-hover-bg">
           <div className="flex items-center w-full">
             <div className="flex w-1/12 pl-0 lg:pl-2 items-center">
-              {card.Icon}
+              <Icon name={card.iconKey} size={24} className="text-card-icon"/> 
             </div>
 
             <div className="flex flex-col gap-1 h-full w-[90%]">

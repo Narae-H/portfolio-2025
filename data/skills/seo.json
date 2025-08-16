@@ -1,16 +1,20 @@
 {
   "title" : "SEO",
-  "titleIconName": "MdOutlineContentPasteSearch",
+  "titleIconName": "Optimising web applications for search engines and user engagement",
   "subTitle": "This is a subtitle",
-  "overviewContent": "I have optimised web applications for search engine performance, focusing on improving site speed, usability, and content structure. My experience includes optimising meta tags and enhancing mobile-friendliness to ensure higher search engine rankings, particularly in Google. I have also implemented structured data and other SEO techniques to improve site visibility and user engagement, contributing to increased traffic and better business outcomes.",
-  "relatedProject": [
+  "overviewContent": "SEO practices have been applied to enhance search engine performance of web applications, with a focus on site speed, usability, and content structure. Meta tags were optimised and mobile responsiveness improved to achieve stronger visibility in Google search results. Structured data and advanced SEO techniques were implemented to boost indexing efficiency and user engagement. These measures contributed to higher organic traffic, improved rankings, and measurable business growth.",
+  "relatedProjects": [
+    {
+      "projectName": "My Muscle Chef Clone",
+      "projectLink": "/experiences/australia/mymusclechefclone"
+    },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]
 }

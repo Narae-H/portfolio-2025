@@ -1,0 +1,12 @@
+{
+  "title": "CI/CD Pipeline",
+  "titleIconName": "FaDocker",
+  "subTitle": "Automated deployment and containerisation for reliable, scalable systems",
+   "overviewContent": "A CI/CD pipeline was established to automate builds, tests, and deployments of containerised applications using Docker and GitHub Actions. Docker images were built, versioned, and pushed to AWS ECR, then deployed to AWS Elastic Beanstalk to ensure consistent environments and reduce manual errors. The integration streamlined release cycles, improved operational stability, and enabled scalable deployments across multiple systems.",
+  "relatedProjects": [
+    {
+      "projectName": "Build CI/CD Pipeline",
+      "projectLink": "/experiences/australia/buildcicdpipeline"
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 {
   "title" : "Microsoft",
   "titleIconName": "FaMicrosoft",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I manage Microsoft Entra ID to ensure secure access to corporate systems. My experience includes implementing Multi-Factor Authentication (MFA), managing conditional access policies, and monitoring audit and sign-in logs for potential security issues. By maintaining strict access control policies and regularly reviewing user activities, I contribute to the organisation’s overall security posture, ensuring that business-critical systems remain protected against unauthorised access.",
-  "relatedProject": [
+  "subTitle": "Managing identity, database, and security within Microsoft ecosystem",
+  "overviewContent": "Experience across the Microsoft ecosystem, including Azure SQL Database, Microsoft Entra ID (formerly Azure AD), and Microsoft 365 services. Responsibilities include configuring and managing secure access to corporate systems, implementing Multi-Factor Authentication (MFA), and applying conditional access policies to strengthen identity security. Proficient in monitoring and interpreting audit and sign-in logs to detect and respond to potential security risks. Additionally, managed security configurations for Microsoft-based mail servers, ensuring data protection and compliance with organisational policies. Hands-on work with Azure SQL Database has also supported scalable, cloud-based applications, enabling seamless integration between databases, identity management, and enterprise collaboration tools.",
+  "relatedProjects": [
     {
       "projectName": "Human Resource Database",
-      "projectLink": "/experiences/human-resource-database"
-    },
-    {
-      "projectName": "Server Migration - External Project",
-      "projectLink": "/experiences/server-migration"
+      "projectLink": "/experiences/australia/humanresourcedatabase"
     },
     {
       "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
+      "projectLink": "/experiences/australia/hhlawyersintranet"
     },
     {
       "projectName": "Finance Overview Dashboard",
-      "projectLink": "/experiences/finance-overview-dashboard"
+      "projectLink": "/experiences/australia/financeoverviewdashboard"
     },
     {
       "projectName": "Individual Performance Dashboard",
-      "projectLink": "/experiences/individual-performance-dashboard"
+      "projectLink": "/experiences/australia/individualperformancedashboard"
+    },
+    {
+      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]
 }

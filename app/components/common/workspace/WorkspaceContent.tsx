@@ -1,12 +1,13 @@
-import { ExperiencesData } from "@/data/experiences";
 import { SkillData } from "@/data/skills";
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import Link from "next/link";
+import { ExperiencesData } from "@/data/experiences";
+import { Tab, TabGroup, TabList } from "@headlessui/react";
+import SkillsTab from "./SkillsTab";
+import ExperiencesTab from "./ExperiencesTab";
 
 type WorkspaceContentProps = {
   contentData: SkillData | ExperiencesData,
   menuCategory: string
-}
+};
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -14,8 +15,8 @@ function classNames(...classes: string[]) {
 
 export default function WorkspaceContent({ contentData, menuCategory }: WorkspaceContentProps) {
   return (
-    <div className="flex flex-1 relative">
-      <TabGroup className="w-full h-full py-5">
+    <div className="flex relative">
+      <TabGroup className="w-full h-full py-10">
         <TabList className="flex space-x-4 border-b border-tabs-tab-border">
           <Tab
             className={({ selected }) =>
@@ -27,87 +28,27 @@ export default function WorkspaceContent({ contentData, menuCategory }: Workspac
               )
             }
           >
-            DETAILS
+            {menuCategory === "skills" ? "Related Projects" : "DETAILS"}
           </Tab>
-          <Tab
-            className={({ selected }) =>
-              classNames(
-                "px-4 py-2 text-lg font-medium rounded-t-lg focus:outline-none cursor-pointer",
-                selected
-                  ? "border-b-1 border-tabs-tab-active-border"
-                  : "border-b-1 border-transparent"
-              )
-            }
-          >
-            IMAGES
-          </Tab>
+          {"imgs" in contentData && contentData.imgs && (
+            <Tab
+              className={({ selected }) =>
+                classNames(
+                  "px-4 py-2 text-lg font-medium rounded-t-lg focus:outline-none cursor-pointer",
+                  selected
+                    ? "border-b-1 border-tabs-tab-active-border"
+                    : "border-b-1 border-transparent"
+                )
+              }
+            >
+              IMAGES
+            </Tab>
+          )}
         </TabList>
 
-        {menuCategory === "skills" && (
-          <SkillsTab contentData={contentData as SkillData} />
-        )}
-        {menuCategory === "experiences" && (
-          <ExperiencesTab contentData={contentData as ExperiencesData} />
-        )}
+        {menuCategory === "skills" && <SkillsTab contentData={contentData as SkillData} />}
+        {menuCategory === "experiences" && <ExperiencesTab contentData={contentData as ExperiencesData} />}
       </TabGroup>
     </div>
   );
-}
-
-function SkillsTab({ contentData }: { contentData: SkillData }) {
-  return(
-    <TabPanels className="h-full w-full">
-      <TabPanel className="p-2">
-        <h3 className="m-4 font-semibold text-2xl">Related Projects:</h3>
-        <ul className="list-disc pl-6 space-y-4">
-          {contentData.relatedProject.map((project, idx) => (
-            <li key={idx}>
-              <Link
-                href={project.projectLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-tabs-content-link-text hover:underline"
-              >
-                {project.projectName}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </TabPanel>
-
-      <TabPanel className="p-2">
-        <h3 className="m-4 font-semibold text-2xl">Images</h3>
-        <p className="pl-4 space-y-4">No images available yet.</p>
-      </TabPanel>
-    </TabPanels>
-  )
-}
-
-function ExperiencesTab({ contentData }: { contentData: ExperiencesData }) {
-  return(
-    <TabPanels className="h-full w-full">
-      <TabPanel className="p-2">
-        <h3 className="m-4 font-semibold text-2xl">DETAILS:</h3>
-        <ul className="list-disc pl-6 space-y-4">
-          {contentData.details.skills.map((skill, idx) => (
-            <li key={idx}>
-              <Link
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-tabs-content-link-text hover:underline"
-              >
-                {skill}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </TabPanel>
-
-      <TabPanel className="p-2">
-        <h3 className="m-4 font-semibold text-2xl">Images</h3>
-        <p className="pl-4 space-y-4">No images available yet.</p>
-      </TabPanel>
-    </TabPanels>
-  )
 }
