@@ -7,8 +7,8 @@ import { MenuItem } from "@/models/menu";
 export default function HomeContent() {
   const contentList: MenuItem[] = [
   { id: "home", title: "Home", iconKey: "VscFiles", link: "/" },
-  { id: "skills", title: "Skills", iconKey: "VscCode", link: "/skills" },
   { id: "experiences", title: "Experiences", iconKey: "VscFolderLibrary", link: "/experiences" },
+  { id: "skills", title: "Skills", iconKey: "VscCode", link: "/skills" }
   ];
   
   const expList: CardItem[] = [
@@ -16,7 +16,7 @@ export default function HomeContent() {
     id: "portfolio",
     title: "Portfolio",
     iconKey: "IoPerson",
-    link: "/",
+    link: "/experiences/australia/portfolio",
     description:
       "Developed with Next.js and TypeScript, focusing on responsive design, clean code, and automated deployment.",
   },
@@ -32,17 +32,17 @@ export default function HomeContent() {
     id: "buildcicdpipeline",
     title: "Build CI/CD Pipeline",
     iconKey: "LuConstruction",
-    link: "/skills",
+    link: "/experiences/australia/buildcicdpipeline",
     description: "Built a pipeline for Continuous Integration (CI) and Development (CD).",
   },
   ];
   
   const skillList: MenuItem[] = [
   {
-    id: "reactnext",
-    title: "React/Next.js",
+    id: "react",
+    title: "React",
     iconKey: "FaReact",
-    link: "/skills/reactnext",
+    link: "/skills/frontend/react",
     description:
       "Experienced in building modern, high-performance web applications with React and Next.js, using server-side rendering, static site generation, and component-based architecture for scalable solutions.",
   },
@@ -50,7 +50,7 @@ export default function HomeContent() {
     id: "cicdpipeline",
     title: "CI/CD Pipeline",
     iconKey: "FaDocker",
-    link: "/skills/cicdpipeline",
+    link: "/skills/others/cicdpipeline",
     description:
       "Proficient in designing CI/CD pipelines with GitHub Actions, Docker, AWS Elastic Beanstalk, and ECS to enable automated, scalable, and reliable deployments.",
   },
@@ -58,7 +58,7 @@ export default function HomeContent() {
     id: "springboot",
     title: "Spring Boot (Java)",
     iconKey: "SiSpringboot",
-    link: "/skills/springboot",
+    link: "/skills/backend/springboot",
     description:
       "Experience with RESTful APIs, implementing security features, and managing configurations using Spring Boot to deliver modular, flexible, and high-performing solutions.",
   },

@@ -38,11 +38,5 @@ export default function Workspace({
         <WorkspaceContent menuCategory={menuCategory} contentData={contentData}/>
       </div>  
     </div>
-    // <div className='flex h-full w-full m-10 md:px-28 md:py-14'>
-    //   <div className="flex flex-col relative h-[fit-content] w-full ">
-    //     <WorkspaceHeader contentData={contentData}/>
-    //     <WorkspaceContent menuCategory={menuCategory} contentData={contentData}/>
-    //   </div>  
-    // </div>
   );
 }
