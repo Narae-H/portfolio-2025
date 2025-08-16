@@ -1,24 +1,28 @@
 {
   "title" : "AWS (Amazon Web Services)",
   "titleIconName": "FaAws",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I have an understanding of AWS services, including EC2, S3, RDS, and Elastic Beanstalk, which I use to manage, deploy, and scale applications. My experience includes optimising cloud infrastructure for cost and performance, setting up secure IAM roles for user access, using CloudWatch for monitoring and troubleshooting, and setting up Amazon SQS for efficient development. I have also utilised AWS services like Elastic Load Balancing and Route 53 to ensure high availability and scalability in distributed web-based applications.",
-  "relatedProject": [
+  "subTitle": "Leveraging cloud infrastructure to support business scalability and reliability",
+  "overviewContent": "AWS has been used to deploy and manage web applications with a focus on high availability, security, and performance. Tasks include deploying applications to Elastic Beanstalk, configuring load balancers to distribute traffic efficiently across regions, setting up secure IAM roles, and implementing security policies. By optimising cloud infrastructure, users across different countries can access services reliably, and system performance is maintained at scale.",
+  "relatedProjects": [
+    {
+      "projectName": "Build CI/CD Pipeline",
+      "projectLink": "/experiences/australia/buildcicdpipeline"
+    },
     {
       "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/employee-capacity-report"
+      "projectLink": "/experiences/australia/employeecapacityreport"
     },
     {
       "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
+      "projectLink": "/experiences/australia/hhlawyersintranet"
     },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]
 }

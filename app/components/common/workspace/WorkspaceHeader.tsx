@@ -6,12 +6,18 @@ export default function WorkspaceHeader ({ contentData }: { contentData: SkillDa
   return (
     <div className='
       flex flex-col
-      h-auto lg:h-4/12
-      gap-5
+      bg-tabs-content-bg
+      z-10
+      gap-8
     '>
-      <div className='flex items-center gap-6'>
-        <Icon name={contentData.titleIconName} size="30px"/>
-        <div className='text-3xl d:text-3xl lg:text-5xl'>{contentData.title}</div>
+      <div className='flex flex-col gap-1'>
+        <div className="flex flex-row gap-3">
+          <Icon name={contentData.titleIconName} size="30px"/>
+          <div className='text-3xl lg:text-5xl'>{contentData.title}</div>
+        </div>
+        <div className="flex text-lg text-tabs-content-text-secondary italic">
+          {contentData.subTitle && `${contentData.subTitle}`}
+        </div>  
       </div>
       <div className='flex text-lg'>
         {contentData.overviewContent}

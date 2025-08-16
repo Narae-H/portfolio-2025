@@ -1,52 +1,56 @@
 {
   "title" : "CSS",
   "titleIconName": "FaCss3Alt",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "My proficiency in CSS enables me to design responsive, mobile-first websites with consistency across devices and platforms. I have successfully implemented front-end designs that are user-friendly and optimised for performance. By working with frameworks such as Bootstrap and applying advanced CSS techniques like flexbox and grid, I ensure that user interfaces are both functional and visually consistent. This work often involves close collaboration with designers and front-end developers to maintain the highest standards of user experience.",
-  "relatedProject": [
+  "subTitle": "Creating responsive, performant, and maintainable designs with CSS3",
+  "overviewContent": "Expertly craft responsive user interfaces using CSS3, leveraging media queries to ensure layouts adapt seamlessly across desktop, tablet, and mobile devices. Applied advanced layout techniques including flexbox and grid, while optimising styles for performance and maintainability. Collaborated closely with designers and front-end developers to translate visual concepts into functional, visually coherent web applications. Emphasised modular, reusable CSS and adhered to best practices to support long-term project scalability and high-quality user experience.",
+  "relatedProjects": [
+    {
+      "projectName": "My Muscle Chef Clone",
+      "projectLink": "/experiences/australia/mymusclechefclone"
+    },
     {
       "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/employee-capacity-report"
+      "projectLink": "/experiences/australia/employeecapacityreport"
     },
     {
       "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
+      "projectLink": "/experiences/australia/hhlawyersintranet"
     },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     },
     {
-      "projectName": "STMS management",
-      "projectLink": "/experiences/stms-management"
+      "projectName": "Samsung Tooling Management System",
+      "projectLink": "/experiences/korea/stmsmanagement"
     },
     {
-      "projectName": "Project Lifecycle Management in Hyundai Mobis",
-      "projectLink": "/experiences/project-lifecycle-management"
+      "projectName": "Product Lifecycle Management in Hyundai Mobis",
+      "projectLink": "/experiences/korea/productlifecyclmanagement"
     },
     {
       "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/traffic-information-system"
+      "projectLink": "/experiences/korea/trafficinformationsystem"
     },
     {
       "projectName": "Manual Product Information System in Hyundai Mobis",
-      "projectLink": "/experiences/mpis"
+      "projectLink": "/experiences/korea/mpis"
     },
     {
-      "projectName": "MobisPatent System in Hyundai Mobis",
-      "projectLink": "/experiences/mpasis"
+      "projectName": "Mobis Patent System in Hyundai Mobis",
+      "projectLink": "/experiences/korea/mpasys"
     },
     {
       "projectName": "PoC –PLM in Dassault Systèmes",
-      "projectLink": "/experiences/poc"
+      "projectLink": "/experiences/korea/poc"
     },
     {
       "projectName": "System Management at Hyundai Mobis",
-      "projectLink": "/experiences/system-management"
+      "projectLink": "/experiences/korea/systemmanagement"
     }
   ]
 }

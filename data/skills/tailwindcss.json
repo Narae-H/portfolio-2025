@@ -1,0 +1,12 @@
+{
+  "title" : "Tailwind CSS",
+  "titleIconName": "SiTailwindcss",
+  "subTitle": "Rapid, maintainable styling for modern web applications",
+  "overviewContent": "Tailwind CSS was used to apply utility-first styling directly within JSX, enabling rapid development of visually consistent and responsive interfaces. The approach allowed for fine-grained control over design without writing extensive custom CSS, improving maintainability and reducing style conflicts. Collaboration with designers was streamlined by using predefined classes and responsive variants, supporting consistent user experiences across devices.",
+  "relatedProjects": [
+    {
+      "projectName": "Portfolio",
+      "projectLink": "/experiences/australia/portfolio"
+    }
+  ]
+}

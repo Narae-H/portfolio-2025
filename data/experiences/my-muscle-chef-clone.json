@@ -1,0 +1,34 @@
+{
+  "title" : "My Muscle Chef Clone",
+  "titleIconName": "GiMuscleUp",
+  "subTitle": "eCommerce frontend clone using Next.js, TypeScript, and Shopify GraphQL API",
+  "overviewContent": "Developed a partial clone of the My Muscle Chef eCommerce platform to deepen expertise in modern frontend architecture, API integration, and performance-oriented rendering strategies. This project explored Next.js with TypeScript, implemented a hybrid SSR/CSR approach for SEO and user experience optimization, and integrated with the Shopify Storefront API using GraphQL. Built with a focus on clean, scalable folder structures, maintainable CSS Module-based styling, and future-ready sorting and filtering logic. The project served as a self-initiated case study in replicating real-world eCommerce UX and technical workflows.",
+  "position": "Full Stack Engineer (Portfolio Project)",
+  "period": "1 Month (Jul 2025 – Jul 2025)",
+  "links": {
+    "github": "https://github.com/Narae-H/mymc-portfolio",
+    "demo": "https://mymc-portfolio.vercel.app/"
+  }, 
+  "details": {
+    "skillIds": [
+      "react",
+      "nextjs",
+      "typescript",
+      "css",
+      "reduxToolkit",
+      "shopify",
+      "graphql"
+    ],
+    "jd": [
+      "Designed and implemented a hybrid SSR/CSR rendering strategy in Next.js to balance SEO performance and interactive UI responsiveness for an eCommerce use case.",
+      "Integrated Shopify Storefront API (GraphQL) to dynamically fetch product data, leveraging both server-side queries and client-side updates for sorting and filtering.",
+      "Benchmarked UI/UX patterns from the original My Muscle Chef platform and recreated layouts with custom CSS Modules and media queries without relying on external UI frameworks.",
+      "Architected scalable folder structures including modularized API handlers, GraphQL query definitions, type-safe data models, and reusable components for maintainability.",
+      "Implemented Redux Toolkit for predictable state management, enabling future expansion to advanced cart, checkout, and personalization features.",
+      "Developed a flexible filtering system combining Shopify collections (for SEO-friendly URLs) with dynamic client-side metafield filtering.",
+      "Optimized API communication by selectively delegating sorting to Shopify for supported parameters, and applying client-side transformations for unsupported custom sort logic.",
+      "Configured GitHub project templates and commit conventions under `.github` for consistent development workflows even in a solo project context.",
+      "Deployed the application to Vercel with environment-specific configurations, ensuring smooth CI/CD from development to production."
+    ]
+  }
+}

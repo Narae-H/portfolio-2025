@@ -1,7 +1,7 @@
 'use client'
 
 import useTabInitializer from "@/lib/hooks/useTabInitializer";
-import { ExperiencesTabs, HomeTabs, SkillsTabs } from "./tabsConfig";
+import { ExperiencesTabs, HomeTabs, SkillsTabs } from "./TabsPanel/tabsConfig";
 
 type MainContentProps = {
   category: string;

@@ -1,24 +1,20 @@
 {
   "title" : "Bootstrap",
-  "titleIconName": "bootstrap",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I regularly use Bootstrap to develop responsive, mobile-friendly web applications, enabling rapid front-end development while maintaining design consistency. With its pre-built components and flexible grid system, I can create sleek, user-friendly interfaces efficiently. I often customize Bootstrap themes to align with project requirements, ensuring that the user interface reflects the website’s identity while also providing an excellent user experience.",
-  "relatedProject": [
+  "titleIconName": "RiBootstrapLine",
+  "subTitle": "Rapid front-end development with design consistency",
+  "overviewContent": "Bootstrap has been leveraged to efficiently develop responsive web applications across multiple projects, particularly when rapid development was needed or design intervention was minimal. Pre-built components and the flexible grid system allowed consistent layouts, while predefined media queries ensured smooth adaptation across desktop, tablet, and mobile screens. Customising Bootstrap themes enabled alignment with project-specific requirements, resulting in interfaces that were both functional and visually coherent.",
+  "relatedProjects": [
     {
       "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
+      "projectLink": "/experiences/australia/hhlawyersintranet"
     },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
-    },
-    {
-      "projectName": "System Management at Hyundai Mobis",
-      "projectLink": "/experiences/system-management"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]
 }

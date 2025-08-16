@@ -1,25 +1,30 @@
 {
   "title" : "Manual Product Information System in Hyundai Mobis",
-  "titleIconName": "mpis",
-  "subTitle": "",
-  "overviewContent": "I updated the Manual Product Information System at Hyundai Mobis by introducing the 'Modified Request' function. This enhancement allows users to create modification requests for released manuals, thereby improving user efficiency. By streamlining the submission process, I ensured that users can easily update manual information, leading to increased accuracy in manual management.",
+  "titleIconName": "FaCar",
+  "subTitle": "Enhanced manual management with 'Modified Request' feature",
+  "overviewContent": "Added a 'Modified Request' feature to the product information system to allow staff to copy existing manuals and make necessary edits. This reduced manual work and made updating product information faster and easier.",
   "position": "Java Programmer",
   "period": "2 months (Oct 2017 – Nov 2017)",
   "details": {
-    "skills": [
-      "OS: Windows"
-      , "Tool: Eclipse (Development), Toad (RDB), Matrix (ODB)"
-      , "Programming: Java, HTML, CSS, JavaScript, jQuery, JSP, XML" 
-      , "Database: Oracle DB, Matrix ODB" 
-      , "Version Control: SVN"
-    ],
-    "jd": [
-      "Developed a new function called 'Modified Request' in alignment with client requirements."
-      , "Designed and implemented databases."
-      , "Conducted unit testing and integration testing."
-      , "Prepared draft versions of technical documentation and end-user manuals."
-    ]
-  }
+      "skillIds": [
+        "java",
+        "jsp",
+        "html",
+        "css",
+        "javascript",
+        "jquery",
+        "oracledb",
+        "matrixodb"
+      ],
+      "jd": [
+        "Gathered user requirements to address manual copy-and-edit inefficiencies.",
+        "Developed the 'Modified Request' feature to copy existing manual data and edit it.",
+        "Updated the database to support the new functionality.",
+        "Performed unit and integration testing to ensure the feature worked correctly.",
+        "Created basic documentation for end users to use the new function."
+      ]
+    }
 }
+
 
 

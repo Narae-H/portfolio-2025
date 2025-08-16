@@ -8,7 +8,7 @@ export interface MenuItem {
   link?: string; 
   description?: string;
   items?: MenuItem[];
-  style?: {};
+  style?: {color?: string, size?: string};
 }
 
 export interface Menu {

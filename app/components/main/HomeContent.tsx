@@ -1,11 +1,8 @@
 import Link from "next/link";
 
-import { FaDocker, FaReact } from "react-icons/fa6";
-import { SiSpringboot } from "react-icons/si";
-
-import { MenuItem } from "@/models/menu";
 import Card, { CardItem } from "@/app/components/common/Card";
 import List from "@/app/components/common/List";
+import { MenuItem } from "@/models/menu";
 
 export default function HomeContent() {
   const contentList: MenuItem[] = [
@@ -14,11 +11,11 @@ export default function HomeContent() {
   { id: "experiences", title: "Experiences", iconKey: "VscFolderLibrary", link: "/experiences" },
   ];
   
-  const expList: MenuItem[] = [
+  const expList: CardItem[] = [
   {
     id: "portfolio",
     title: "Portfolio",
-    iconKey: "BsPerson",
+    iconKey: "IoPerson",
     link: "/",
     description:
       "Developed with Next.js and TypeScript, focusing on responsive design, clean code, and automated deployment.",
@@ -27,7 +24,7 @@ export default function HomeContent() {
     id: "mymc-portfolio",
     title: "My Muscle Chef Clone",
     iconKey: "GiMuscleUp",
-    link: "/",
+    link: "/experiences/australia/mymusclechefclone",
     description:
       "Built to showcase modern frontend skills and API integration through a partial My Muscle Chef clone.",
   },
@@ -40,11 +37,11 @@ export default function HomeContent() {
   },
   ];
   
-  const skillList: CardItem[] = [
+  const skillList: MenuItem[] = [
   {
     id: "reactnext",
     title: "React/Next.js",
-    Icon: <FaReact color="#5ed3f3" size={24} />,
+    iconKey: "FaReact",
     link: "/skills/reactnext",
     description:
       "Experienced in building modern, high-performance web applications with React and Next.js, using server-side rendering, static site generation, and component-based architecture for scalable solutions.",
@@ -52,7 +49,7 @@ export default function HomeContent() {
   {
     id: "cicdpipeline",
     title: "CI/CD Pipeline",
-    Icon: <FaDocker color="#1D63ED" size={24} />,
+    iconKey: "FaDocker",
     link: "/skills/cicdpipeline",
     description:
       "Proficient in designing CI/CD pipelines with GitHub Actions, Docker, AWS Elastic Beanstalk, and ECS to enable automated, scalable, and reliable deployments.",
@@ -60,7 +57,7 @@ export default function HomeContent() {
   {
     id: "springboot",
     title: "Spring Boot (Java)",
-    Icon: <SiSpringboot color="#6ca84e" size={24} />,
+    iconKey: "SiSpringboot",
     link: "/skills/springboot",
     description:
       "Experience with RESTful APIs, implementing security features, and managing configurations using Spring Boot to deliver modular, flexible, and high-performing solutions.",
@@ -78,14 +75,14 @@ export default function HomeContent() {
         <div className="flex flex-wrap h-auto">
           <section className="w-full h-auto lg:w-1/2 mb-8">
             <List title="Contents" listItems={contentList} className="mb-10" />
-            <List title="Experiences" listItems={expList} className="pr-10 w-full"/>
+            <List title="Skills" listItems={skillList} className="pr-10 w-full"/>
             <Link href="/experiences" className="flex text-list-link-text pl-5 mt-1">
               More...
             </Link>
           </section>
 
           <section className="w-full h-auto lg:w-1/2 mb-8">
-            <Card title="Skills" cardItems={skillList} />
+            <Card title="Experiences" cardItems={expList} />
             <Link href="/skills" className="flex text-list-link-text pl-5 mt-1">
               More...
             </Link>

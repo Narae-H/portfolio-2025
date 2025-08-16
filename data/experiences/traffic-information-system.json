@@ -1,26 +1,26 @@
 {
   "title" : "Traffic Information System in Korea Expressway Corporation",
-  "titleIconName": "trafficinformationsystem",
-  "subTitle": "",
-  "overviewContent": "I developed a new traffic information system specifically for the Pyeongchang 2018 Winter Olympics, creating a dedicated website that provided real-time updates on estimated travel times for attendees. This system was designed to assist both domestic and international travellers by offering crucial information on traffic conditions and travel routes. By referencing the existing traffic information infrastructure, I enabled users to plan their journeys effectively and make informed decisions about travel to the Olympic events.",
+  "titleIconName": "PiTrafficSignalFill",
+  "subTitle": "Real-time traffic information updates for the Pyeongchang 2018 Winter Olympics",
+  "overviewContent": "Developed a dedicated traffic information system for the Pyeongchang 2018 Winter Olympics. The system provided real-time travel time estimates based on toll and sensor data, allowing both domestic and international travellers to plan their journeys effectively. It included features to compare predicted and actual travel times and adjust predictions to improve accuracy.",
   "position": "Java Programmer",
   "period": "2 months (Dec 2017 – Jan 2018)",
   "details": {
-    "skills": [
-      "OS: Windows"
-      , "Tool: Eclipse (Development), Toad (RDB)"
-      , "Programming: Java, HTML, CSS, JavaScript, jQuery, jqChart"
-      , "Database: Oracle DB"
-      , "Version Control: SVN"
+    "skillIds": [
+      "java",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "oracledb"
     ],
     "jd": [
-      "Analysed the current traffic information system."
-      , "Developed a new traffic information system for the Pyeongchang 2018 Winter Olympics, focusing on functions for comparison and analysis between estimated and actual travel times."
-      , "Supported the design and implementation of the traffic information database while working closely with database analysts (DBA)."
-      , "Conducted web standard validation checks."
-      , "Conducted unit testing and integration testing."
-      , "Wrote technical documentation and end-user manuals."
-
+      "Analysed the existing traffic information system and identified requirements specific to the Pyeongchang 2018 Winter Olympics.",
+      "Developed features to calculate and visualise estimated travel times using toll and sensor data.",
+      "Implemented functionality to compare predicted and actual travel times and adjust predictions as needed for improved accuracy.",
+      "Collaborated with database analysts (DBAs) to integrate queries into the system.",
+      "Performed web standard validation checks, unit testing, and integration testing.",
+      "Prepared technical documentation and end-user manuals."
     ]
   }
 }

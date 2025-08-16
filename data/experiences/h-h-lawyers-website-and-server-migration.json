@@ -1,36 +1,40 @@
 {
   "title" : "H & H Lawyers Website and Server Migration",
   "titleIconName": "hhlawyerswebsiteandservermigration",
-  "subTitle": "",
-  "overviewContent": "I developed a new website for H & H Lawyers and successfully migrated their servers from on-premises solutions to Microsoft Exchange and AWS. This project involved creating a modern, user-friendly website that enhances the firm's online presence while ensuring optimal functionality. Additionally, the server migration improved system reliability and scalability, enabling the firm to leverage cloud technology for better performance and data management.",
+  "subTitle": "Website redevelopment and cloud-based email/server migration",
+  "overviewContent": "Redeveloped H & H Lawyers’ website and migrated their email and servers to Microsoft Exchange and AWS, addressing key access and operational limitations. The project delivered a fully multilingual website tailored to stakeholders with an admin panel, improved SEO to secure top search rankings for target clients, and established a scalable, globally accessible cloud infrastructure. Migrating the email server allowed external access, resolved spam filtering issues, and strengthened IT security, boosting overall operational efficiency.",
   "position": "Full Stack Java Developer",
   "period": "12 months (Oct 2019 – Sep 2020)",
-  "link": "https://hhlaw.com.au",
+  "links": {
+    "github": "https://hhlaw.com.au",
+    "demo": ""
+  },
   "details": {
-    "skills": [
-      "OS: Windows"
-      , "Tool: Eclipse (Development), DBeaver (RDB)"
-      , "Programming: Java, Thymeleaf, HTML, CSS, JavaScript, jQuery, Bootstrap, MySQL"
-      , "Framework: Spring Boot"
-      , "Database: Maria DB"
-      , "Version Control: SVN"
-      , "Cloud Services: AWS Elastic Beanstalk, AWS Load Balancer, Route 53, Azure Database, Azure Entra ID"
-      , "Other: Agile Methodology, SOLID principles, MVC pattern, RESTful API"
+    "skillIds": [
+      "java",
+      "springboot",
+      "thymeleaf",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "bootstrap",
+      "mysql",
+      "mariadb",
+      "awsEb",
+      "awsLb",
+      "awsRoute53"
     ],
     "jd": [
-      "Analysed user requirements."
-      , "Planned and managed the project."
-      , "Set up the development/production environment."
-      , "Designed and created the database."
-      , "Designed and developed the website with a RESTful API using Spring Boot and deployed it to AWS."
-      , "Designed and created the database in AWS RDS."
-      , "Implemented comprehensive SEO strategies, including writing meta tags, generating a sitemap, optimising keywords, and effectively using HTML tags. Supported multilingual SEO for English, Korean, and Japanese."
-      , "Checked web standard validation in alignment with W3C web standards."
-      , "Conducted unit testing and integration testing."
-      , "Wrote technical documentation and end-user manuals."
-      , "Migrated the email server from on-premise to Microsoft Exchange."
-      , "Set up security policies in Office 365"
-      , "Contributed to all phases of the Software Development Life Cycle (SDLC), collaborating closely with designers, developers, and cross-functional teams to ensure successful project delivery."
+      "Analysed IT limitations and website constraints, identifying critical access issues with on-premises email servers and Wordpress site.",
+      "Planned and carried out email server migration to Microsoft Exchange, implementing MFA, security policies, and resolving spam filtering issues to ensure reliable external communication.",
+      "Transferred company domain to internal administration, removing reliance on external IT providers and increasing control over IT systems.",
+      "Redeveloped a fully multilingual website (English, Korean, Japanese, Chinese) using Spring Boot and Thymeleaf, including an admin panel to enable internal control over content and layout.",
+      "Implemented SEO optimisations, including keyword building, meta tags, sitemap generation, and multilingual support, securing top search rankings for target clients.",
+      "Deployed the website on AWS Elastic Beanstalk with load balancing for high availability, fast global access, and scalable performance.",
+      "Applied MVC patterns and RESTful API architecture for maintainability, intuitive URL structure, and future extensibility.",
+      "Participated in all phases of SDLC, collaborating closely with stakeholders, designers, and cross-functional teams to deliver the project on time and within scope.",
+      "Conducted unit, integration, and performance testing to ensure reliability, responsiveness, and cross-region accessibility, significantly improving user experience and operational efficiency."
     ]
   },
   "imgs": [
