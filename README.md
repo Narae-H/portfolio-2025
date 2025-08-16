@@ -1,5 +1,5 @@
 # My Portfolio
-<img width="1920" height="911" alt="portfolio_img" src="https://github.com/user-attachments/assets/1cb1a70d-1d76-47e7-8e0e-a2b720bb2e92" />
+<img width="1920" height="911" alt="Image" src="https://github.com/user-attachments/assets/0943f69b-0be6-4267-ad79-204e16feec94" />
 
 🔗Link: [portfolio-2025-liart-nu.vercel.app](https://portfolio-2025-liart-nu.vercel.app/)   
 
