@@ -1,26 +1,27 @@
 {
-  "title" : "MobisPatent System in Hyundai Mobis",
-  "titleIconName": "patent",
-  "subTitle": "This is a subtitle",
+  "title" : "Patent System in Hyundai Mobis",
+  "titleIconName": "FaStamp",
+  "subTitle": "Multi-language support for internal patent system",
   "overviewContent": "Updated the system to support multiple languages based on the user's location or preferences",
-  "details": [
-    {
-      "position": "Java Programmer",
-      "period": "1 month (Sep 2017)",
-      "skills": [
-        "OS: Windows"
-        , "Tool: Eclipse (Development), Toad (RDB), Matrix (ODB)"
-        , "Programming: Java, HTML, CSS, JavaScript, jQuery, JSP, JSTL, XML"
-        , "Database: Oracle DB, Matrix ODB"
-        , "Version Control: SVN."
-      ],
-      "jd": [
-        "Created and modified JSP, JSTL, and properties files to enable language preference selection within the system."
-        , "Changed data schemas and drew Entity-Relationship Diagrams (ERDs)."
-        , "Conducted unit testing and integration testing."
-        , "Prepared draft versions of technical documentation and end-user manuals."
-      ]
-    }
-  ],
-  "img": ""
+  "position": "Java Programmer",
+  "period": "1 month (Sep 2017)",
+  "details": {
+    "skillIds": [
+      "java",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "jsp",
+      "oracledb",
+      "matrixodb"
+    ],
+    "jd": [
+      "Added language preference functionality to allow users to select Korean or English.",
+      "Modified JSP, JSTL, and properties files to support multi-language content.",
+      "Updated database schemas and created ERDs to accommodate language-specific data.",
+      "Performed unit and integration testing to ensure correct system behaviour.",
+      "Prepared basic documentation for end users."
+    ]
+  }
 }

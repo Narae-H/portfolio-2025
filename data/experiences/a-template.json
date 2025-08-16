@@ -1,0 +1,20 @@
+{
+  "title" : "",
+  "titleIconName": "",
+  "subTitle": "",
+  "overviewContent": "",
+  "position": "",
+  "period": "",
+  "links": {
+    "github": "",
+    "demo": ""
+  },
+  "details": {
+    "skillIds": [""],
+    "jd": [""]
+  },
+  "imgs": [
+    {"desc": "", "url": ""}
+  ]
+}
+

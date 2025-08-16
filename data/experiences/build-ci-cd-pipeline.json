@@ -1,23 +1,23 @@
 {
   "title" : "Build CI/CD Pipeline",
-  "titleIconName": "buildcicdpipeline",
-  "subTitle": "",
-  "overviewContent": "Implemented a CI/CD pipeline to containerize a Spring Boot application using Docker, automate builds with GitHub Actions, and deploy seamlessly to AWS Elastic Beanstalk. Configured AWS IAM for secure integration between GitHub Actions and AWS services, ensuring efficient deployment and scalability.",
-  "position": "Full Stack Developer",
-  "period": "Jan 2025 – current",
+  "titleIconName": "FaDocker",
+  "subTitle": "Automated CI/CD pipeline with Docker and AWS to streamline deployments and reduce errors",
+  "overviewContent": "Implemented a CI/CD pipeline for multiple systems by containerising them with Docker, automating builds and deployments with GitHub Actions, and deploying seamlessly to AWS Elastic Beanstalk. This setup eliminated manual deployment errors and reduced the time required for releases.",
+  "position": "Full Stack Engineer",
+  "period": "Jan 2025 – Mar 2025",
   "details": {
-    "skills": [
-      "Spring Boot (Maven): Application code built with Spring Boot; Maven for build management."
-      , "Docker: Containerization—packaging everything the application needs to run consistently"
-      , "AWS Elastic Container Registry: AWS-hosted repository for Docker images."
-      , "AWS Elastic Beanstalk: Managed platform to deploy and scale the application."
-      , "GitHub Actions: Automated CI/CD workflows integrated with GitHub."
+    "skillIds": [
+      "springboot", 
+      "docker", 
+      "githubActions",
+      "awsEcr", 
+      "awsEb"
     ],
     "jd": [
-      "Packaged a Spring Boot project (built with Maven) into a Docker container.",
-      "Built a Docker image and pushed it to AWS ECR using GitHub Actions.",
-      "Created an AWS IAM user and granted the necessary permissions for GitHub Actions to connect with AWS services.",
-      "Deployed the Docker image to AWS Elastic Beanstalk (EB)."
+      "Analysed the existing manual deployment process and implemented an automated CI/CD pipeline using Docker and GitHub Actions, eliminating manual errors and streamlining deployments across all systems.",
+      "Built and pushed Docker images to AWS ECR, ensuring consistent environment setup and efficient release process.",
+      "Deployed Docker images to AWS Elastic Beanstalk, enabling seamless scaling and improving operational stability.",
+      "Optimised the integration between GitHub Actions and AWS services to enhance automation and reduce deployment effort, significantly improving team efficiency."
     ]
   }
 }

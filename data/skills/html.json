@@ -1,52 +1,52 @@
 {
   "title" : "HTML",
   "titleIconName": "MdCode",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I am highly skilled in using HTML to structure web applications with a strong focus on accessibility, user experience, and SEO (Search engine optimisation). By adhering to W3C standards, I ensure that websites are not only visually appealing but also search engine optimised. I regularly collaborate with UI/UX designers to translate design concepts into fully functional, responsive web pages, while ensuring the structure supports efficient front-end performance.",
-  "relatedProject": [
+  "subTitle": "Structuring web applications with standards and SEO in mind",
+  "overviewContent": "Expertly structure web applications using HTML with careful attention to semantic elements, meta tags, and W3C standards to ensure accessibility, maintainability, and SEO optimisation. Applied HTML best practices to deliver responsive, high-performance pages while supporting front-end frameworks and collaborating with UI/UX designers. Focused on precise implementation of tags to improve search engine ranking and enhance user experience across devices.",
+  "relatedProjects": [
     {
       "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/employee-capacity-report"
+      "projectLink": "/experiences/australia/employeecapacityreport"
     },
     {
       "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
+      "projectLink": "/experiences/australia/hhlawyersintranet"
     },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     },
     {
-      "projectName": "STMS management",
-      "projectLink": "/experiences/stms-management"
+      "projectName": "Samsung Tooling Management System Management at Samsung",
+      "projectLink": "/experiences/korea/stmsmanagement"
     },
     {
-      "projectName": "Project Lifecycle Management in Hyundai Mobis",
-      "projectLink": "/experiences/project-lifecycle-management"
+      "projectName": "Product Lifecycle Management in Hyundai Mobis",
+      "projectLink": "/experiences/korea/productlifecyclmanagement"
     },
     {
       "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/traffic-information-system"
+      "projectLink": "/experiences/korea/trafficinformationsystem"
     },
     {
       "projectName": "Manual Product Information System in Hyundai Mobis",
-      "projectLink": "/experiences/mpis"
+      "projectLink": "/experiences/korea/mpis"
     },
     {
-      "projectName": "MobisPatent System in Hyundai Mobis",
-      "projectLink": "/experiences/mpasis"
+      "projectName": "Mobis Patent System in Hyundai Mobis",
+      "projectLink": "/experiences/korea/mpasys"
     },
     {
       "projectName": "PoC –PLM in Dassault Systèmes",
-      "projectLink": "/experiences/poc"
+      "projectLink": "/experiences/korea/poc"
     },
     {
       "projectName": "System Management at Hyundai Mobis",
-      "projectLink": "/experiences/system-management"
+      "projectLink": "/experiences/korea/systemmanagement"
     }
   ]
 }

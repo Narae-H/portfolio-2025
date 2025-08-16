@@ -1,32 +1,36 @@
 {
   "title" : "MariaDB",
   "titleIconName": "SiMariadb",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "In my work with MariaDB, I have set up and maintained databases to support web-based systems. I create basic SQL queries to facilitate the development of applications, ensuring they align with the Model-View-Controller (MVC) architecture. My role involves collaborating with development teams to design efficient database structures that integrate smoothly with back-end logic, supporting the overall system’s functionality.",
-  "relatedProject": [
+  "subTitle": "Designing and maintaining efficient relational databases",
+  "overviewContent": "MariaDB has been used to design, set up, and maintain relational databases supporting web-based applications. Work includes writing and optimising SQL queries, creating stored procedures, and structuring data for efficient integration with MVC-based backend systems. Database design was tailored to support application performance, reliability, and maintainability. Collaboration with development teams ensured seamless data flow and smooth system functionality across multiple projects, from dashboards to intranet systems.",
+  "relatedProjects": [
     {
       "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/employee-capacity-report"
+      "projectLink": "/experiences/australia/employeecapacityreport"
     },
     {
       "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
+      "projectLink": "/experiences/australia/hhlawyersintranet"
+    },
+    {
+      "projectName": "Human Resource Database",
+      "projectLink": "/experiences/australia/humanresourcedatabase"
     },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "Finance Overview Dashboard",
-      "projectLink": "/experiences/finance-overview-dashboard"
+      "projectLink": "/experiences/australia/financeoverviewdashboard"
     },
     {
       "projectName": "Individual Performance Dashboard",
-      "projectLink": "/experiences/individual-performance-dashboard"
+      "projectLink": "/experiences/australia/individualperformancedashboard"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]
 }

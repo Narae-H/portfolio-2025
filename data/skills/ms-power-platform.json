@@ -1,16 +1,16 @@
 {
   "title" : "Microsoft Power Platform",
-  "titleIconName": "FaMaxcdn",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I have worked extensively with Microsoft Power BI to create data-driven dashboards that provide valuable insights for business decision-making. My work includes integrating multiple data sources into Power BI, building real-time reports, and presenting key metrics in intuitive visual formats. In addition, I have used Power Automate to streamline workflows, automating repetitive tasks to increase efficiency and reduce manual workloads.",
-  "relatedProject": [
+  "titleIconName": "FaMicrosoft",
+  "subTitle": "Building interactive, data-driven dashboards with Power BI",
+  "overviewContent": "Microsoft Power BI was leveraged to develop interactive, data-driven dashboards that support informed business decision-making. Multiple data sources were integrated to provide real-time insights, with key metrics visualised in intuitive, easy-to-understand formats. The dashboards facilitated faster and more accurate reporting, contributing to improved operational efficiency and enhanced data visibility across projects.",
+  "relatedProjects": [
     {
       "projectName": "Finance Overview Dashboard",
-      "projectLink": "/experiences/finance-overview-dashboard"
+      "projectLink": "/experiences/australia/financeoverviewdashboard"
     },
     {
       "projectName": "Individual Performance Dashboard",
-      "projectLink": "/experiences/individual-performance-dashboard"
+      "projectLink": "/experiences/australia/individualperformancedashboard"
     }
   ]
 }

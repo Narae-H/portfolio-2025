@@ -1,20 +1,28 @@
 {
   "title" : "Spring Boot",
   "titleIconName": "SiSpringboot",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I have leveraged Spring Boot to rapidly develop scalable, microservices-based applications. Its streamlined dependency management and embedded server capabilities have allowed me to create and maintain complex systems efficiently. I have worked extensively with RESTful APIs, implemented security features, and handled configuration management, ensuring that solutions are modular, flexible, and high-performing.",
-  "relatedProject": [
+  "subTitle": "Building secure, high-performance back-end systems",
+  "overviewContent": "Developed enterprise-grade, microservices-based applications using Spring Boot, delivering scalable and maintainable solutions in production environments. Designed and implemented robust RESTful APIs for seamless integration with diverse front-end and third-party systems. Applied Spring Security to enforce advanced security measures, including role-based access control, OAuth2/JWT authentication, CORS, and CSRF protection, ensuring system resilience against threats. Optimised modular architecture and configuration management to streamline deployment pipelines and enhance operational efficiency.",
+  "relatedProjects": [
+    {
+      "projectName": "Build CI/CD Pipeline",
+      "projectLink": "/experiences/australia/buildcicdpipeline"
+    },
     {
       "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/employee-capacity-report"
+      "projectLink": "/experiences/australia/employeecapacityreport"
+    },
+    {
+      "projectName": "H & H Lawyers Intranet",
+      "projectLink": "/experiences/australia/hhlawyersintranet"
     },
     {
       "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
+      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
       "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
+      "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]
 }

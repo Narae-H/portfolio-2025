@@ -1,0 +1,12 @@
+{
+  "title" : "TypeScript",
+  "titleIconName": "BiLogoTypescript",
+  "subTitle": "Enhancing code reliability with typed JavaScript",
+  "overviewContent": "TypeScript was employed to improve code reliability by reducing type-related errors commonly encountered in JavaScript. Strong typing enabled early detection of potential issues, helping maintain cleaner and more maintainable code. Familiarity with JavaScript and other typed languages facilitated rapid adoption of TypeScript, allowing effective integration into existing projects and contributing to more predictable, robust application behaviour.",
+  "relatedProjects": [
+    {
+      "projectName": "Portfolio",
+      "projectLink": "/experiences/australia/portfolio"
+    }
+  ]
+}

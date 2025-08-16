@@ -1,36 +1,26 @@
 {
   "title" : "Finance Overview Dashboard",
-  "titleIconName": "financeoverviewdashboard",
-  "subTitle": "",
-  "overviewContent": "I developed a finance overview dashboard designed to provide a comprehensive snapshot of the organisation's financial health. This dashboard consolidates key financial metrics and visualisations, enabling stakeholders to quickly assess performance and make informed decisions. By incorporating interactive elements and user-friendly navigation, I ensured that users can easily access vital financial information, improving overall visibility and facilitating strategic planning.",
-  "position": "Full Stack Developer",
+  "titleIconName": "FaMoneyBills",
+  "subTitle": "Real-time financial performance tracking and KPI dashboard",
+  "overviewContent": "Designed and implemented an interactive financial performance dashboard using Microsoft Power BI, integrating the firm’s internal database with daily data exports from ActionStep, the legal practice management system. The solution calculates and tracks annual and monthly revenue targets for each lawyer, compares them against actual billings, collections, and discounts, and visualises KPIs in near real-time—limited only by ActionStep’s daily refresh cycle. Advanced filtering by lawyer, or expertise type allows stakeholders to identify revenue sources, monitor collection performance, and analyse discount patterns. This has enabled the finance team, administrators, and senior lawyers to make data-driven decisions, respond quickly to underperformance, and maintain firm-wide visibility of revenue progress against targets.",
+  "position": "Full Stack Engineer",
   "period": "4 months (Mar 2021 – Jun 2021)",
   "details": {
-    "skills": [
-      "OS: Windows"
-      , "SaaS: Microsoft Power BI"
-      , "Programming: DAX"
-      , "Database: Maria DB, Azure SQL Database"
+    "skillIds": [
+      "powerbi",
+      "dax",
+      "azuredb",
+      "mariadb"
     ],
     "jd": [
-      "Analysed user requirements."
-      , "Planned and managed the project."
-      , "Set up the development/production environment."
-      , "Evaluated UI/UX design by working closely with a designer."
-      , "Modified the firm’s database."
-      , "Developed a Power BI report to track cash received, debt, and WIP."
-      , "Conducted unit testing and integration testing."
-      , "Wrote technical documentation and end-user manuals."
+      "Collaborated with finance stakeholders to define performance metrics, revenue targets, and reporting requirements, ensuring alignment with the firm’s strategic and operational goals.",
+      "Integrated the firm’s internal database with daily data exports from ActionStep, designing optimised queries and transformation logic to calculate billings, collections, discounts, and outstanding balances.",
+      "Built an interactive Microsoft Power BI dashboard with dynamic filtering by lawyer and expertise type, enabling granular performance analysis and direct drill-through to ActionStep records.",
+      "Implemented automated refresh schedules and optimised dataset structures to minimise load times and provide near real-time KPI visibility within the constraints of ActionStep’s daily update cycle.",
+      "Developed revenue target tracking logic to measure individual and firm-wide progress against monthly and annual goals, surfacing underperformance trends for early intervention.",
+      "Designed visualisations to highlight high-discount matters, slow collections, and top-performing expertise areas, supporting targeted operational and business development actions.",
+      "Conducted performance tuning, user acceptance testing, and dashboard training to ensure adoption, scalability, and maintainability.",
+      "Produced comprehensive technical documentation, including data flow diagrams and Power BI model schema, to support long-term maintenance and knowledge transfer."
     ]
-  },
-  "imgs": [
-    {
-      "desc" : "Main page"
-      , "url" : "/images/experiences/finance-overview-dashboard1.png" 
-    },
-    {
-      "desc" : "Revenue page"
-      , "url" : "/images/experiences/finance-overview-dashboard2.png" 
-    }
-  ]
+  }
 }

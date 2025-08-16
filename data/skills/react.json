@@ -1,12 +1,16 @@
 {
   "title" : "React",
   "titleIconName": "FaReact",
-  "subTitle": "",
-  "overviewContent": "I have experience in React for building responsive single-page applications (SPAs) with seamless user experiences. I manage state using hooks and have integrated Redux Toolkit for efficient, predictable state management in complex applications. My work includes performance optimisation using lazy loading and code splitting, ensuring scalable and maintainable applications. By focusing on reusable components and best practices, I ensure code quality, making development smoother in both Agile and collaborative environments.",
-  "relatedProject": [
+  "subTitle": "Building modern, responsive SPAs",
+  "overviewContent": "Focusing on building responsive single-page applications (SPAs) with React, I manage state using hooks and apply best practices to ensure clean, maintainable code. My work includes performance optimisation such as lazy loading and code splitting to deliver smooth and efficient applications. While React is a relatively recent addition to my toolkit, I have actively applied it in portfolio projects and continue to expand my proficiency, emphasising reusable components, modular architecture, and scalable design patterns.",
+  "relatedProjects": [
     {
       "projectName": "Portfolio",
-      "projectLink": "/experiences/portfolio"
+      "projectLink": "/experiences/australia/portfolio"
+    },
+    {
+      "projectName": "My Muscle Chef Clone",
+      "projectLink": "/experiences/australia/mymusclechefclone"
     }
   ]
 }

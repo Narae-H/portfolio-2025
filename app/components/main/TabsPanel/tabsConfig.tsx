@@ -1,14 +1,14 @@
 import Workspace from "@/app/components/common/workspace";
-import TabsPanel, { Tab } from "@/app/components/main/TabsPanel";
+import HomeContent from "@/app/components/main/HomeContent";
+import TabsPanel, { Tab } from "@/app/components/main/TabsPanel/TabsPanel";
+import experiencesDataMap from "@/data/experiences";
 import { mainMenus } from "@/data/menu/mainMenu";
+import skillDataMap from "@/data/skills";
 import useSelectedTab from "@/lib/hooks/useSelectedTab";
 import useVisitedTabs from "@/lib/hooks/useVisitedTabs";
 import { findMenuItemById } from "@/lib/utils/menu";
-import { MenuItem } from "@/models/menu";
-import HomeContent from "@/app/components/main/HomeContent";
-import WelcomeContent from "./WelcomeContent";
-import experiencesDataMap from "@/data/experiences";
-import skillDataMap from "@/data/skills";
+import { EmptyMenuItemValue, MenuItem } from "@/models/menu";
+import WelcomeContent from "../WelcomeContent";
 
 export function HomeTabs() {
   const { selectedTab } = useSelectedTab("selected_home_tab");
@@ -34,7 +34,7 @@ export function SkillsTabs(){
   const { visitedTabs, closeTab } = useVisitedTabs(`visited_${category}`);
   const { selectedTab, setSelectedTab } = useSelectedTab(`selected_${category}_tab`);
 
-  const skillMenu = mainMenus.menus.find((menu) => menu.id === category);
+  const skillMenu: MenuItem = mainMenus.menus.find((menu) => menu.id === category)?? EmptyMenuItemValue;
 
   const foundItems = visitedTabs
     .map((title) => findMenuItemById(skillMenu?.items ?? [], title))

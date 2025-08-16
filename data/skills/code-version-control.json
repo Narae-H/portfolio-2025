@@ -1,52 +1,16 @@
 {
-  "title" : "Code Version Control",
+  "title": "Code Version Control & Collaboration",
   "titleIconName": "FaGithub",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I am skilled in using version control systems, such as Git and SVN, to manage codebase changes efficiently. I have established branching strategies that help maintain organised and structured code, ensuring smooth collaboration across teams. My experience includes resolving conflicts, merging changes, and tracking version history to ensure code integrity throughout the development process. By maintaining clear version control practices, I facilitate collaborative work while reducing the risk of errors in large, shared codebases.",
-  "relatedProject": [
+  "subTitle": "Managing source code and team workflows with Git, SVN, and GitHub Projects",
+  "overviewContent": "Version control practices have been applied using Git and SVN to maintain code quality and enable seamless collaboration across teams. Branching strategies were established to support parallel feature development, while code reviews and conflict resolution processes were managed to ensure stability in shared repositories. GitHub Projects and issue tracking were adopted to align development tasks with project milestones, providing transparency and accountability within the team. Through disciplined source control and workflow management, large-scale applications were delivered with reduced integration risks and improved maintainability.",
+  "relatedProjects": [
     {
-      "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/employee-capacity-report"
+      "projectName": "Portfolio",
+      "projectLink": "/experiences/australia/portfolio"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/h-h-lawyers-intranet"
-    },
-    {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/one-click-trade-mark-website"
-    },
-    {
-      "projectName": "H & H Lawyers Website and Server Migration",
-      "projectLink": "/experiences/h-h-lawyers-website-and-server-migration"
-    },
-    {
-      "projectName": "STMS management",
-      "projectLink": "/experiences/stms-management"
-    },
-    {
-      "projectName": "Project Lifecycle Management in Hyundai Mobis",
-      "projectLink": "/experiences/project-lifecycle-management"
-    },
-    {
-      "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/traffic-information-system"
-    },
-    {
-      "projectName": "Manual Product Information System in Hyundai Mobis",
-      "projectLink": "/experiences/mpis"
-    },
-    {
-      "projectName": "MobisPatent System in Hyundai Mobis",
-      "projectLink": "/experiences/mpasis"
-    },
-    {
-      "projectName": "PoC –PLM in Dassault Systèmes",
-      "projectLink": "/experiences/poc"
-    },
-    {
-      "projectName": "System Management at Hyundai Mobis",
-      "projectLink": "/experiences/system-management"
+      "projectName": "mymusclechefclone",
+      "projectLink": "/experiences/australia/mymusclechefclone"
     }
   ]
 }

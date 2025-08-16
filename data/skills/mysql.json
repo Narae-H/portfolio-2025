@@ -1,12 +1,12 @@
 {
   "title" : "MySQL",
   "titleIconName": "GrMysql",
-  "subTitle": "This is a subtitle",
-  "overviewContent": "I am skilled in designing, optimising, and managing relational databases using MySQL. My experience includes writing complex SQL queries, managing stored procedures, and ensuring that databases are optimised for performance and data integrity.",
-  "relatedProject": [
+  "subTitle": "Designing and optimising relational databases",
+  "overviewContent": "MySQL was used to design and manage relational databases, ensuring high performance and data integrity across applications. This included writing complex queries, creating and optimising stored procedures, and structuring data for efficient retrieval. By applying best practices in indexing and query optimisation, database performance was enhanced, supporting dynamic, real-time features such as traffic estimation calculations and reporting. Collaboration with DBAs ensured accurate data modelling and smooth integration with backend systems.",
+  "relatedProjects": [
     {
       "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/traffic-information-system"
+      "projectLink": "/experiences/korea/trafficinformationsystem"
     }
   ]
 }
