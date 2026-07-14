@@ -3,6 +3,7 @@ import { DEFAULT_THEME, THEME_KEY } from "@/models/theme";
 import { SITE_URL } from "@/constants/constants";
 import AppShell from "@/app/components/layout/AppShell";
 import { ThemeProvider } from "@/app/components/theme/ThemeProvider";
+import { TourProvider } from "@/app/components/tour/TourProvider";
 import StoreProvider from "./StoreProvider";
 import "./globals.css";
 
@@ -51,7 +52,9 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col min-w-[360px]">
         <StoreProvider>
           <ThemeProvider>
-            <AppShell>{children}</AppShell>
+            <TourProvider>
+              <AppShell>{children}</AppShell>
+            </TourProvider>
           </ThemeProvider>
         </StoreProvider>
       </body>

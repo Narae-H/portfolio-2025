@@ -45,7 +45,9 @@ export function SidebarContent({
   };
 
   return (
-    <div className={`
+    <div
+      data-tour="sidebar"
+      className={`
       relative flex flex-col shrink-0
       h-full min-h-0
       bg-sidebar-bg text-list-header-text

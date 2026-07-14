@@ -26,11 +26,13 @@ export default function TabsPanel({
   onSelectTab 
 }: TabsProps) {
   return (
-    <div className={`
+    <div
+      data-tour="tabs"
+      className={`
       flex flex-1 flex-col basis-0
       min-w-0 h-min-0 h-full
       bg-tabs-panel-bg
-      text-tabs-tab-text 
+      text-tabs-tab-text
       ${className}
     `}>
       <TabsHeader 
