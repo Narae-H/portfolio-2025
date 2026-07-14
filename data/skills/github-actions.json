@@ -1,0 +1,12 @@
+{
+  "title": "GitHub Actions",
+  "titleIconName": "SiGithubactions",
+  "subTitle": "CI/CD with OIDC, quality gates, and safe deploys",
+  "overviewContent": "I build automated build/test/deploy pipelines with GitHub Actions across independently deployed services. I authenticate to AWS via OIDC (no long-lived keys), factor common logic into reusable workflows, enforce CI quality gates (build, tests, linting) before merge, and add circuit-breaker style safeguards so a bad deploy halts rather than rolling out.",
+  "relatedProjects": [
+    {
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    }
+  ]
+}

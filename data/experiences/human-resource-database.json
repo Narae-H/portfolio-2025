@@ -4,7 +4,7 @@
   "subTitle": "Centralised HR management and system integration",
   "overviewContent": "Designed and implemented a centralised human resource database to consolidate employee information and performance data, replacing fragmented Excel-based tracking. This solution improves data reliability, enables efficient updates across internal systems, and lays the foundation for integrating with external systems such as ActionStep, Xero, and Adobe. By establishing a single source of truth, essential employee data is centrally managed while still allowing targeted updates where necessary, improving overall HR operations and reporting.",
   "position": "Full Stack Engineer",
-  "period": "5 months (Dec 2023 - Apr 2024)",
+  "period": "5 months (Dec 2023 – Apr 2024)",
   "details": {
     "skillIds": [
       "azuredb",

@@ -1,11 +1,15 @@
 {
-  "title" : "Tailwind CSS",
+  "title": "Tailwind CSS",
   "titleIconName": "SiTailwindcss",
-  "subTitle": "Rapid, maintainable styling for modern web applications",
-  "overviewContent": "Tailwind CSS was used to apply utility-first styling directly within JSX, enabling rapid development of visually consistent and responsive interfaces. The approach allowed for fine-grained control over design without writing extensive custom CSS, improving maintainability and reducing style conflicts. Collaboration with designers was streamlined by using predefined classes and responsive variants, supporting consistent user experiences across devices.",
+  "subTitle": "Utility-first styling with a design-token system",
+  "overviewContent": "I style modern interfaces with Tailwind CSS (v4, CSS-first), applying utility classes directly in JSX for rapid, consistent and responsive UIs. I lean on design tokens and semantic theme variables — used in this portfolio to drive the VS Code light and dark themes — which keeps styling maintainable, reduces style conflicts, and makes collaborating with designers straightforward.",
   "relatedProjects": [
     {
-      "projectName": "Portfolio",
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "Narae's Portfolio",
       "projectLink": "/experiences/australia/portfolio"
     }
   ]

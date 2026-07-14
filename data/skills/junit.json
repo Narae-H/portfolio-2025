@@ -1,0 +1,16 @@
+{
+  "title": "JUnit",
+  "titleIconName": "SiJunit5",
+  "subTitle": "Structured backend testing with tagged suites",
+  "overviewContent": "I use JUnit to test Spring Boot backends at both the unit and integration level, wiring tests into CI quality gates so regressions are caught before merge. I organise suites with @Tag-based grouping (for example separating fast, slow, and manual tests) so the pipeline runs the right subset at the right stage, keeping feedback fast while still covering critical paths.",
+  "relatedProjects": [
+    {
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "Employee Capacity Report",
+      "projectLink": "/experiences/australia/employeecapacityreport"
+    }
+  ]
+}

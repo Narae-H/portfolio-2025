@@ -1,0 +1,16 @@
+{
+  "title": "AI-Native Engineering",
+  "titleIconName": "FaRobot",
+  "subTitle": "Agent-first development with guardrails, reviews, and verification loops",
+  "overviewContent": "Over the past year I've reshaped how I build software around AI: agents handle the first pass while I focus on decomposing the problem, designing the structure, and verifying the result — because AI used loosely falls apart at scale. I run Claude Code with SDLC-aligned sub-agents (requirements → design → implementation → review → testing), reusable skill modules, slash commands, and hook gates, each agent loading only the context its role needs, with specs decomposed from GitHub Issues as the single source of truth. I hold the quality bar with a two-layer safety model: deterministic gates (build/test hooks) block failing merges, and disciplined human review catches code that builds but is logically wrong, with every correction fed back into CLAUDE.md / skill files as a sharpened guardrail so the system gets more reliable with use. I also work with Cursor and MCP, treat strong typing as an agent-output contract, and am exploring RAG.",
+  "relatedProjects": [
+    {
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "GroundedDoc — AI Document Q&A",
+      "projectLink": "/experiences/australia/groundeddoc"
+    }
+  ]
+}

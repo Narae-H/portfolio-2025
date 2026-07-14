@@ -1,34 +1,42 @@
+import ainativeengineering from './ai-native-engineering.json';
+
 import java from './java.json';
 import springboot from './spring-boot.json';
+
 import html from './html.json';
 import css from './css.json';
 import tailwindcss from './tailwindcss.json';
 import javascript from './javascript.json';
 import typescript from './typescript.json';
 import react from './react.json';
+import nextjs from './nextjs.json';
 import bootstrap from './bootstrap.json';
 import thymeleaf from './thymeleaf.json';
 
+import junit from './junit.json';
+import playwright from './playwright.json';
+
 import mysql from './mysql.json';
 import mariadb from './maria-db.json';
-import azuredatabase from './azure-db.json';
+import mssql from './mssql.json';
+import oracle from './oracle.json';
 
 import aws from './aws.json';
-import microsoft from './microsoft.json';
+import docker from './docker.json';
+import githubactions from './github-actions.json';
 
 import codeversioncontrol from './code-version-control.json';
-import cicdpipeline from './cicdpipeline.json';
 import seo from './seo.json';
-import msofficeapp from './ms-office-app.json';
-import mspowerplatform from './ms-power-platform.json';
 
 const skillDataMap = {
+  ainativeengineering,
   java, springboot,
-  html, css, tailwindcss, javascript, typescript, 
-  react, bootstrap, thymeleaf,
-  mysql, mariadb, azuredatabase,
-  aws, microsoft,
-  codeversioncontrol, cicdpipeline, seo, msofficeapp, mspowerplatform
+  html, css, tailwindcss, javascript, typescript,
+  react, nextjs, bootstrap, thymeleaf,
+  junit, playwright,
+  mysql, mariadb, mssql, oracle,
+  aws, docker, githubactions,
+  codeversioncontrol, seo
 };
 
 export default skillDataMap;

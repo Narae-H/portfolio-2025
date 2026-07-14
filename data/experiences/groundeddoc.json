@@ -1,0 +1,31 @@
+{
+  "title" : "GroundedDoc — AI Document Q&A",
+  "titleIconName": "MdOutlineContentPasteSearch",
+  "subTitle": "Construction-document Q&A with grounded, cited answers (in progress)",
+  "overviewContent": "GroundedDoc is a construction-industry document Q&A app: upload a construction document (an EBA, subcontract, or award), ask questions in plain language, and get answers in plain English — each one backed by a citation to the exact passage it relied on, so every claim can be verified against the source. The product is built AI-first with Claude Code and Cursor in the loop. Stack: Next.js 16 (App Router, Server Actions, RSC), React 19.2, TypeScript (strict), the Vercel AI SDK for structured output and streaming, the Anthropic Claude API, and Supabase (Postgres, Auth, and Storage), deployed on Vercel. This project is in progress.",
+  "position": "Personal Project",
+  "period": "Jun 2026 – Present (in progress)",
+  "links": {
+    "github": "https://github.com/Narae-H/groundeddoc-ai",
+    "demo": "https://groundeddoc-ai.vercel.app/login"
+  },
+  "details": {
+    "skillIds": [
+      "claudecode",
+      "cursor",
+      "claudeApi",
+      "nextjs",
+      "react",
+      "typescript",
+      "supabase"
+    ],
+    "jd": [
+      "Lets users upload a construction document (an EBA, subcontract, or award) and ask questions about it in plain language.",
+      "Grounds every answer in the source — responses cite the exact passage relied on, so each claim can be verified against the document.",
+      "Wires the Anthropic Claude API in through the Vercel AI SDK (structured output and streaming) rather than raw fetch calls.",
+      "Uses Supabase for Postgres data, Auth (single-user login to protect API credits), and Storage for the original uploaded files, with environment variables validated at boot so misconfiguration fails fast.",
+      "Built AI-first with Claude Code and Cursor, with an SDLC-oriented agent setup in the repository (CLAUDE.md, AGENTS.md, DESIGN.md).",
+      "Deployed on Vercel with CI/CD. Project in progress."
+    ]
+  }
+}

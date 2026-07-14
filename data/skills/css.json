@@ -1,8 +1,8 @@
 {
-  "title" : "CSS",
+  "title": "CSS",
   "titleIconName": "FaCss3Alt",
   "subTitle": "Creating responsive, performant, and maintainable designs with CSS3",
-  "overviewContent": "Expertly craft responsive user interfaces using CSS3, leveraging media queries to ensure layouts adapt seamlessly across desktop, tablet, and mobile devices. Applied advanced layout techniques including flexbox and grid, while optimising styles for performance and maintainability. Collaborated closely with designers and front-end developers to translate visual concepts into functional, visually coherent web applications. Emphasised modular, reusable CSS and adhered to best practices to support long-term project scalability and high-quality user experience.",
+  "overviewContent": "I craft responsive user interfaces with CSS3, using media queries so layouts adapt seamlessly across desktop, tablet, and mobile devices. I apply advanced layout techniques including flexbox and grid while optimising styles for performance and maintainability. I work closely with designers and front-end developers to translate visual concepts into functional, visually coherent applications, and I favour modular, reusable CSS and best practices to support long-term scalability and a high-quality user experience.",
   "relatedProjects": [
     {
       "projectName": "My Muscle Chef Clone",
@@ -21,11 +21,11 @@
       "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     },
     {
-      "projectName": "Samsung Tooling Management System",
+      "projectName": "Samsung Tooling Management System (STMS)",
       "projectLink": "/experiences/korea/stmsmanagement"
     },
     {
@@ -41,11 +41,11 @@
       "projectLink": "/experiences/korea/mpis"
     },
     {
-      "projectName": "Mobis Patent System in Hyundai Mobis",
+      "projectName": "Patent System in Hyundai Mobis",
       "projectLink": "/experiences/korea/mpasys"
     },
     {
-      "projectName": "PoC –PLM in Dassault Systèmes",
+      "projectName": "PoC – PLM in Dassault Systèmes",
       "projectLink": "/experiences/korea/poc"
     },
     {

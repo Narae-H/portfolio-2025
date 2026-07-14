@@ -5,9 +5,6 @@
   "overviewContent": "Developed a professional-grade platform that streamlines trademark registration for clients, reducing time and costs for both clients and lawyers. The system enables clients to submit only essential information, which is then reviewed by patent lawyers before submission, ensuring accuracy and efficiency. Additionally, the platform provides a simplified patent search page by integrating the Australia Trademark API, improving accessibility and user experience for clients.",
   "position": "Full Stack Java Developer",
   "period": "12 months (Oct 2021 – Sep 2022)",
-  "links": {
-    "demo": "https://oneclicktrademark.com.au/"
-  },
   "details": {
     "skillIds": [
         "java",

@@ -1,8 +1,8 @@
 {
-  "title" : "Bootstrap",
+  "title": "Bootstrap",
   "titleIconName": "RiBootstrapLine",
   "subTitle": "Rapid front-end development with design consistency",
-  "overviewContent": "Bootstrap has been leveraged to efficiently develop responsive web applications across multiple projects, particularly when rapid development was needed or design intervention was minimal. Pre-built components and the flexible grid system allowed consistent layouts, while predefined media queries ensured smooth adaptation across desktop, tablet, and mobile screens. Customising Bootstrap themes enabled alignment with project-specific requirements, resulting in interfaces that were both functional and visually coherent.",
+  "overviewContent": "I use Bootstrap to efficiently develop responsive web applications, particularly when I need rapid development or minimal design intervention. I rely on its pre-built components and flexible grid system for consistent layouts, and its predefined media queries for smooth adaptation across desktop, tablet, and mobile screens. I customise Bootstrap themes to align with project-specific requirements, producing interfaces that are both functional and visually coherent.",
   "relatedProjects": [
     {
       "projectName": "H & H Lawyers Intranet",
@@ -13,7 +13,7 @@
       "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]

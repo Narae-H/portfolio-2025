@@ -1,8 +1,8 @@
 {
-  "title" : "JavaScript",
+  "title": "JavaScript",
   "titleIconName": "SiJavascript",
   "subTitle": "Core language for dynamic web applications",
-  "overviewContent": "Proficient in core JavaScript, I apply in-depth knowledge of ES5 and ES6+ features to build efficient, maintainable, and scalable web applications. This solid foundation in vanilla JavaScript enables seamless integration with libraries and frameworks such as React, Next.js, and jQuery. facilitating the creation of complex, interactive user interfaces. I consistently optimise JavaScript code to ensure smooth performance across desktop, tablet, and mobile platforms, delivering high-quality, professional web experiences.",
+  "overviewContent": "I work fluently in core JavaScript, applying in-depth knowledge of ES5 and ES6+ features to build efficient, maintainable, and scalable web applications. This solid foundation in vanilla JavaScript lets me integrate seamlessly with libraries and frameworks such as React, Next.js, and jQuery, and create complex, interactive user interfaces. I consistently optimise my JavaScript to keep performance smooth across desktop, tablet, and mobile platforms, delivering high-quality, professional web experiences.",
   "relatedProjects": [
     {
       "projectName": "H & H Lawyers Intranet",
@@ -17,11 +17,11 @@
       "projectLink": "/experiences/australia/employeecapacityreport"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     },
     {
-      "projectName": "Samsung Tooling Management System",
+      "projectName": "Samsung Tooling Management System (STMS)",
       "projectLink": "/experiences/korea/stmsmanagement"
     },
     {
@@ -37,11 +37,11 @@
       "projectLink": "/experiences/korea/mpis"
     },
     {
-      "projectName": "Mobis Patent System in Hyundai Mobis",
+      "projectName": "Patent System in Hyundai Mobis",
       "projectLink": "/experiences/korea/mpasys"
     },
     {
-      "projectName": "PoC –PLM in Dassault Systèmes",
+      "projectName": "PoC – PLM in Dassault Systèmes",
       "projectLink": "/experiences/korea/poc"
     },
     {

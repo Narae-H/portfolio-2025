@@ -1,11 +1,15 @@
 {
-  "title" : "React",
+  "title": "React",
   "titleIconName": "FaReact",
   "subTitle": "Building modern, responsive SPAs",
-  "overviewContent": "Focusing on building responsive single-page applications (SPAs) with React, I manage state using hooks and apply best practices to ensure clean, maintainable code. My work includes performance optimisation such as lazy loading and code splitting to deliver smooth and efficient applications. While React is a relatively recent addition to my toolkit, I have actively applied it in portfolio projects and continue to expand my proficiency, emphasising reusable components, modular architecture, and scalable design patterns.",
+  "overviewContent": "I build responsive single-page applications with React, managing state with hooks and applying best practices for clean, maintainable code. My work includes performance optimisation such as lazy loading and code splitting to deliver smooth, efficient applications. I use React in production — including the H & H Lawyers rebuild and this portfolio — emphasising reusable components, modular architecture, and scalable design patterns.",
   "relatedProjects": [
     {
-      "projectName": "Portfolio",
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "Narae's Portfolio",
       "projectLink": "/experiences/australia/portfolio"
     },
     {

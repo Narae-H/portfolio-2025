@@ -1,0 +1,53 @@
+{
+  "title" : "H & H Lawyers Website Rebuild",
+  "titleIconName": "CgBrowser",
+  "subTitle": "Full rebuild of a four-language law-firm platform, agent-first",
+  "overviewContent": "Rebuilt H & H Lawyers' website end-to-end and shipped it to production, coordinating external designers and developers. Because this was a full rebrand, I also acted as product manager through the design phase — roughly six months to align external designers and finalise the new design, followed by six months of development. The platform is a four-language (English, Korean, Japanese, Chinese) law-firm site backed by a multi-module Spring Boot backend and a React/Next.js frontend, running on AWS. I drove the build agent-first with a reusable AI pipeline embedded in the repository, and held a two-layer safety model so agent output only shipped once it passed both deterministic gates and human review.",
+  "position": "Full-Stack Engineer & PM",
+  "period": "Jul 2025 – Jul 2026 (12 months, launched Jul 2026)",
+  "links": {
+    "demo": "https://hhlaw.com.au"
+  },
+  "details": {
+    "skillIds": [
+      "claudecode",
+      "cursor",
+      "mcp",
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwindcss",
+      "nextintl",
+      "java",
+      "springboot",
+      "gradle",
+      "querydsl",
+      "springdoc",
+      "junit",
+      "playwright",
+      "docker",
+      "githubActions",
+      "awsEcs",
+      "awsEcr",
+      "awsLb",
+      "awsRds",
+      "awsS3",
+      "awsCloudfront",
+      "awsRoute53",
+      "awsCognito",
+      "awsSecretsManager"
+    ],
+    "jd": [
+      "Rebuilt the firm's website end-to-end, coordinating external designers and developers and owning product, backend, frontend, and AWS infrastructure.",
+      "Acted as product manager through a six-month design phase of a full rebrand — aligning external designers on direction and finalising the design before roughly six months of development.",
+      "Built a React/Next.js/TypeScript frontend with Tailwind CSS and four-language support (English, Korean, Japanese, Chinese).",
+      "Architected a multi-module Spring Boot backend (Java 17, Gradle) with strict module boundaries and independently deployed domain API services, using QueryDSL for type-safe queries and springdoc/Swagger for API documentation.",
+      "Integrated third-party services including IP Australia and Microsoft Graph through RESTful APIs.",
+      "Deployed on AWS: containerised services on ECS Fargate (images in ECR) behind an Application Load Balancer, with RDS, S3 + CloudFront CDN, Route 53/ACM, Cognito (Azure AD SSO), Secrets Manager, and CloudWatch.",
+      "Set up CI/CD with GitHub Actions authenticating via OIDC (no long-lived keys), reusable workflows, CI quality gates, and Core Web Vitals / Lighthouse checks.",
+      "Drove development agent-first: SDLC-aligned Claude Code sub-agents (requirements → design → implementation → review → testing), skill modules, slash commands, and hook gates, with specs decomposed from GitHub Issues as the single source of truth.",
+      "Held a two-layer safety model — deterministic gates (build/test hooks) plus disciplined human review — so agent output shipped only once it passed both, feeding every correction back into CLAUDE.md / skill files as a sharpened guardrail.",
+      "Worked with non-technical stakeholders to turn requirements into shipped features, and reviewed external developers' code and designers' UI to keep quality consistent."
+    ]
+  }
+}
