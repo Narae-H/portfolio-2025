@@ -9,6 +9,7 @@ export default function WorkspaceHeader ({ contentData }: { contentData: SkillDa
       bg-tabs-content-bg
       z-10
       gap-8
+      lg:shrink-0
     '>
       <div className='flex flex-col gap-1'>
         <div className="flex flex-row gap-3">

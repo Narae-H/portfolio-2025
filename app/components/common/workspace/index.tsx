@@ -27,16 +27,11 @@ export default function Workspace({
   }
 
   return (
-    <div className='flex h-full lg:h-auto w-full m-10 lg:m-24'>
-      <div className="
-        flex flex-col 
-        relative 
-        h-full lg:h-auto w-full 
-        lg:justify-between
-        ">
+    <div className='flex w-full p-10 lg:px-24 lg:pt-24 lg:pb-6 lg:h-full'>
+      <div className="flex flex-col relative w-full lg:h-full lg:min-h-0">
         <WorkspaceHeader contentData={contentData}/>
         <WorkspaceContent menuCategory={menuCategory} contentData={contentData}/>
-      </div>  
+      </div>
     </div>
   );
 }

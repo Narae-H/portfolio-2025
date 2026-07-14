@@ -15,9 +15,9 @@ function classNames(...classes: string[]) {
 
 export default function WorkspaceContent({ contentData, menuCategory }: WorkspaceContentProps) {
   return (
-    <div className="flex relative">
-      <TabGroup className="w-full h-full py-10">
-        <TabList className="flex space-x-4 border-b border-tabs-tab-border">
+    <div className="flex flex-col relative w-full lg:flex-1 lg:min-h-0">
+      <TabGroup className="flex flex-col w-full pt-10 lg:h-full lg:min-h-0">
+        <TabList className="flex space-x-4 border-b border-tabs-tab-border shrink-0">
           <Tab
             className={({ selected }) =>
               classNames(

@@ -1,24 +1,25 @@
 import { MdKeyboardArrowUp } from "react-icons/md";
 
 type Props = {
-  onClick: () => void
+  onClick: () => void;
+  className?: string;
 }
-export default function ScrollToTopButton ({onClick}: Props) {
+
+export default function ScrollToTopButton ({ onClick, className = "fixed bottom-14 right-10" }: Props) {
   return (
     <div
-      onClick={onClick} 
-      className="
+      onClick={onClick}
+      className={`
         flex
-        fixed
         bg-go-to-top-bg
         rounded-[20px]
-        bottom-14 right-10
         p-1
         cursor-pointer
         opacity-50
         z-999
         hover:opacity-60
-      "
+        ${className}
+      `}
     >
       <MdKeyboardArrowUp color="#ffffff" size="32px" />
     </div>
