@@ -76,27 +76,32 @@ export default function TabsHeader({
               ref={(el) => { tabRefs.current[tab.id] = el; }}
               className={`
                 inline-flex
-                h-[39px] 
+                h-[39px]
                 px-1
-                items-center 
+                items-center
                 select-none
-                border-1 border-l-transparent border-r-tabs-tab-border border-b-tabs-tab-border border-t-transparent hover:bg-tabs-tab-hover-bg 
+                border-1 border-l-transparent border-r-tabs-tab-border border-b-tabs-tab-border border-t-transparent hover:bg-tabs-tab-hover-bg
                 ${isActive ? "bg-tabs-tab-active-bg !border-t-tabs-tab-active-border !border-b-tabs-tab-active-bg" : "border-t-1 border-transparent"}
               `}
-              onClick={() => handleTabClick(tab.categoryId ?? '', tab.id)}
             >
-              <Link href={tab.link ?? ''} className="flex items-center gap-2 px-4 h-full cursor-pointer">
+              <Link
+                href={tab.link ?? ''}
+                onClick={() => handleTabClick(tab.categoryId ?? '', tab.id)}
+                className="flex items-center gap-2 px-4 h-full cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-tabs-tab-active-border"
+              >
                 {tab.iconKey && <Icon name={tab.iconKey} {...tab.style} />}
                 <div>{tab.title}</div>
               </Link>
 
               <button
+                type="button"
+                aria-label={`Close ${tab.title} tab`}
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
                   handleCloseTab(tab.id);
                 }}
-                className="p-2 text-gray-400 focus:outline-none cursor-pointer rounded-md hover:bg-tabs-tab-hover-text"
+                className="p-2 text-gray-400 outline-none focus-visible:ring-2 focus-visible:ring-tabs-tab-active-border cursor-pointer rounded-md hover:bg-tabs-tab-hover-text"
               >
                 <VscChromeClose />
               </button>

@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { DEFAULT_THEME, THEME_KEY } from "@/models/theme";
+import { SITE_URL } from "@/constants/constants";
 import AppShell from "@/app/components/layout/AppShell";
 import { ThemeProvider } from "@/app/components/theme/ThemeProvider";
 import StoreProvider from "./StoreProvider";
 import "./globals.css";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+const siteUrl = SITE_URL;
 
 const description =
   "Full-stack software engineer. A VS Code-themed portfolio showcasing projects across web, cloud, and AI-native engineering.";
