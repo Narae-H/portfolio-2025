@@ -3,7 +3,16 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import visitedTabsReducer from '@/redux/features/visitedTabsReducer'
 import selectedTabReducer from '@/redux/features/selectedTabReducer'
 import storage from 'redux-persist/lib/storage'
-import { persistReducer, persistStore } from 'redux-persist'
+import {
+  persistReducer,
+  persistStore,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist'
 
 const rootReducer = combineReducers({
   visitedTabs: visitedTabsReducer,
@@ -22,7 +31,9 @@ export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false,
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
     }),
 })
 

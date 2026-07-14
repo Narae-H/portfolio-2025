@@ -1,32 +1,59 @@
-'use client'
-import Activitybar from "@/app/components/layout/activitybar/Activitybar";
-import Footer from "@/app/components/layout/footer/Footer";
-import Header from "@/app/components/layout/header/Header";
-import { useDeviceDetection } from "@/lib/hooks/useDeviceDetection";
-import { useTheme } from "@/lib/hooks/useTheme";
-import "./globals.css";
+import type { Metadata } from "next";
+import { DEFAULT_THEME, THEME_KEY } from "@/models/theme";
+import AppShell from "@/app/components/layout/AppShell";
+import { ThemeProvider } from "@/app/components/theme/ThemeProvider";
 import StoreProvider from "./StoreProvider";
+import "./globals.css";
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
+const description =
+  "Full-stack software engineer. A VS Code-themed portfolio showcasing projects across web, cloud, and AI-native engineering.";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Narae Hyeon — Portfolio",
+    template: "%s | Narae Hyeon",
+  },
+  description,
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Narae Hyeon — Portfolio",
+    title: "Narae Hyeon — Portfolio",
+    description,
+    locale: "en_US",
+  },
+};
+
+// Runs before hydration so the saved theme is applied to <html> with no flash of the wrong theme.
+const themeInitScript = `(function(){try{var t=localStorage.getItem(${JSON.stringify(
+  THEME_KEY
+)})||${JSON.stringify(
+  DEFAULT_THEME
+)};document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { theme } = useTheme();
-  const { isMobile } = useDeviceDetection();
-  
   return (
-    <html lang="en" data-theme={theme}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-screen flex flex-col min-w-[360px]">
         <StoreProvider>
-          <Header className="flex h-14 flex-shrink-0"/>
-
-          <div className="flex flex-1 min-w-0 min-h-0 h-full basis-0 overflow-hidden">
-            {!isMobile && <Activitybar className="flex w-18 h-auto"/> }
-            {children}
-          </div>
-          
-          <Footer className="flex h-[25px] flex-shrink-0"/>
+          <ThemeProvider>
+            <AppShell>{children}</AppShell>
+          </ThemeProvider>
         </StoreProvider>
       </body>
     </html>

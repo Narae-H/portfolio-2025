@@ -1,4 +1,4 @@
-import { useTheme } from "@/lib/hooks/useTheme";
+import { useTheme } from "@/app/components/theme/ThemeProvider";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 export default function ThemeButton() {
