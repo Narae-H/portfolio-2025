@@ -26,11 +26,5 @@
       "Conducted unit and integration testing to ensure accuracy and reliability of the reports.",
       "Documented technical design and deployment processes for maintainability and team reference."
     ]
-  },
-  "imgs": [
-    {
-      "desc" : "Email Template"
-      , "url" : "/images/experiences/employee-capacity-report.png" 
-    }
-  ]
+  }
 }

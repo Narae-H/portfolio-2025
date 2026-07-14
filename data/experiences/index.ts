@@ -43,7 +43,6 @@ export type ExperiencesData = {
   period: string;
   links?: {github?: string, demo?: string};
   details: Details;
-  imgs?: {desc: string, url: string}[];
 };
 
 export type ExperiencesId = keyof typeof experiencesDataMap;

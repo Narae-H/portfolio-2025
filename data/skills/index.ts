@@ -44,7 +44,6 @@ export type SkillData = {
   subTitle: string;
   overviewContent: string;
   relatedProjects: RelatedProject[];
-  imgs?: [{desc: string, url: string}]
 };
 
 export type SkillId = keyof typeof skillDataMap;

@@ -36,11 +36,5 @@
       "Participated in all phases of SDLC, collaborating closely with stakeholders, designers, and cross-functional teams to deliver the project on time and within scope.",
       "Conducted unit, integration, and performance testing to ensure reliability, responsiveness, and cross-region accessibility, significantly improving user experience and operational efficiency."
     ]
-  },
-  "imgs": [
-    {
-      "desc" : "Main page"
-      , "url" : "/images/experiences/hhlawyers-website.png" 
-    }
-  ]
+  }
 }

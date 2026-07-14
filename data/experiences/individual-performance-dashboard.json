@@ -24,17 +24,7 @@
       "Conducted unit and integration testing to ensure reliability and accuracy of the dashboard.",
       "Wrote technical documentation and end-user manuals for maintainability and training."
     ]
-  },
-  "imgs": [
-    {
-      "desc" : "Main page"
-      , "url" : "/images/experiences/individual-performance-dashboard1.png" 
-    },
-    {
-      "desc" : "Average hours"
-      , "url" : "/images/experiences/individual-performance-dashboard2.png" 
-    }
-  ]
+  }
 }
 
 

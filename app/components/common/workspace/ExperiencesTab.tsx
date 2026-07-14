@@ -5,7 +5,6 @@ import ScrollableTabPanel from "@/app/components/common/workspace/ScrollableTabP
 import TabPanelContent from "@/app/components/common/workspace/TabPanelContent";
 import { BADEGE_BASE_URL } from "@/constants/constants";
 import Badge from "@/app/components/common/Badge";
-import { TabPanel } from "@headlessui/react";
 
 type ExperiencesTabProps = {
   contentData: ExperiencesData;
@@ -78,21 +77,6 @@ export default function ExperiencesTab({ contentData }: ExperiencesTabProps) {
             ))}
           </ul>
         </div>
-      </TabPanelContent>
-
-      <TabPanelContent title="imgs">
-      {contentData.imgs && (
-        <TabPanel className="p-2">
-          <ul className="flex flex-row list-disc pl-12 space-y-4 whitespace-nowrap gap-8">
-            {contentData.imgs.map((img, idx) => (
-              <li key={idx}>
-                <span>{img.desc}</span>
-                <img src={img.url} className="w-xl" />
-              </li>
-            ))}
-          </ul>
-        </TabPanel>
-      )}
       </TabPanelContent>
     </ScrollableTabPanel>
   );
