@@ -79,7 +79,7 @@ export function ExperiencesTabs() {
       title: "Welcome",
       iconKey: "VscCode",
       style: { size: "13px" },
-      link: "/skills",
+      link: "/experiences",
       content: <WelcomeContent contentMenu={experienceMenu} />,
     },
     ...foundItems.map((item) => ({
