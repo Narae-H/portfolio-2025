@@ -26,11 +26,6 @@ export default function SkillsTab({ contentData }: SkillsTabProps) {
           ))}
         </ul>
       </TabPanel>
-
-      <TabPanel className="p-2">
-        <h3 className="m-4 font-semibold text-2xl">Images</h3>
-        <p className="pl-4 space-y-4">No images available yet.</p>
-      </TabPanel>
     </ScrollableTabPanel>
   );
 }

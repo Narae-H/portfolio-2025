@@ -1,8 +1,8 @@
 {
-  "title" : "MariaDB",
+  "title": "MariaDB",
   "titleIconName": "SiMariadb",
   "subTitle": "Designing and maintaining efficient relational databases",
-  "overviewContent": "MariaDB has been used to design, set up, and maintain relational databases supporting web-based applications. Work includes writing and optimising SQL queries, creating stored procedures, and structuring data for efficient integration with MVC-based backend systems. Database design was tailored to support application performance, reliability, and maintainability. Collaboration with development teams ensured seamless data flow and smooth system functionality across multiple projects, from dashboards to intranet systems.",
+  "overviewContent": "I use MariaDB to design, set up, and maintain relational databases that support web applications. My work includes writing and optimising SQL queries, creating stored procedures, and structuring data for efficient integration with MVC-based backends. I design databases for performance, reliability, and maintainability, and work with development teams to ensure smooth data flow across projects, from dashboards to intranet systems.",
   "relatedProjects": [
     {
       "projectName": "Employee Capacity Report",
@@ -29,7 +29,7 @@
       "projectLink": "/experiences/australia/individualperformancedashboard"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]

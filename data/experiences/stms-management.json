@@ -1,10 +1,10 @@
 {
-  "title" : "Samsung Tooling Management System Management at Samsung",
+  "title" : "Samsung Tooling Management System (STMS)",
   "titleIconName": "TbCircleLetterSFilled",
   "subTitle": "Supporting the management of tooling scheduling system",
   "overviewContent": "Supported the management of the STMS (Samsung Tooling Management System) used for scheduling and coordinating mould usage in Samsung factories. Assisted in maintaining system efficiency and ensuring optimal utilisation of tooling resources.",
   "position": "Full Stack Developer",
-  "period": "12 months (Jun 2018 - Dec 2018)",
+  "period": "12 months (Jun 2018 – Dec 2018)",
   "details": {
     "skillIds": [
       "java",

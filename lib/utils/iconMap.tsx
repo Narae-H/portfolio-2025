@@ -4,7 +4,7 @@ import { BiLeaf, BiLogoTypescript } from "react-icons/bi";
 import { BsServer } from "react-icons/bs";
 import { CgBrowser } from "react-icons/cg";
 import { FaBalanceScaleLeft, FaStamp } from "react-icons/fa";
-import { FaAws, FaCar, FaContao, FaCss3Alt, FaDocker, FaGithub, FaHashtag, FaJ, FaJava, FaMaxcdn, FaMicrosoft, FaMoneyBills, FaPersonRays, FaPersonWalking, FaReact, FaS } from "react-icons/fa6";
+import { FaAws, FaCar, FaContao, FaCss3Alt, FaDocker, FaGithub, FaHashtag, FaJ, FaJava, FaMaxcdn, FaMicrosoft, FaMoneyBills, FaPersonRays, FaPersonWalking, FaReact, FaRobot, FaS } from "react-icons/fa6";
 import { GiClick, GiCycle, GiMuscleUp } from "react-icons/gi";
 import { GrMysql } from "react-icons/gr";
 import { ImOnedrive } from "react-icons/im";
@@ -14,9 +14,9 @@ import { LuConstruction } from "react-icons/lu";
 import { MdCode, MdOutlineContentPasteSearch, MdOutlineManageHistory, MdOutlineReduceCapacity } from "react-icons/md";
 import { PiTrafficSignalFill } from "react-icons/pi";
 import { RiBootstrapLine } from "react-icons/ri";
-import { SiJavascript, SiMariadb, SiSpringboot, SiTailwindcss, SiThymeleaf } from "react-icons/si";
+import { SiGithubactions, SiJavascript, SiJunit5, SiMariadb, SiNextdotjs, SiOracle, SiSpringboot, SiTailwindcss, SiThymeleaf } from "react-icons/si";
 import { SlPeople } from "react-icons/sl";
-import { TbBrandMysql, TbBrandSamsungpass, TbCircleLetterPFilled, TbCircleLetterSFilled } from "react-icons/tb";
+import { TbBrandMysql, TbBrandSamsungpass, TbCircleLetterPFilled, TbCircleLetterSFilled, TbMasksTheater } from "react-icons/tb";
 import { TiVendorMicrosoft } from "react-icons/ti";
 import { VscAzure, VscCode, VscFiles, VscFolderLibrary } from "react-icons/vsc";
 
@@ -78,5 +78,11 @@ export const IconMap: IconMapType = {
   TbCircleLetterSFilled,
   FaStamp,
   BiLogoTypescript,
-  SiTailwindcss
+  SiTailwindcss,
+  FaRobot,
+  SiNextdotjs,
+  SiJunit5,
+  TbMasksTheater,
+  SiGithubactions,
+  SiOracle
 };

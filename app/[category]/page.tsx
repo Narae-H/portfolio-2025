@@ -2,19 +2,17 @@ import { Metadata } from "next";
 
 import MainContent from "@/app/components/main/MainContent";
 import Sidebar from "@/app/components/main/Sidebar";
-
-export const metadata: Metadata = {
-  title: "Narae's Portfolio",
-  description: "My portfolio site",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+import { toTitleCase } from "@/lib/utils/text";
 
 type PageProps = {
   params: Promise<{category: string}>;
   searchParams: Promise<Record<string, string>>;
 };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { category } = await params;
+  return { title: toTitleCase(category) };
+}
 
 export default async function Page({ params }: PageProps) {
   const { category } = await params;

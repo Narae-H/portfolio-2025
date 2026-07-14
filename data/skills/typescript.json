@@ -1,12 +1,24 @@
 {
-  "title" : "TypeScript",
+  "title": "TypeScript",
   "titleIconName": "BiLogoTypescript",
-  "subTitle": "Enhancing code reliability with typed JavaScript",
-  "overviewContent": "TypeScript was employed to improve code reliability by reducing type-related errors commonly encountered in JavaScript. Strong typing enabled early detection of potential issues, helping maintain cleaner and more maintainable code. Familiarity with JavaScript and other typed languages facilitated rapid adoption of TypeScript, allowing effective integration into existing projects and contributing to more predictable, robust application behaviour.",
+  "subTitle": "Typed frontend and a contract for agent output",
+  "overviewContent": "TypeScript is my default for frontend work, and I treat strong typing as a contract for AI-generated code — well-defined interfaces make agent output verifiable and surface mistakes at compile time rather than in production. I use it across the H & H Lawyers rebuild, this portfolio and GroundedDoc for type-safe components, API models and data flow, keeping large codebases predictable and maintainable.",
   "relatedProjects": [
     {
-      "projectName": "Portfolio",
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "Narae's Portfolio",
       "projectLink": "/experiences/australia/portfolio"
+    },
+    {
+      "projectName": "GroundedDoc — AI Document Q&A",
+      "projectLink": "/experiences/australia/groundeddoc"
+    },
+    {
+      "projectName": "My Muscle Chef Clone",
+      "projectLink": "/experiences/australia/mymusclechefclone"
     }
   ]
 }

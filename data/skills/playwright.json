@@ -1,0 +1,16 @@
+{
+  "title": "Playwright",
+  "titleIconName": "TbMasksTheater",
+  "subTitle": "End-to-end browser testing",
+  "overviewContent": "I use Playwright for end-to-end testing of critical user flows, running real browser scenarios across the application to catch integration and regression issues that unit tests miss. On the H & H Lawyers rebuild this covered key journeys across a four-language site, wired into the CI pipeline so broken flows block deployment.",
+  "relatedProjects": [
+    {
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "Narae's Portfolio",
+      "projectLink": "/experiences/australia/portfolio"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Microsoft SQL",
+  "titleIconName": "FaMicrosoft",
+  "subTitle": "Relational data for internal apps and dashboards",
+  "overviewContent": "I design, query, and maintain Microsoft SQL databases that back internal applications and reporting dashboards. This covers schema design, writing and optimising queries, integrating the database with other services, and monitoring performance to keep data reliable and maintainable across the enterprise.",
+  "relatedProjects": [
+    {
+      "projectName": "Human Resource Database",
+      "projectLink": "/experiences/australia/humanresourcedatabase"
+    },
+    {
+      "projectName": "Finance Overview Dashboard",
+      "projectLink": "/experiences/australia/financeoverviewdashboard"
+    },
+    {
+      "projectName": "Individual Performance Dashboard",
+      "projectLink": "/experiences/australia/individualperformancedashboard"
+    }
+  ]
+}

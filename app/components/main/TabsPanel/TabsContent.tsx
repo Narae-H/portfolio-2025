@@ -18,23 +18,18 @@ export default function TabsContent({
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const handleScrollToTop = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
+    scrollContainerRef.current?.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div 
+    <div
       ref={scrollContainerRef}
       className="
-        flex flex-1 basis-0
+        flex flex-col flex-1 basis-0
         min-h-0 h-full
         bg-tabs-content-bg
         overflow-y-auto
-        lg:overflow-y-hidden
+        lg:overflow-hidden
       "
     >
       {tabs.find((tab) => tab.id === selectedTab)?.content}

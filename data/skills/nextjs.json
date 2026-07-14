@@ -1,0 +1,24 @@
+{
+  "title": "Next.js",
+  "titleIconName": "SiNextdotjs",
+  "subTitle": "App Router SSR/CSR for SEO and performance",
+  "overviewContent": "I build production frontends with Next.js (App Router), balancing server-side rendering for SEO with client-side interactivity for a responsive UX. Across the H & H Lawyers website rebuild, this portfolio, and GroundedDoc I've used server components, route-level metadata, dynamic routing, and hybrid SSR/CSR data fetching, with a focus on clean, scalable folder structures and maintainable, type-safe components.",
+  "relatedProjects": [
+    {
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
+    {
+      "projectName": "Narae's Portfolio",
+      "projectLink": "/experiences/australia/portfolio"
+    },
+    {
+      "projectName": "GroundedDoc — AI Document Q&A",
+      "projectLink": "/experiences/australia/groundeddoc"
+    },
+    {
+      "projectName": "My Muscle Chef Clone",
+      "projectLink": "/experiences/australia/mymusclechefclone"
+    }
+  ]
+}

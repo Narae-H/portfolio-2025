@@ -1,8 +1,8 @@
 {
-  "title" : "Thymeleaf",
+  "title": "Thymeleaf",
   "titleIconName": "SiThymeleaf",
   "subTitle": "Dynamic server-side rendering for Spring-based applications",
-  "overviewContent": "Thymeleaf has been used to efficiently generate dynamic, server-side rendered web pages, integrating smoothly with back-end Spring logic. Templates were leveraged to handle forms, conditional content, and error messages, enabling maintainable and structured code. This approach enhanced SEO, improved page load performance, and strengthened security. By utilising Thymeleaf alongside Spring Boot, data from the server could be seamlessly rendered and reused across views, making front-end development faster and more consistent across multiple applications.",
+  "overviewContent": "I use Thymeleaf to generate dynamic, server-side rendered web pages that integrate smoothly with back-end Spring logic. I use templates to handle forms, conditional content, and error messages, keeping code maintainable and structured. This improves SEO, page-load performance, and security, and pairing Thymeleaf with Spring Boot lets me render server data seamlessly and reuse it across views, making front-end development faster and more consistent across applications.",
   "relatedProjects": [
     {
       "projectName": "Employee Capacity Report",
@@ -17,7 +17,7 @@
       "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]

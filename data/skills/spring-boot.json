@@ -1,12 +1,12 @@
 {
-  "title" : "Spring Boot",
+  "title": "Spring Boot",
   "titleIconName": "SiSpringboot",
-  "subTitle": "Building secure, high-performance back-end systems",
-  "overviewContent": "Developed enterprise-grade, microservices-based applications using Spring Boot, delivering scalable and maintainable solutions in production environments. Designed and implemented robust RESTful APIs for seamless integration with diverse front-end and third-party systems. Applied Spring Security to enforce advanced security measures, including role-based access control, OAuth2/JWT authentication, CORS, and CSRF protection, ensuring system resilience against threats. Optimised modular architecture and configuration management to streamline deployment pipelines and enhance operational efficiency.",
+  "subTitle": "Multi-module microservices and REST APIs",
+  "overviewContent": "I build multi-module Spring Boot backends (Gradle) with strict module boundaries and independently deployable microservices. I design RESTful APIs documented with springdoc/Swagger (OpenAPI), use QueryDSL for type-safe dynamic queries, and apply Spring Security for role-based access control, OAuth2/JWT authentication, CORS and CSRF protection. Modular architecture and clean configuration management keep deployment pipelines and operations efficient in production.",
   "relatedProjects": [
     {
-      "projectName": "Build CI/CD Pipeline",
-      "projectLink": "/experiences/australia/buildcicdpipeline"
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
     },
     {
       "projectName": "Employee Capacity Report",
@@ -21,7 +21,7 @@
       "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     }
   ]

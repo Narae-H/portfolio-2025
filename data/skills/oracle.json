@@ -1,0 +1,24 @@
+{
+  "title": "Oracle",
+  "titleIconName": "SiOracle",
+  "subTitle": "Enterprise SQL and stored procedures",
+  "overviewContent": "During my time at PNDPS I built and maintained Java/Oracle enterprise systems across the full SDLC, from relational database design through implementation and testing. I wrote and tuned complex SQL queries and stored procedures supporting mission-critical operations in the manufacturing sector.",
+  "relatedProjects": [
+    {
+      "projectName": "Product Lifecycle Management in Hyundai Mobis",
+      "projectLink": "/experiences/korea/productlifecyclmanagement"
+    },
+    {
+      "projectName": "Traffic Information System in Korea Expressway Corporation",
+      "projectLink": "/experiences/korea/trafficinformationsystem"
+    },
+    {
+      "projectName": "Patent System in Hyundai Mobis",
+      "projectLink": "/experiences/korea/mpasys"
+    },
+    {
+      "projectName": "System Management at Hyundai Mobis",
+      "projectLink": "/experiences/korea/systemmanagement"
+    }
+  ]
+}

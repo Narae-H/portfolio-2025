@@ -2,14 +2,14 @@
   "title": "Code Version Control & Collaboration",
   "titleIconName": "FaGithub",
   "subTitle": "Managing source code and team workflows with Git, SVN, and GitHub Projects",
-  "overviewContent": "Version control practices have been applied using Git and SVN to maintain code quality and enable seamless collaboration across teams. Branching strategies were established to support parallel feature development, while code reviews and conflict resolution processes were managed to ensure stability in shared repositories. GitHub Projects and issue tracking were adopted to align development tasks with project milestones, providing transparency and accountability within the team. Through disciplined source control and workflow management, large-scale applications were delivered with reduced integration risks and improved maintainability.",
+  "overviewContent": "I use Git and SVN to maintain code quality and enable smooth collaboration across teams. I establish branching strategies to support parallel feature development, and handle code reviews and conflict resolution to keep shared repositories stable. I use GitHub Projects and issue tracking to align tasks with project milestones for transparency and accountability. Through disciplined source control and workflow management, I deliver large-scale applications with reduced integration risk and improved maintainability.",
   "relatedProjects": [
     {
-      "projectName": "Portfolio",
+      "projectName": "Narae's Portfolio",
       "projectLink": "/experiences/australia/portfolio"
     },
     {
-      "projectName": "mymusclechefclone",
+      "projectName": "My Muscle Chef Clone",
       "projectLink": "/experiences/australia/mymusclechefclone"
     }
   ]

@@ -7,10 +7,10 @@
 
 # Introduction
 
-This project is a personal portfolio site built with `Next.js (React.js Framework) and TypeScript`, designed to showcase development skills and projects.
-It uses static export to enable deployment via GitHub Pages and emphasises clean, maintainable code structure and modern frontend best practices.
+This project is a personal portfolio site built with `Next.js (App Router) and TypeScript`, designed to showcase development skills and projects.
+It is styled as a VS Code workspace and deployed on Vercel, emphasising clean, maintainable code structure and modern frontend best practices.
 
-The main goal is to create a responsive, performant portfolio with well-organised code and automated deployment workflow.
+The main goal is to create a responsive, performant portfolio with well-organised code and an automated deployment workflow.
 
 <br/>
 
@@ -51,7 +51,7 @@ portfolio-2025
 │   └── 📄 PULL_REQUEST_TEMPLATE.md   
 │
 ├── 📁 app                             # Next.js App Router application structure
-│   ├── 📁 [cagetory]
+│   ├── 📁 [category]
 │   │    └── 📁 [subCategory]
 │   │         └── 📁 [tabId]
 │   ├── 📁 components                  # Reusable React components
@@ -74,8 +74,7 @@ portfolio-2025
 ├── 📁 models                          # Type definitions or interfaces 
 │
 ├── 📁 public                          # Static assets
-│   ├── 📁 fonts                       
-│   └── 📁 images                      
+│   └── 📁 fonts                       
 │
 ├── 📁 redux                           # State management
 │

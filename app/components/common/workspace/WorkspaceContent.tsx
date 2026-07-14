@@ -15,9 +15,9 @@ function classNames(...classes: string[]) {
 
 export default function WorkspaceContent({ contentData, menuCategory }: WorkspaceContentProps) {
   return (
-    <div className="flex relative">
-      <TabGroup className="w-full h-full py-10">
-        <TabList className="flex space-x-4 border-b border-tabs-tab-border">
+    <div className="flex flex-col relative w-full lg:flex-1 lg:min-h-0">
+      <TabGroup className="flex flex-col w-full pt-10 lg:h-full lg:min-h-0">
+        <TabList className="flex space-x-4 border-b border-tabs-tab-border shrink-0">
           <Tab
             className={({ selected }) =>
               classNames(
@@ -30,20 +30,6 @@ export default function WorkspaceContent({ contentData, menuCategory }: Workspac
           >
             {menuCategory === "skills" ? "Related Projects" : "DETAILS"}
           </Tab>
-          {"imgs" in contentData && contentData.imgs && (
-            <Tab
-              className={({ selected }) =>
-                classNames(
-                  "px-4 py-2 text-lg font-medium rounded-t-lg focus:outline-none cursor-pointer",
-                  selected
-                    ? "border-b-1 border-tabs-tab-active-border"
-                    : "border-b-1 border-transparent"
-                )
-              }
-            >
-              IMAGES
-            </Tab>
-          )}
         </TabList>
 
         {menuCategory === "skills" && <SkillsTab contentData={contentData as SkillData} />}

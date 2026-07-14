@@ -1,4 +1,5 @@
-import buildcicdpipeline from './build-ci-cd-pipeline.json';
+import hhlawyerswebsiterebuild from './h-h-lawyers-website-rebuild.json';
+import groundeddoc from './groundeddoc.json';
 import mymusclechefclone from './my-muscle-chef-clone.json';
 import portfolio from './portfolio.json';
 import financeoverviewdashboard from './finance-overview-dashboard.json';
@@ -20,7 +21,8 @@ import poc from './poc.json';
 import systemmanagement from './system-management.json';
 
 const experiencesDataMap = {
-  portfolio, mymusclechefclone, buildcicdpipeline, humanresourcedatabase,
+  hhlawyerswebsiterebuild, groundeddoc,
+  portfolio, mymusclechefclone, humanresourcedatabase,
   employeecapacityreport, hhlawyersintranet,
   oneclicktrademarkwebsite, financeoverviewdashboard, individualperformancedashboard,
   hhlawyerswebmigration, stmsmanagement, productlifecyclmanagement,
@@ -43,7 +45,6 @@ export type ExperiencesData = {
   period: string;
   links?: {github?: string, demo?: string};
   details: Details;
-  imgs?: {desc: string, url: string}[];
 };
 
 export type ExperiencesId = keyof typeof experiencesDataMap;

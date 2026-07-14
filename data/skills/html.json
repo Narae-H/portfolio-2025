@@ -1,8 +1,8 @@
 {
-  "title" : "HTML",
+  "title": "HTML",
   "titleIconName": "MdCode",
   "subTitle": "Structuring web applications with standards and SEO in mind",
-  "overviewContent": "Expertly structure web applications using HTML with careful attention to semantic elements, meta tags, and W3C standards to ensure accessibility, maintainability, and SEO optimisation. Applied HTML best practices to deliver responsive, high-performance pages while supporting front-end frameworks and collaborating with UI/UX designers. Focused on precise implementation of tags to improve search engine ranking and enhance user experience across devices.",
+  "overviewContent": "I structure web applications with HTML, paying careful attention to semantic elements, meta tags, and W3C standards for accessibility, maintainability, and SEO. I apply HTML best practices to deliver responsive, high-performance pages that support modern front-end frameworks, and I collaborate with UI/UX designers to implement markup precisely, improving search ranking and user experience across devices.",
   "relatedProjects": [
     {
       "projectName": "Employee Capacity Report",
@@ -17,11 +17,11 @@
       "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     },
     {
-      "projectName": "Samsung Tooling Management System Management at Samsung",
+      "projectName": "Samsung Tooling Management System (STMS)",
       "projectLink": "/experiences/korea/stmsmanagement"
     },
     {
@@ -37,11 +37,11 @@
       "projectLink": "/experiences/korea/mpis"
     },
     {
-      "projectName": "Mobis Patent System in Hyundai Mobis",
+      "projectName": "Patent System in Hyundai Mobis",
       "projectLink": "/experiences/korea/mpasys"
     },
     {
-      "projectName": "PoC –PLM in Dassault Systèmes",
+      "projectName": "PoC – PLM in Dassault Systèmes",
       "projectLink": "/experiences/korea/poc"
     },
     {

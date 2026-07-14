@@ -13,11 +13,13 @@ export default function Activitybar({className}: Props) {
   const { category } = useParams();
 
   return (
-    <div className={`
-      flex flex-col justify-between 
-      bg-activitybar-bg 
-      text-activitybar-text 
-      border-r-1 border-activitybar-border 
+    <div
+      data-tour="activitybar"
+      className={`
+      flex flex-col justify-between
+      bg-activitybar-bg
+      text-activitybar-text
+      border-r-1 border-activitybar-border
       ${className}`}
     >
       <div className="flex w-full flex-col">

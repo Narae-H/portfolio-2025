@@ -1,9 +1,13 @@
 {
-  "title" : "Java",
+  "title": "Java",
   "titleIconName": "FaJava",
   "subTitle": "Enterprise-Grade Back-End Development",
-  "overviewContent": "Over 8 years of professional experience leveraging Java to architect, develop, and maintain robust enterprise back-end systems. Skilled in applying object-oriented principles and design patterns to multi-tier architectures, integrating with complex third-party APIs, and optimising high-traffic, mission-critical applications. Adept at refactoring legacy systems for scalability and maintainability, ensuring long-term operational stability in corporate environments.",
+  "overviewContent": "I have over 8 years of professional experience using Java to architect, develop, and maintain robust enterprise back-end systems. I apply object-oriented principles and design patterns to multi-tier architectures, build multi-module projects with Gradle, integrate with complex third-party APIs, and optimise high-traffic, mission-critical applications. I'm comfortable refactoring legacy systems for scalability and maintainability, ensuring long-term operational stability in corporate environments.",
   "relatedProjects": [
+    {
+      "projectName": "H & H Lawyers Website Rebuild",
+      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+    },
     {
       "projectName": "Employee Capacity Report",
       "projectLink": "/experiences/australia/employeecapacityreport"
@@ -17,11 +21,11 @@
       "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
     },
     {
-      "projectName": "H & H Lawyers Website and Server Migration",
+      "projectName": "H & H Email & Server Migration",
       "projectLink": "/experiences/australia/hhlawyerswebmigration"
     },
     {
-      "projectName": "Project Lifecycle Management in Hyundai Mobis",
+      "projectName": "Product Lifecycle Management in Hyundai Mobis",
       "projectLink": "/experiences/korea/productlifecyclmanagement"
     },
     {
@@ -33,7 +37,7 @@
       "projectLink": "/experiences/korea/mpasys"
     },
     {
-      "projectName": "Samsung Tooling Management System Management",
+      "projectName": "Samsung Tooling Management System (STMS)",
       "projectLink": "/experiences/korea/stmsmanagement"
     },
     {
@@ -41,11 +45,7 @@
       "projectLink": "/experiences/korea/mpis"
     },
     {
-      "projectName": "MobisPatent System in Hyundai Mobis",
-      "projectLink": "/experiences/korea/mpasys"
-    },
-    {
-      "projectName": "PoC –PLM in Dassault Systèmes",
+      "projectName": "PoC – PLM in Dassault Systèmes",
       "projectLink": "/experiences/korea/poc"
     },
     {

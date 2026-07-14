@@ -18,49 +18,50 @@ export default function HomeContent() {
     iconKey: "IoPerson",
     link: "/experiences/australia/portfolio",
     description:
-      "Developed with Next.js and TypeScript, focusing on responsive design, clean code, and automated deployment.",
+      "This VS Code-themed portfolio, built with Next.js and TypeScript — responsive design, clean code, and automated deployment.",
   },
   {
-    id: "mymc-portfolio",
-    title: "My Muscle Chef Clone",
-    iconKey: "GiMuscleUp",
-    link: "/experiences/australia/mymusclechefclone",
+    id: "hhlawyerswebsiterebuild",
+    title: "H & H Lawyers Website Rebuild",
+    iconKey: "CgBrowser",
+    link: "/experiences/australia/hhlawyerswebsiterebuild",
     description:
-      "Built to showcase modern frontend skills and API integration through a partial My Muscle Chef clone.",
+      "End-to-end rebuild of a four-language law-firm platform — Spring Boot MSA backend and React/Next.js frontend on AWS, built agent-first.",
   },
   {
-    id: "buildcicdpipeline",
-    title: "Build CI/CD Pipeline",
-    iconKey: "LuConstruction",
-    link: "/experiences/australia/buildcicdpipeline",
-    description: "Built a pipeline for Continuous Integration (CI) and Development (CD).",
+    id: "groundeddoc",
+    title: "GroundedDoc (in progress)",
+    iconKey: "MdOutlineContentPasteSearch",
+    link: "/experiences/australia/groundeddoc",
+    description:
+      "An AI document Q&A app that answers only from uploaded sources with clause-level citations. Next.js, TypeScript, Supabase, Claude API.",
   },
   ];
   
   const skillList: MenuItem[] = [
+  {
+    id: "ainativeengineering",
+    title: "AI-Native Engineering",
+    iconKey: "FaRobot",
+    link: "/skills/ai/ainativeengineering",
+    description:
+      "Agent-first development with Claude Code — SDLC sub-agents, skills, slash commands, and hook gates, held to a two-layer safety model of deterministic gates plus human review.",
+  },
+  {
+    id: "java",
+    title: "Java",
+    iconKey: "FaJava",
+    link: "/skills/backend/java",
+    description:
+      "Over 8 years building enterprise back-end systems — OOP and design patterns, multi-module Gradle projects, and high-traffic, mission-critical applications.",
+  },
   {
     id: "react",
     title: "React",
     iconKey: "FaReact",
     link: "/skills/frontend/react",
     description:
-      "Experienced in building modern, high-performance web applications with React and Next.js, using server-side rendering, static site generation, and component-based architecture for scalable solutions.",
-  },
-  {
-    id: "cicdpipeline",
-    title: "CI/CD Pipeline",
-    iconKey: "FaDocker",
-    link: "/skills/others/cicdpipeline",
-    description:
-      "Proficient in designing CI/CD pipelines with GitHub Actions, Docker, AWS Elastic Beanstalk, and ECS to enable automated, scalable, and reliable deployments.",
-  },
-  {
-    id: "springboot",
-    title: "Spring Boot (Java)",
-    iconKey: "SiSpringboot",
-    link: "/skills/backend/springboot",
-    description:
-      "Experience with RESTful APIs, implementing security features, and managing configurations using Spring Boot to deliver modular, flexible, and high-performing solutions.",
+      "Building modern, responsive SPAs with React and Next.js — hooks, reusable components, and performance optimisation, used in production.",
   },
   ];
 
@@ -69,21 +70,21 @@ export default function HomeContent() {
       <div className="flex flex-col lg:justify-center w-10/12 md:w-8/12 h-auto pt-10">
         <header className="flex flex-col pb-12">
           <h1 className="text-5xl text-tabs-content-text font-[mono-space-neon] mb-2">Narae Hyeon</h1>
-          <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Full Stack Developer</h2>
+          <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Software Engineer</h2>
         </header>
 
         <div className="flex flex-wrap h-auto">
           <section className="w-full h-auto lg:w-1/2 mb-8">
             <List title="Contents" listItems={contentList} className="mb-10" />
             <List title="Skills" listItems={skillList} className="pr-10 w-full"/>
-            <Link href="/experiences" className="flex text-list-link-text pl-5 mt-1">
+            <Link href="/skills" className="flex text-list-link-text pl-5 mt-1">
               More...
             </Link>
           </section>
 
           <section className="w-full h-auto lg:w-1/2 mb-8">
             <Card title="Experiences" cardItems={expList} />
-            <Link href="/skills" className="flex text-list-link-text pl-5 mt-1">
+            <Link href="/experiences" className="flex text-list-link-text pl-5 mt-1">
               More...
             </Link>
           </section>

@@ -14,7 +14,7 @@ export default function LeftHeader() {
   const MenuItemComponent = isMobile ? TopMenuMobileItem : TopMenuDesktopItem;
 
   return (
-    <div className="flex h-full items-center">
+    <div className="flex h-full items-center" data-tour="topmenu">
       <Link href="/">
         <VscVscode className="w-9 h-9 text-blue-500 ml-3 mr-1" />
       </Link>

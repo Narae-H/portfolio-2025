@@ -1,7 +1,7 @@
 {
-  "title" : "H & H Lawyers Website and Server Migration",
-  "titleIconName": "hhlawyerswebsiteandservermigration",
-  "subTitle": "Website redevelopment and cloud-based email/server migration",
+  "title" : "H & H Email & Server Migration",
+  "titleIconName": "FaBalanceScaleLeft",
+  "subTitle": "Email and server migration to Microsoft Exchange and AWS",
   "overviewContent": "Redeveloped H & H Lawyers’ website and migrated their email and servers to Microsoft Exchange and AWS, addressing key access and operational limitations. The project delivered a fully multilingual website tailored to stakeholders with an admin panel, improved SEO to secure top search rankings for target clients, and established a scalable, globally accessible cloud infrastructure. Migrating the email server allowed external access, resolved spam filtering issues, and strengthened IT security, boosting overall operational efficiency.",
   "position": "Full Stack Java Developer",
   "period": "12 months (Oct 2019 – Sep 2020)",
@@ -36,11 +36,5 @@
       "Participated in all phases of SDLC, collaborating closely with stakeholders, designers, and cross-functional teams to deliver the project on time and within scope.",
       "Conducted unit, integration, and performance testing to ensure reliability, responsiveness, and cross-region accessibility, significantly improving user experience and operational efficiency."
     ]
-  },
-  "imgs": [
-    {
-      "desc" : "Main page"
-      , "url" : "/images/experiences/hhlawyers-website.png" 
-    }
-  ]
+  }
 }
