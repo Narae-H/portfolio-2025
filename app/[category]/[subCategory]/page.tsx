@@ -1,7 +1,7 @@
 import MainContent from "@/app/components/main/MainContent";
 import Sidebar from "@/app/components/main/Sidebar";
 import { Metadata } from "next";
-import { toTitleCase } from "@/lib/utils/text";
+import { resolveSubCategoryTitle } from "@/lib/utils/titles";
 
 type PageProps = {
   params: Promise<{ category: string, subCategory: string }>;
@@ -10,7 +10,7 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category, subCategory } = await params;
-  return { title: `${toTitleCase(subCategory)} · ${toTitleCase(category)}` };
+  return { title: resolveSubCategoryTitle(category, subCategory) };
 }
 
 export default async function SubPage({ params }: PageProps) {
