@@ -66,8 +66,8 @@ export default function HomeContent() {
   ];
 
   return (
-    <div className="flex w-full h-auto justify-center">
-      <div className="flex flex-col lg:justify-center w-10/12 md:w-8/12 h-auto pt-10">
+    <div className="flex w-full min-h-full justify-center">
+      <div className="flex flex-col w-10/12 md:w-8/12 h-auto my-auto py-10">
         <header className="flex flex-col pb-12">
           <h1 className="text-5xl text-tabs-content-text font-[mono-space-neon] mb-2">Narae Hyeon</h1>
           <h2 className="text-2xl sm:text-3xl text-tabs-content-text-secondary">Software Engineer</h2>
