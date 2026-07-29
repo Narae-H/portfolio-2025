@@ -121,18 +121,3 @@ portfolio-2025
 │
 └── 📄 .env.local                      # Environment variables for local development (not committed)
 ```
-
-<br/>
-
-# Known Issues & Solutions
-
-## LocalStorage-based tab state is not shared across components ([Related PR](https://github.com/Narae-H/portfolio-2025/pull/15/commits/5ba624134a7ae50b597332c9ce5301b797f8180b))
-
-Initially, the tab state was stored in `localStorage` for persistence.  
-However, because React components read from `localStorage` independently, state updates weren't reflected across components, causing inconsistencies.
-
-### Solution: Use Redux Toolkit with redux-persist for global state management
-
-- Manage tab states globally via `Redux Toolkit slice` keyed by storage keys.
-- Persist Redux state to localStorage using `redux-persist`.
-- This ensures all components share and react to the latest tab state instantly.
