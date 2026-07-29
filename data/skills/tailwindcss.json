@@ -5,12 +5,12 @@
   "overviewContent": "I style modern interfaces with Tailwind CSS (v4, CSS-first), applying utility classes directly in JSX for rapid, consistent and responsive UIs. I lean on design tokens and semantic theme variables — used in this portfolio to drive the VS Code light and dark themes — which keeps styling maintainable, reduces style conflicts, and makes collaborating with designers straightforward.",
   "relatedProjects": [
     {
-      "projectName": "H & H Lawyers Website Rebuild",
-      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+      "projectName": "H & H Lawyers Platform Rebuild",
+      "projectLink": "/experiences/hhlawyers/platformrebuild"
     },
     {
       "projectName": "Narae's Portfolio",
-      "projectLink": "/experiences/australia/portfolio"
+      "projectLink": "/experiences/personal/portfolio"
     }
   ]
 }

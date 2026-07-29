@@ -1,0 +1,23 @@
+{
+  "title" : "Samsung Electronics STMS",
+  "titleIconName": "TbBrandSamsungpass",
+  "subTitle": "Operating the tooling scheduling system across Samsung factories",
+  "overviewContent": "Supported the operation of STMS (Samsung Tooling Management System), the platform used to schedule and coordinate mould usage across Samsung Electronics factories. The work covered installation, configuration, diagnosis, upgrades, and troubleshooting, alongside day-to-day maintenance and end-user support — keeping the system available and tooling resources optimally utilised.",
+  "position": "Full Stack Developer",
+  "period": "7 months (Jun 2018 – Dec 2018)",
+  "details": {
+    "skillIds": [
+      "java",
+      "html",
+      "css",
+      "javascript",
+      "oracledb"
+    ],
+    "jd": [
+      "Assisted in installing, configuring, diagnosing, upgrading, and troubleshooting the STMS.",
+      "Performed maintenance tasks to ensure the availability and reliability of the tooling management system.",
+      "Provided support and responded to system enquiries from end-users.",
+      "Contributed to code refactoring and minor system improvements."
+    ]
+  }
+}

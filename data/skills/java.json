@@ -5,52 +5,36 @@
   "overviewContent": "I have over 8 years of professional experience using Java to architect, develop, and maintain robust enterprise back-end systems. I apply object-oriented principles and design patterns to multi-tier architectures, build multi-module projects with Gradle, integrate with complex third-party APIs, and optimise high-traffic, mission-critical applications. I'm comfortable refactoring legacy systems for scalability and maintainability, ensuring long-term operational stability in corporate environments.",
   "relatedProjects": [
     {
-      "projectName": "H & H Lawyers Website Rebuild",
-      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+      "projectName": "H & H Lawyers Platform Rebuild",
+      "projectLink": "/experiences/hhlawyers/platformrebuild"
     },
     {
-      "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/australia/employeecapacityreport"
+      "projectName": "Internal Systems & Reporting",
+      "projectLink": "/experiences/hhlawyers/internalsystems"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/australia/hhlawyersintranet"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     },
     {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Hyundai Mobis — PLM & Internal Systems",
+      "projectLink": "/experiences/pndps/hyundaimobis"
     },
     {
-      "projectName": "Product Lifecycle Management in Hyundai Mobis",
-      "projectLink": "/experiences/korea/productlifecyclmanagement"
+      "projectName": "PyeongChang 2018 Olympics — Traffic Information System",
+      "projectLink": "/experiences/pndps/pyeongchang2018"
     },
     {
-      "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/korea/trafficinformationsystem"
+      "projectName": "Samsung Electronics STMS",
+      "projectLink": "/experiences/pndps/samsungstms"
     },
     {
-      "projectName": "Patent System in Hyundai Mobis",
-      "projectLink": "/experiences/korea/mpasys"
-    },
-    {
-      "projectName": "Samsung Tooling Management System (STMS)",
-      "projectLink": "/experiences/korea/stmsmanagement"
-    },
-    {
-      "projectName": "Manual Product Information System in Hyundai Mobis",
-      "projectLink": "/experiences/korea/mpis"
-    },
-    {
-      "projectName": "PoC – PLM in Dassault Systèmes",
-      "projectLink": "/experiences/korea/poc"
-    },
-    {
-      "projectName": "System Management at Hyundai Mobis",
-      "projectLink": "/experiences/korea/systemmanagement"
+      "projectName": "Dassault Systèmes PLM PoC",
+      "projectLink": "/experiences/pndps/dassaultplmpoc"
     }
   ]
 }

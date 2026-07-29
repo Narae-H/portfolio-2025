@@ -5,48 +5,32 @@
   "overviewContent": "I structure web applications with HTML, paying careful attention to semantic elements, meta tags, and W3C standards for accessibility, maintainability, and SEO. I apply HTML best practices to deliver responsive, high-performance pages that support modern front-end frameworks, and I collaborate with UI/UX designers to implement markup precisely, improving search ranking and user experience across devices.",
   "relatedProjects": [
     {
-      "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/australia/employeecapacityreport"
+      "projectName": "Internal Systems & Reporting",
+      "projectLink": "/experiences/hhlawyers/internalsystems"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/australia/hhlawyersintranet"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     },
     {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Samsung Electronics STMS",
+      "projectLink": "/experiences/pndps/samsungstms"
     },
     {
-      "projectName": "Samsung Tooling Management System (STMS)",
-      "projectLink": "/experiences/korea/stmsmanagement"
+      "projectName": "Hyundai Mobis — PLM & Internal Systems",
+      "projectLink": "/experiences/pndps/hyundaimobis"
     },
     {
-      "projectName": "Product Lifecycle Management in Hyundai Mobis",
-      "projectLink": "/experiences/korea/productlifecyclmanagement"
+      "projectName": "PyeongChang 2018 Olympics — Traffic Information System",
+      "projectLink": "/experiences/pndps/pyeongchang2018"
     },
     {
-      "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/korea/trafficinformationsystem"
-    },
-    {
-      "projectName": "Manual Product Information System in Hyundai Mobis",
-      "projectLink": "/experiences/korea/mpis"
-    },
-    {
-      "projectName": "Patent System in Hyundai Mobis",
-      "projectLink": "/experiences/korea/mpasys"
-    },
-    {
-      "projectName": "PoC – PLM in Dassault Systèmes",
-      "projectLink": "/experiences/korea/poc"
-    },
-    {
-      "projectName": "System Management at Hyundai Mobis",
-      "projectLink": "/experiences/korea/systemmanagement"
+      "projectName": "Dassault Systèmes PLM PoC",
+      "projectLink": "/experiences/pndps/dassaultplmpoc"
     }
   ]
 }

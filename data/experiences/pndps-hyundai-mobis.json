@@ -1,0 +1,30 @@
+{
+  "title" : "Hyundai Mobis — PLM & Internal Systems",
+  "titleIconName": "FaCar",
+  "subTitle": "Three years on-site maintaining and extending Hyundai Mobis internal systems",
+  "overviewContent": "Spent three years on-site at Hyundai Mobis as part of PNDPS, running and extending the internal systems the engineering organisation depended on. The bulk of the work was system management (2015 – 2017): monitoring, diagnosing, upgrading, and troubleshooting in-house systems, and supporting the end-users on them. From there I moved onto feature delivery — adding Korean/English language support to the internal Patent System (2017), building a 'Modified Request' function in the Manual Product Information System (2017) so staff could copy an existing manual and edit it instead of rewriting from scratch, and finally customising the Dassault Systèmes Enovia solution to deliver Bills of Materials (BOM) and Engineering Orders (EO) for the company's PLM rollout (2018). Throughout, the stack was Java/JSP on Oracle and Matrix ODB.",
+  "position": "PLM Programmer / Java Programmer",
+  "period": "Mar 2015 – May 2018 (~3 years)",
+  "details": {
+    "skillIds": [
+      "java",
+      "jsp",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "oracledb",
+      "matrixodb"
+    ],
+    "jd": [
+      "System Management (Mar 2015 – Jun 2017): configured, diagnosed, upgraded, and troubleshot in-house systems, monitoring proactively and performing regular maintenance to keep IT infrastructure continuously available.",
+      "System Management: supported end-users on system issues and worked with stakeholders to assess IT requirements and implement solutions aligned with organisational objectives.",
+      "Patent System (Sep 2017): added language preference functionality so users could switch between Korean and English, modifying JSP, JSTL, and properties files to serve multi-language content.",
+      "Patent System: updated database schemas and produced ERDs to accommodate language-specific data.",
+      "Manual Product Information System (Oct – Nov 2017): gathered requirements around manual copy-and-edit inefficiencies and built a 'Modified Request' feature that clones an existing manual's data for editing, cutting repetitive manual work.",
+      "Manual Product Information System: extended the database to support the new workflow.",
+      "Product Lifecycle Management (Feb – May 2018): analysed the Dassault Systèmes Enovia framework and customised it to deliver Bills of Materials (BOM) and Engineering Orders (EO) supporting project planning, execution, and monitoring.",
+      "Across all four systems: performed unit and integration testing, and wrote technical documentation and end-user manuals."
+    ]
+  }
+}

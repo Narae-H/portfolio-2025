@@ -5,8 +5,8 @@
   "overviewContent": "I containerise services with Docker to keep local and production environments consistent and deployments reproducible. I write multi-stage Dockerfiles that produce small, non-root runtime images, publish them to Amazon ECR, and run them on ECS Fargate as part of an automated CI/CD pipeline.",
   "relatedProjects": [
     {
-      "projectName": "H & H Lawyers Website Rebuild",
-      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+      "projectName": "H & H Lawyers Platform Rebuild",
+      "projectLink": "/experiences/hhlawyers/platformrebuild"
     }
   ]
 }

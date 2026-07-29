@@ -39,21 +39,28 @@ export default function TabsHeader({
 
   // When a selected tab is outside of layout, then auto-scroll
   useEffect(() => {
-    if (selectedTab && tabRefs.current[selectedTab] && tabsContainerRef.current) {
-      const tabEl = tabRefs.current[selectedTab]!;
-      const container = tabsContainerRef.current;
-      const tabLeft = tabEl.offsetLeft;
-      const tabRight = tabEl.offsetLeft + tabEl.offsetWidth;
-      const containerScrollLeft = container.scrollLeft;
-      const containerWidth = container.offsetWidth;
+    const container = tabsContainerRef.current;
+    const tabEl = selectedTab ? tabRefs.current[selectedTab] : null;
+    if (!container || !tabEl) return;
 
-      if (tabLeft < containerScrollLeft) {
-        container.scrollTo({ left: tabLeft, behavior: "smooth" });
-      } else if (tabRight > containerScrollLeft + containerWidth) {
-        container.scrollTo({ left: tabRight - containerWidth, behavior: "smooth" });
-      }
+    // Stop any smooth scroll still running for the previous tab, or it wins
+    container.scrollTo({ left: container.scrollLeft });
+
+    const containerRect = container.getBoundingClientRect();
+    const tabRect = tabEl.getBoundingClientRect();
+
+    // offsetLeft is relative to the sidebar/activity bar, so measure against the strip
+    const tabStart = tabRect.left - containerRect.left + container.scrollLeft;
+    const tabEnd = tabStart + tabRect.width;
+    const viewStart = container.scrollLeft;
+    const viewEnd = viewStart + container.clientWidth;
+
+    if (tabStart < viewStart) {
+      container.scrollTo({ left: tabStart, behavior: "smooth" });
+    } else if (tabEnd > viewEnd) {
+      container.scrollTo({ left: tabEnd - container.clientWidth, behavior: "smooth" });
     }
-  }, [selectedTab]);
+  }, [selectedTab, tabs.length]);
 
   return (
     <div className="flex flex-row">
@@ -61,11 +68,11 @@ export default function TabsHeader({
         ref={tabsContainerRef}
         className="
           flex
-          h-[39px] 
-          whitespace-nowrap 
+          h-[39px]
+          min-w-0
+          whitespace-nowrap
           tabs-scroll
-          overflow-x-hidden overflow-y-hidden
-          hover:overflow-x-auto
+          overflow-x-auto overflow-y-hidden
         "
       >
         {tabs.map((tab) => {

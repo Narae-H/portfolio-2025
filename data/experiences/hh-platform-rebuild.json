@@ -1,5 +1,5 @@
 {
-  "title" : "H & H Lawyers Website Rebuild",
+  "title" : "H & H Lawyers Platform Rebuild",
   "titleIconName": "CgBrowser",
   "subTitle": "Full rebuild of a four-language law-firm platform, agent-first",
   "overviewContent": "Rebuilt H & H Lawyers' website end-to-end and shipped it to production, coordinating external designers and developers. Because this was a full rebrand, I also acted as product manager through the design phase — roughly six months to align external designers and finalise the new design, followed by six months of development. The platform is a four-language (English, Korean, Japanese, Chinese) law-firm site backed by a multi-module Spring Boot backend and a React/Next.js frontend, running on AWS. I drove the build agent-first with a reusable AI pipeline embedded in the repository, and held a two-layer safety model so agent output only shipped once it passed both deterministic gates and human review.",
