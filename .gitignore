@@ -20,9 +20,9 @@
 # production
 /build
 
-# editors
+# editors & local tooling
 /.idea/
-/.gstack/
+.gstack/
 
 # misc
 .DS_Store
