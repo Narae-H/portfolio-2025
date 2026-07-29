@@ -3,12 +3,12 @@
   "titleIconName": "IoPerson",
   "subTitle": "A responsive SPA portfolio showcasing modern React and TypeScript skills",
   "overviewContent": "This portfolio project was developed as a comprehensive personal profile, aimed at showcasing my skills while providing hands-on experience with modern front-end technologies. It utilises React, Next.js, TypeScript, and Tailwind CSS to implement a responsive, multi-device SPA. The project supports theme selection and manages static data, with future database integration planned. The project emphasises component-based architecture, global state management, and user preference persistence to enhance performance, maintainability, and user experience.",
-  "position": "Full Stack Engineer",
+  "position": "Personal Project",
   "period": "Aug 2025 (updated Jul 2026)",
   "links": {
     "github": "https://github.com/Narae-H/portfolio-2025",
     "demo": "https://portfolio-2025-liart-nu.vercel.app/"
-  }, 
+  },
   "details": {
     "skillIds": [
       "react",

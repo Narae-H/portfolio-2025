@@ -14,17 +14,17 @@ export default function HomeContent() {
   const expList: CardItem[] = [
   {
     id: "portfolio",
-    title: "Portfolio",
+    title: "Portfolio Site",
     iconKey: "IoPerson",
-    link: "/experiences/australia/portfolio",
+    link: "/experiences/personal/portfolio",
     description:
       "This VS Code-themed portfolio, built with Next.js and TypeScript — responsive design, clean code, and automated deployment.",
   },
   {
-    id: "hhlawyerswebsiterebuild",
-    title: "H & H Lawyers Website Rebuild",
+    id: "platformrebuild",
+    title: "H & H Lawyers Platform Rebuild",
     iconKey: "CgBrowser",
-    link: "/experiences/australia/hhlawyerswebsiterebuild",
+    link: "/experiences/hhlawyers/platformrebuild",
     description:
       "End-to-end rebuild of a four-language law-firm platform — Spring Boot MSA backend and React/Next.js frontend on AWS, built agent-first.",
   },
@@ -32,7 +32,7 @@ export default function HomeContent() {
     id: "groundeddoc",
     title: "GroundedDoc (in progress)",
     iconKey: "MdOutlineContentPasteSearch",
-    link: "/experiences/australia/groundeddoc",
+    link: "/experiences/personal/groundeddoc",
     description:
       "An AI document Q&A app that answers only from uploaded sources with clause-level citations. Next.js, TypeScript, Supabase, Claude API.",
   },

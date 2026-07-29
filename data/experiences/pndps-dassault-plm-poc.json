@@ -1,8 +1,8 @@
 {
-  "title" : "PoC – PLM in Dassault Systèmes",
-  "titleIconName": "TbCircleLetterPFilled",
-  "subTitle": "Supported PLM system proof of concept with EO and BOM functionalities",
-  "overviewContent": "Participated in a proof of concept (PoC) for a Product Lifecycle Management (PLM) system at Dassault Systèmes, supporting the development of key functionalities such as Engineering Orders (EO) and Bills of Materials (BOM). Assisted the team in validating system requirements and ensuring feasibility, contributing to a smoother implementation of PLM processes.",
+  "title" : "Dassault Systèmes PLM PoC",
+  "titleIconName": "GiCycle",
+  "subTitle": "Proof of concept for a PLM rollout — Engineering Orders and BOM",
+  "overviewContent": "Took part in a proof of concept for a Product Lifecycle Management (PLM) system at Dassault Systèmes, supporting development of the core functionality — Engineering Orders (EO) and Bills of Materials (BOM) — by customising the Enovia solution. The PoC validated system requirements and feasibility ahead of the full rollout, which I later worked on at Hyundai Mobis.",
   "position": "PLM Programmer",
   "period": "2 months (Jul 2017 – Aug 2017)",
   "details": {
@@ -23,4 +23,3 @@
     ]
   }
 }
-

@@ -1,14 +1,10 @@
 {
-  "title" : "H & H Email & Server Migration",
-  "titleIconName": "FaBalanceScaleLeft",
-  "subTitle": "Email and server migration to Microsoft Exchange and AWS",
-  "overviewContent": "Redeveloped H & H Lawyers’ website and migrated their email and servers to Microsoft Exchange and AWS, addressing key access and operational limitations. The project delivered a fully multilingual website tailored to stakeholders with an admin panel, improved SEO to secure top search rankings for target clients, and established a scalable, globally accessible cloud infrastructure. Migrating the email server allowed external access, resolved spam filtering issues, and strengthened IT security, boosting overall operational efficiency.",
+  "title" : "Website & Server Migration",
+  "titleIconName": "BsServer",
+  "subTitle": "First major delivery — multilingual site rebuild plus email and server migration",
+  "overviewContent": "My first large delivery at the firm. I rebuilt H & H Lawyers' website and migrated their email and servers to Microsoft Exchange and AWS, resolving long-standing access and operational limitations. The project delivered a fully multilingual (English, Korean, Japanese, Chinese) site with an admin panel so content could be managed internally, SEO work that secured top search rankings for target clients, and a scalable, globally accessible cloud infrastructure. Migrating the email server enabled reliable external access, fixed spam filtering issues, and strengthened IT security. It also moved domain administration in-house, ending the dependency on an external IT provider.",
   "position": "Full Stack Java Developer",
   "period": "12 months (Oct 2019 – Sep 2020)",
-  "links": {
-    "github": "https://hhlaw.com.au",
-    "demo": ""
-  },
   "details": {
     "skillIds": [
       "java",

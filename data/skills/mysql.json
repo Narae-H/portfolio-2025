@@ -5,8 +5,8 @@
   "overviewContent": "I use MySQL to design and manage relational databases with high performance and data integrity. This includes writing complex queries, creating and optimising stored procedures, and structuring data for efficient retrieval. By applying best practices in indexing and query optimisation, I improve database performance to support dynamic, real-time features such as traffic-estimation calculations and reporting, and I work with DBAs to ensure accurate data modelling and smooth integration with backend systems.",
   "relatedProjects": [
     {
-      "projectName": "Traffic Information System in Korea Expressway Corporation",
-      "projectLink": "/experiences/korea/trafficinformationsystem"
+      "projectName": "PyeongChang 2018 Olympics — Traffic Information System",
+      "projectLink": "/experiences/pndps/pyeongchang2018"
     }
   ]
 }

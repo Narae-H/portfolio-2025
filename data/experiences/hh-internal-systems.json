@@ -1,0 +1,40 @@
+{
+  "title" : "Internal Systems & Reporting",
+  "titleIconName": "MdOutlineManageHistory",
+  "subTitle": "Five internal systems for performance reporting, HR data, and staff resources",
+  "overviewContent": "Over four years I delivered the firm's internal tooling as a series of five systems, each replacing a manual or spreadsheet-driven process with a maintained one. The reporting side began with an Individual Performance Dashboard (2020 – 2021) giving lawyers and team leaders daily visibility of their own numbers, followed by a Finance Overview Dashboard (2021) that tracked revenue targets, billings, collections, and discounts firm-wide, and an automated Employee Capacity Report (2023) that emailed billable/non-billable utilisation every Monday. Alongside these I built the firm's Intranet (2023) as a single hub for policies, forms, and internal links, and a central Human Resource Database (2023 – 2024) that replaced fragmented Excel tracking with one source of truth for employee data. The stack spans Power BI and DAX for the analytics layer and Spring Boot, Thymeleaf, and MariaDB on AWS for the web systems, all fed from ActionStep (the legal practice management system) and internal databases.",
+  "position": "Full Stack Engineer",
+  "period": "Oct 2020 – Apr 2024 (five internal systems)",
+  "details": {
+    "skillIds": [
+      "java",
+      "springboot",
+      "thymeleaf",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "bootstrap",
+      "powerbi",
+      "dax",
+      "mariadb",
+      "azuredb",
+      "awsEb",
+      "awsRoute53"
+    ],
+    "jd": [
+      "Individual Performance Dashboard (Oct 2020 – Jan 2021): built Power BI reports on daily-refreshed ActionStep and internal database extracts, showing monthly total hours, billable vs non-billable split, matter engagement, and senior-lawyer collaboration patterns.",
+      "Individual Performance Dashboard: enabled drill-down straight into specific matters in ActionStep, and separated access levels so individual lawyers and team leaders each saw the right scope.",
+      "Finance Overview Dashboard (Mar – Jun 2021): worked with finance stakeholders to define revenue targets and KPIs, then modelled billings, collections, discounts, and outstanding balances with optimised queries and DAX measures.",
+      "Finance Overview Dashboard: delivered dynamic filtering by lawyer and expertise type, surfacing high-discount matters, slow collections, and progress against monthly and annual targets for early intervention.",
+      "H & H Lawyers Intranet (Feb – Mar 2023): designed a modular intranet as a single hub for policies, SOPs, training guides, and direct links to frequently used internal and third-party systems, cutting navigation time for staff.",
+      "H & H Lawyers Intranet: built a responsive Thymeleaf/Bootstrap UI, configured authentication and role-based access through Azure Entra ID, and deployed to AWS Elastic Beanstalk with load balancing and Route 53 DNS.",
+      "Employee Capacity Report (May – Jul 2023): analysed capacity reporting needs for both junior staff and supervisors, then modelled billable and non-billable hours from ActionStep time recording data.",
+      "Employee Capacity Report: developed a scheduler that generates and emails reports every Monday for the previous week and month, accounting for working days, public holidays, and leave.",
+      "Human Resource Database (Dec 2023 – Apr 2024): replaced fragmented Excel tracking with a central HR database covering employee information, roles, teams, and performance metrics, migrating and validating the legacy data.",
+      "Human Resource Database: established the database as the single source of truth and integrated it with internal platforms to propagate data automatically, laying groundwork for integrations with ActionStep, Xero, and Adobe.",
+      "Across all five systems: set up development and production environments, designed the database schemas, and ran unit, integration, and user acceptance testing before release.",
+      "Across all five systems: worked directly with non-technical stakeholders (finance, HR, administration, and senior lawyers) to turn pain points into requirements, and wrote technical documentation and end-user manuals for long-term maintainability."
+    ]
+  }
+}
