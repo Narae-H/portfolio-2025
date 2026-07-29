@@ -5,20 +5,20 @@
   "overviewContent": "I run production workloads on AWS with a focus on availability, security and cost. On the H & H Lawyers rebuild I containerised services onto ECS Fargate (images stored in ECR) behind an Application Load Balancer, with RDS for relational data, S3 + CloudFront for a global CDN, Route 53 and ACM for DNS/TLS, Cognito (with Azure AD SSO) for authentication, Secrets Manager for credentials, and CloudWatch for observability — all deployed through GitHub Actions using OIDC rather than long-lived keys. Earlier work used Elastic Beanstalk with load balancing for reliable multi-region access.",
   "relatedProjects": [
     {
-      "projectName": "H & H Lawyers Website Rebuild",
-      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+      "projectName": "H & H Lawyers Platform Rebuild",
+      "projectLink": "/experiences/hhlawyers/platformrebuild"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/australia/hhlawyersintranet"
+      "projectName": "Internal Systems & Reporting",
+      "projectLink": "/experiences/hhlawyers/internalsystems"
     },
     {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     }
   ]
 }

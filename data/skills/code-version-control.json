@@ -6,11 +6,7 @@
   "relatedProjects": [
     {
       "projectName": "Narae's Portfolio",
-      "projectLink": "/experiences/australia/portfolio"
-    },
-    {
-      "projectName": "My Muscle Chef Clone",
-      "projectLink": "/experiences/australia/mymusclechefclone"
+      "projectLink": "/experiences/personal/portfolio"
     }
   ]
 }

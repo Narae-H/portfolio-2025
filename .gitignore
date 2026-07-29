@@ -20,8 +20,14 @@
 # production
 /build
 
+# editors & local tooling
+/.idea/
+.gstack/
+
 # misc
 .DS_Store
+Thumbs.db
+desktop.ini
 *.pem
 
 # debug

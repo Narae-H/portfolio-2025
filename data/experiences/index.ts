@@ -1,32 +1,23 @@
-import hhlawyerswebsiterebuild from './h-h-lawyers-website-rebuild.json';
-import groundeddoc from './groundeddoc.json';
-import mymusclechefclone from './my-muscle-chef-clone.json';
-import portfolio from './portfolio.json';
-import financeoverviewdashboard from './finance-overview-dashboard.json';
-import employeecapacityreport from './employee-capacity-report.json';
-import hhlawyersintranet from './h-h-lawyers-intranet.json';
-import humanresourcedatabase from './human-resource-database.json';
-import oneclicktrademarkwebsite from './one-click-trade-mark-website.json';
+// H & H Lawyers · Sydney · 2019 – Present
+import platformrebuild from './hh-platform-rebuild.json';
+import oneclicktrademark from './hh-one-click-trade-mark.json';
+import websitemigration from './hh-website-server-migration.json';
+import internalsystems from './hh-internal-systems.json';
 
-import individualperformancedashboard from './individual-performance-dashboard.json';
-import hhlawyerswebmigration from './h-h-lawyers-website-and-server-migration.json';
-import stmsmanagement from './stms-management.json';
+// PNDPS · Korea · 2014 – 2018
+import hyundaimobis from './pndps-hyundai-mobis.json';
+import pyeongchang2018 from './pndps-pyeongchang-2018.json';
+import samsungstms from './pndps-samsung-stms.json';
+import dassaultplmpoc from './pndps-dassault-plm-poc.json';
 
-import productlifecyclmanagement from './product-lifecycle-management.json';
-import trafficinformationsystem from './traffic-information-system.json';
-
-import mpis from './mpis.json';
-import mpasys from './mobispatent-system.json';
-import poc from './poc.json';
-import systemmanagement from './system-management.json';
+// Personal
+import groundeddoc from './personal-groundeddoc.json';
+import portfolio from './personal-portfolio.json';
 
 const experiencesDataMap = {
-  hhlawyerswebsiterebuild, groundeddoc,
-  portfolio, mymusclechefclone, humanresourcedatabase,
-  employeecapacityreport, hhlawyersintranet,
-  oneclicktrademarkwebsite, financeoverviewdashboard, individualperformancedashboard,
-  hhlawyerswebmigration, stmsmanagement, productlifecyclmanagement,
-  trafficinformationsystem, mpis, mpasys, poc, systemmanagement
+  platformrebuild, oneclicktrademark, websitemigration, internalsystems,
+  hyundaimobis, pyeongchang2018, samsungstms, dassaultplmpoc,
+  groundeddoc, portfolio
 };
 
 export default experiencesDataMap;

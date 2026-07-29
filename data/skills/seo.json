@@ -5,20 +5,16 @@
   "overviewContent": "I build SEO into sites from the structure up. On the H & H Lawyers rebuild this meant a generated sitemap, hreflang tags across four languages (English, Korean, Japanese, Chinese), an RSS feed, semantic markup, route-level metadata and Open Graph tags, plus Core Web Vitals budgets enforced in CI. Earlier work covered meta tags, structured data, mobile responsiveness and a keyword strategy that secured top Google rankings for target clients, contributing to higher organic traffic and measurable business growth.",
   "relatedProjects": [
     {
-      "projectName": "H & H Lawyers Website Rebuild",
-      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+      "projectName": "H & H Lawyers Platform Rebuild",
+      "projectLink": "/experiences/hhlawyers/platformrebuild"
     },
     {
-      "projectName": "My Muscle Chef Clone",
-      "projectLink": "/experiences/australia/mymusclechefclone"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
-    },
-    {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     }
   ]
 }

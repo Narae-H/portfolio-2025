@@ -5,32 +5,16 @@
   "overviewContent": "I use MariaDB to design, set up, and maintain relational databases that support web applications. My work includes writing and optimising SQL queries, creating stored procedures, and structuring data for efficient integration with MVC-based backends. I design databases for performance, reliability, and maintainability, and work with development teams to ensure smooth data flow across projects, from dashboards to intranet systems.",
   "relatedProjects": [
     {
-      "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/australia/employeecapacityreport"
+      "projectName": "Internal Systems & Reporting",
+      "projectLink": "/experiences/hhlawyers/internalsystems"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/australia/hhlawyersintranet"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "Human Resource Database",
-      "projectLink": "/experiences/australia/humanresourcedatabase"
-    },
-    {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
-    },
-    {
-      "projectName": "Finance Overview Dashboard",
-      "projectLink": "/experiences/australia/financeoverviewdashboard"
-    },
-    {
-      "projectName": "Individual Performance Dashboard",
-      "projectLink": "/experiences/australia/individualperformancedashboard"
-    },
-    {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     }
   ]
 }

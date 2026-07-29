@@ -5,24 +5,20 @@
   "overviewContent": "I build multi-module Spring Boot backends (Gradle) with strict module boundaries and independently deployable microservices. I design RESTful APIs documented with springdoc/Swagger (OpenAPI), use QueryDSL for type-safe dynamic queries, and apply Spring Security for role-based access control, OAuth2/JWT authentication, CORS and CSRF protection. Modular architecture and clean configuration management keep deployment pipelines and operations efficient in production.",
   "relatedProjects": [
     {
-      "projectName": "H & H Lawyers Website Rebuild",
-      "projectLink": "/experiences/australia/hhlawyerswebsiterebuild"
+      "projectName": "H & H Lawyers Platform Rebuild",
+      "projectLink": "/experiences/hhlawyers/platformrebuild"
     },
     {
-      "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/australia/employeecapacityreport"
+      "projectName": "Internal Systems & Reporting",
+      "projectLink": "/experiences/hhlawyers/internalsystems"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/australia/hhlawyersintranet"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
-    },
-    {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     }
   ]
 }

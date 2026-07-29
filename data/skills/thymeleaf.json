@@ -5,20 +5,16 @@
   "overviewContent": "I use Thymeleaf to generate dynamic, server-side rendered web pages that integrate smoothly with back-end Spring logic. I use templates to handle forms, conditional content, and error messages, keeping code maintainable and structured. This improves SEO, page-load performance, and security, and pairing Thymeleaf with Spring Boot lets me render server data seamlessly and reuse it across views, making front-end development faster and more consistent across applications.",
   "relatedProjects": [
     {
-      "projectName": "Employee Capacity Report",
-      "projectLink": "/experiences/australia/employeecapacityreport"
+      "projectName": "Internal Systems & Reporting",
+      "projectLink": "/experiences/hhlawyers/internalsystems"
     },
     {
-      "projectName": "H & H Lawyers Intranet",
-      "projectLink": "/experiences/australia/hhlawyersintranet"
+      "projectName": "One Click Trade Mark",
+      "projectLink": "/experiences/hhlawyers/oneclicktrademark"
     },
     {
-      "projectName": "One Click Trade Mark Website",
-      "projectLink": "/experiences/australia/oneclicktrademarkwebsite"
-    },
-    {
-      "projectName": "H & H Email & Server Migration",
-      "projectLink": "/experiences/australia/hhlawyerswebmigration"
+      "projectName": "Website & Server Migration",
+      "projectLink": "/experiences/hhlawyers/websitemigration"
     }
   ]
 }
